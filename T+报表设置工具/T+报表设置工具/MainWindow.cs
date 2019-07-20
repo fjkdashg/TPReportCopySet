@@ -18,14 +18,15 @@ namespace T_报表设置工具
     {
         SqlConnection MainSQL;
 
-        XmlDocument BaseRepXML;
-        XmlDocument CDBXML;
-        XmlDocument CDJXML;
-        XmlDocument ZCFZBXML;
-        XmlDocument ZCFZJXML;
-        XmlDocument LRBXML;
-        XmlDocument LRJXML;
+        RepXML BaseRepXML;
+        RepXML CDBXML;
+        RepXML CDJXML;
+        RepXML ZCFZBXML;
+        RepXML ZCFZJXML;
+        RepXML LRBXML;
+        RepXML LRJXML;
 
+        /*
         XmlNode BaseRepXML_root;
         XmlNode CDBXML_root;
         XmlNode CDJXML_root;
@@ -33,28 +34,109 @@ namespace T_报表设置工具
         XmlNode ZCFZJXML_root;
         XmlNode LRBXML_root;
         XmlNode LRJXML_root;
+        */
+        DataTable rDT = new DataTable();
+        DataTable zDT = new DataTable();
+
 
         public MainWindow()
         {
             InitializeComponent();
-            
+
             //GetWorkDB_Click(new object(), new EventArgs());
+            DataColumn c1 = new DataColumn();
+            c1.ColumnName = "RepID";
+            c1.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c1);
+
+            DataColumn c2 = new DataColumn();
+            c2.ColumnName = "RepNo";
+            c2.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c2);
+
+            DataColumn c3 = new DataColumn();
+            c3.ColumnName = "RepName";
+            c3.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c3);
+
+            DataColumn c4 = new DataColumn();
+            c4.ColumnName = "zName";
+            c4.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c4);
+
+            DataColumn c5 = new DataColumn();
+            c5.ColumnName = "BzNo";
+            c5.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c5);
+
+            DataColumn c6 = new DataColumn();
+            c6.ColumnName = "BzCDCol";
+            c6.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c6);
+
+            DataColumn c7 = new DataColumn();
+            c7.ColumnName = "BzZCFZCol1";
+            c7.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c7);
+
+            DataColumn c8 = new DataColumn();
+            c8.ColumnName = "BzZCFZCol2";
+            c8.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c8);
+
+            DataColumn c9 = new DataColumn();
+            c9.ColumnName = "BzLRCol1";
+            c9.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c9);
+
+            DataColumn c10 = new DataColumn();
+            c10.ColumnName = "BzLRCol2";
+            c10.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c10);
+
+            //------------
+            DataColumn c11 = new DataColumn();
+            c11.ColumnName = "JzNo";
+            c11.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c11);
+
+            DataColumn c12 = new DataColumn();
+            c12.ColumnName = "JzCDCol";
+            c12.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c12);
+
+            DataColumn c13 = new DataColumn();
+            c13.ColumnName = "JzZCFZCol1";
+            c13.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c13);
+
+            DataColumn c14 = new DataColumn();
+            c14.ColumnName = "JzZCFZCol2";
+            c14.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c14);
+
+            DataColumn c15 = new DataColumn();
+            c15.ColumnName = "JzLRCol1";
+            c15.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c15);
+
+            DataColumn c16 = new DataColumn();
+            c16.ColumnName = "JzLRCol2";
+            c16.DataType = Type.GetType("System.String");
+            zDT.Columns.Add(c16);
+
         }
 
         protected override void OnLoad(EventArgs e)
         {
             GetWorkDB.PerformClick();
             SaveSQLConn.PerformClick();
-            ReadBaseRepSet.PerformClick();
-            BTN_ReadCDValue.PerformClick();
-            ReadZCFZValue.PerformClick();
-            ReadLRValue.PerformClick();
         }
 
         private void GetWorkDB_Click(object sender, EventArgs e)
         {
-            string ConnStr = String.Format("data source={0},{1};initial catalog=Master;user id={2};pwd={3}", SQL_Host.Text.Trim(),SQL_Port.Text.Trim(),SQL_User.Text.Trim(),SQL_Pwd.Text.Trim());
-            Console.WriteLine(ConnStr);
+            string ConnStr = String.Format("data source={0},{1};initial catalog=Master;user id={2};pwd={3}", SQL_Host.Text.Trim(), SQL_Port.Text.Trim(), SQL_User.Text.Trim(), SQL_Pwd.Text.Trim());
+            //Console.WriteLine(ConnStr);
             MainSQL = new SqlConnection(ConnStr);
             MainSQL.Open();
             SqlDataAdapter SDA = new SqlDataAdapter("SELECT Name FROM Master..SysDatabases ORDER BY Name", MainSQL);
@@ -70,7 +152,7 @@ namespace T_报表设置工具
         {
             if (!String.IsNullOrEmpty(this.SQL_WorkDB.Text))
             {
-                this.MainWorkTabC.Enabled = true;
+                this.WorkSetting.Enabled = true;
                 this.GetWorkDB.Enabled = false;
                 this.SQL_Host.Enabled = false;
                 this.SQL_Port.Enabled = false;
@@ -86,6 +168,8 @@ namespace T_报表设置工具
                 try
                 {
                     SqlDataAdapter SDA = new SqlDataAdapter("select  * from   TUFO_ReportTemplateBasic where    isSysTemplate <> 1 and Creator <> 'admin' ", MainSQL);
+                    SDA.Fill(rDT);
+
                     DataTable dblist1 = new DataTable();
                     DataTable dblist2 = new DataTable();
                     DataTable dblist3 = new DataTable();
@@ -165,15 +249,94 @@ namespace T_报表设置工具
                 }
                 catch
                 {
-                    
+
                 }
                 //this.Temp_BaseRep_ZTName_CellName.Text = IndexToASCiiTitle(this.Temp_BaseRep_ZTName_Col.Value) + this.Temp_BaseRep_ZTName_Row.Value.ToString();
-                Temp_BaseRep_ZTInfo_ColRow_indexChanged(new object(),new EventArgs());
+                Temp_BaseRep_ZTInfo_ColRow_indexChanged(new object(), new EventArgs());
                 Temp_BaseRep_DataInfo_ColRow_indexChanged(new object(), new EventArgs());
                 Temp_CDWorkRep_ColRow_indexChanged(new object(), new EventArgs());
                 Temp_ZCFZWorkRep_ColRow_indexChanged(new object(), new EventArgs());
                 Temp_LRWorkRep_ColRow_indexChanged(new object(), new EventArgs());
             }
+        }
+
+        private void GetXNL_Click(object sender, EventArgs e)
+        {
+            BaseRepXML=GetRepXMLData(this.Temp_BaseRep_ID.Text);
+
+            CDBXML=GetRepXMLData(this.Temp_CDB_ID.Text);
+            CDJXML=GetRepXMLData(this.Temp_CDJ_ID.Text);
+            
+            ZCFZBXML=GetRepXMLData(this.Temp_ZCFZB_ID.Text);
+            ZCFZJXML=GetRepXMLData(this.Temp_ZCFZJ_ID.Text);
+            
+            LRBXML=GetRepXMLData(this.Temp_LRB_ID.Text);
+            LRJXML=GetRepXMLData(this.Temp_LRJ_ID.Text);
+
+            WorkSetting.SelectTab(BaseSetting);
+            ReadBaseRepSet.PerformClick();
+            WorkSetting.SelectTab(CDSetting);
+            BTN_ReadCDValue.PerformClick();
+            WorkSetting.SelectTab(ZCFZSetting);
+            ReadZCFZValue.PerformClick();
+            WorkSetting.SelectTab(LRSetting);
+            ReadLRValue.PerformClick();
+        }
+        public RepXML GetRepXMLData(string RepID)
+        {
+            string sql = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", RepID);
+            SqlCommand cmd = new SqlCommand(sql, MainSQL);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            RepXML rx = new RepXML();
+            while (sdr.Read())
+            {
+                string RepXMLStr = (string)sdr.GetSqlString(0);
+                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
+                rx.Doc= new XmlDocument();
+                rx.Doc.LoadXml(RepXMLStr);
+            }
+            sdr.Close();
+            cmd.Dispose();
+            Console.WriteLine(rx.RootNode.InnerXml.ToString());
+            return rx;
+        }
+
+        string GetXMLValueByRC(RepXML RX, decimal rowno, decimal colno,string VType="snix")
+        {
+            string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", rowno, colno);
+            string rStr = "";
+            switch (VType)
+            {
+                case "snix":
+                    rStr = RX.RootNode.SelectSingleNode(namepath).InnerXml;
+                    break;
+                case "snafv":
+                    rStr = RX.RootNode.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
+                    break;
+                default:
+                    rStr = RX.RootNode.SelectSingleNode(namepath).InnerXml;
+                    break;
+            }
+            return rStr;
+        }
+
+        string GetXMLValueByRC(RepXML RX, NumericUpDown rowno, NumericUpDown colno, string VType = "snix")
+        {
+            string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", rowno.Value, colno.Value);
+            string rStr = "";
+            switch (VType)
+            {
+                case "snix":
+                    rStr= RX.RootNode.SelectSingleNode(namepath).InnerXml;
+                    break;
+                case "snafv":
+                    rStr= RX.RootNode.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
+                    break;
+                default:
+                    rStr= RX.RootNode.SelectSingleNode(namepath).InnerXml;
+                    break;
+            }
+            return rStr;
         }
 
         void setZTCount()
@@ -183,7 +346,7 @@ namespace T_报表设置工具
             ZCFZ_C_B_CEnd_C.Value = ZCFZ_C_B_CStart_C.Value + B_ZT_Child_Count;
             LR_M_B_CEnd_C.Value = LR_M_B_CStart_C.Value + B_ZT_Child_Count;
             LR_C_B_CEnd_C.Value = LR_C_B_CStart_C.Value + B_ZT_Child_Count;
-            
+
             decimal J_ZT_Child_Count = JCD_CEnd_C.Value - JCD_CStart_C.Value;
             ZCFZ_M_J_CEnd_C.Value = ZCFZ_M_J_CStart_C.Value + J_ZT_Child_Count;
             ZCFZ_C_J_CEnd_C.Value = ZCFZ_C_J_CStart_C.Value + J_ZT_Child_Count;
@@ -193,12 +356,12 @@ namespace T_报表设置工具
 
         private void SaveSetting_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Temp_BaseRep_ZTInfo_ColRow_indexChanged(object sender, EventArgs e)
         {
-            this.Temp_BaseRep_ZTName_CellName.Text = IndexToASCiiTitle(this.Temp_BaseRep_ZTName_Col.Value)+ this.Temp_BaseRep_ZTName_Row.Value.ToString();
+            this.Temp_BaseRep_ZTName_CellName.Text = IndexToASCiiTitle(this.Temp_BaseRep_ZTName_Col.Value) + this.Temp_BaseRep_ZTName_Row.Value.ToString();
             this.Temp_BaseRep_ZTNo_ZBCS.Text = IndexToASCiiTitle(this.Temp_BaseRep_ZTNo_ZBC.Value) + this.Temp_BaseRep_ZTNo_R.Value.ToString();
             this.Temp_BaseRep_ZTNo_ZJCS.Text = IndexToASCiiTitle(this.Temp_BaseRep_ZTNo_ZJC.Value) + this.Temp_BaseRep_ZTNo_R.Value.ToString();
             this.Temp_BaseRep_ZTNo_LBCS.Text = IndexToASCiiTitle(this.Temp_BaseRep_ZTNo_LBC.Value) + this.Temp_BaseRep_ZTNo_R.Value.ToString();
@@ -207,9 +370,9 @@ namespace T_报表设置工具
 
         private void Temp_BaseRep_DataInfo_ColRow_indexChanged(object sender, EventArgs e)
         {
-            this.BZMCS.Text = IndexToASCiiTitle(this.BZMC.Value) ;
+            this.BZMCS.Text = IndexToASCiiTitle(this.BZMC.Value);
             this.BZMCCS.Text = IndexToASCiiTitle(this.BZMCC.Value);
-            
+
             this.BZQCS.Text = IndexToASCiiTitle(this.BZQC.Value);
             this.BZQCCS.Text = IndexToASCiiTitle(this.BZQCC.Value);
 
@@ -271,98 +434,71 @@ namespace T_报表设置工具
 
         private void ReadBaseRepSet_Click(object sender, EventArgs e)
         {
-            string sql = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_BaseRep_ID.Text);
-            SqlCommand cmd = new SqlCommand(sql, MainSQL);
-            SqlDataReader sdr = cmd.ExecuteReader();
-            while (sdr.Read())
+            try
             {
-                string RepXMLStr =(string) sdr.GetSqlString(0);
-                RepXMLStr=RepXMLStr.Replace("=\"", " ='").Replace("\" ","' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
+                string ak = GetXMLValueByRC(BaseRepXML, this.Temp_BaseRep_ZTName_Row, Temp_BaseRep_ZTName_Col);
+                ZTInfoBox.Text = "账套信息:" + ak;
+                ZTDataBox.Text = "数据列:" + ak;
 
-                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++");
+                Temp_BaseRep_ZTNo_ZBCV.Text = GetXMLValueByRC(BaseRepXML, Temp_BaseRep_ZTNo_R, Temp_BaseRep_ZTNo_ZBC); //.RootNode.SelectSingleNode(namepath).InnerXml;
 
-                BaseRepXML= new XmlDocument();
-                BaseRepXML.LoadXml(RepXMLStr);
-                BaseRepXML_root = BaseRepXML.DocumentElement;
+                Temp_BaseRep_ZTNo_ZJCV.Text = GetXMLValueByRC(BaseRepXML, Temp_BaseRep_ZTNo_R, Temp_BaseRep_ZTNo_ZJC); //BaseRepXML.RootNode.SelectSingleNode(namepath).InnerXml;
 
-                //this.richTextBox3.Text = TempXDRoot.InnerXml;
-                try
-                {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.Temp_BaseRep_ZTName_Row.Value, Temp_BaseRep_ZTName_Col.Value);
+                Temp_BaseRep_ZTNo_LBCV.Text = GetXMLValueByRC(BaseRepXML, Temp_BaseRep_ZTNo_R, Temp_BaseRep_ZTNo_LBC); //BaseRepXML.RootNode.SelectSingleNode(namepath).InnerXml;
 
-                    string ak = BaseRepXML_root.SelectSingleNode(namepath).InnerXml;
-                    ZTInfoBox.Text = "账套信息:" + ak;
-                    ZTDataBox.Text= "数据列:" + ak;
-                    //Console.WriteLine(ak);
+                Temp_BaseRep_ZTNo_LJCV.Text = GetXMLValueByRC(BaseRepXML, Temp_BaseRep_ZTNo_R, Temp_BaseRep_ZTNo_LJC); //BaseRepXML.RootNode.SelectSingleNode(namepath).InnerXml;
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.Temp_BaseRep_ZTNo_R.Value, Temp_BaseRep_ZTNo_ZBC.Value);
-                    Temp_BaseRep_ZTNo_ZBCV.Text = BaseRepXML_root.SelectSingleNode(namepath).InnerXml;
+                decimal[] bzcol = new decimal[8];
+                bzcol[0] = this.BZMC.Value;
+                bzcol[1] = this.BZQC.Value;
+                bzcol[2] = this.BZMCC.Value;
+                bzcol[3] = this.BZQCC.Value;
+                bzcol[4] = this.BLNC.Value;
+                bzcol[5] = this.BLYC.Value;
+                bzcol[6] = this.BLNCC.Value;
+                bzcol[7] = this.BLYCC.Value;
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.Temp_BaseRep_ZTNo_R.Value, Temp_BaseRep_ZTNo_ZJC.Value);
-                    Temp_BaseRep_ZTNo_ZJCV.Text = BaseRepXML_root.SelectSingleNode(namepath).InnerXml;
+                getztname(BaseRepXML, bzcol, this.Temp_BaseRep_BZTNo, Temp_BaseRep_BZTNo_New, Temp_BaseRep_BZTNo_ListShow, Temp_BaseRep_ZTNoMsg);
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.Temp_BaseRep_ZTNo_R.Value, Temp_BaseRep_ZTNo_LBC.Value);
-                    Temp_BaseRep_ZTNo_LBCV.Text = BaseRepXML_root.SelectSingleNode(namepath).InnerXml;
+                decimal[] jdcol = new decimal[8];
+                jdcol[0] = this.JZMC.Value;
+                jdcol[1] = this.JZQC.Value;
+                jdcol[2] = this.JZMCC.Value;
+                jdcol[3] = this.JZQCC.Value;
+                jdcol[4] = this.JLNC.Value;
+                jdcol[5] = this.JLYC.Value;
+                jdcol[6] = this.JLNCC.Value;
+                jdcol[7] = this.JLYCC.Value;
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.Temp_BaseRep_ZTNo_R.Value, Temp_BaseRep_ZTNo_LJC.Value);
-                    Temp_BaseRep_ZTNo_LJCV.Text = BaseRepXML_root.SelectSingleNode(namepath).InnerXml;
+                getztname(BaseRepXML, jdcol, this.Temp_BaseRep_JZTNo, Temp_BaseRep_JZTNo_New, Temp_BaseRep_JZTNo_ListShow, Temp_BaseRep_ZTNoMsg);
 
-                    decimal[] bzcol = new decimal[8];
-                    bzcol[0] = this.BZMC.Value;
-                    bzcol[1] = this.BZQC.Value;
-                    bzcol[2] = this.BZMCC.Value;
-                    bzcol[3] = this.BZQCC.Value;
-                    bzcol[4] = this.BLNC.Value;
-                    bzcol[5] = this.BLYC.Value;
-                    bzcol[6] = this.BLNCC.Value;
-                    bzcol[7] = this.BLYCC.Value;
-
-                    getztname(BaseRepXML_root, bzcol, this.Temp_BaseRep_BZTNo, Temp_BaseRep_BZTNo_New, Temp_BaseRep_BZTNo_ListShow, Temp_BaseRep_ZTNoMsg);
-
-                    decimal[] jdcol = new decimal[8];
-                    jdcol[0] = this.JZMC.Value;
-                    jdcol[1] = this.JZQC.Value;
-                    jdcol[2] = this.JZMCC.Value;
-                    jdcol[3] = this.JZQCC.Value;
-                    jdcol[4] = this.JLNC.Value;
-                    jdcol[5] = this.JLYC.Value;
-                    jdcol[6] = this.JLNCC.Value;
-                    jdcol[7] = this.JLYCC.Value;
-
-                    getztname(BaseRepXML_root, jdcol, this.Temp_BaseRep_JZTNo, Temp_BaseRep_JZTNo_New, Temp_BaseRep_JZTNo_ListShow, Temp_BaseRep_ZTNoMsg);
-
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
             }
-            sdr.Close();
-            cmd.Dispose();
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
-        void getztname(XmlNode TempXDRoot, decimal[] _Colno, TextBox v1, TextBox v2, TextBox v3, TextBox nmsg)
+        void getztname(RepXML TempXDRoot, decimal[] _Colno, TextBox v1, TextBox v2, TextBox v3, TextBox nmsg)
         {
             try
             {
-                int RowCount = int.Parse(TempXDRoot.SelectSingleNode("Sheet/Total[1]").Attributes["rows"].Value);
+                int RowCount = int.Parse(TempXDRoot.RootNode.SelectSingleNode("Sheet/Total[1]").Attributes["rows"].Value);
                 List<string> ztname = new List<string>();
                 foreach (decimal ColNo in _Colno)
                 {
                     for (int i = 0; i <= RowCount; i++)
                     {
                         string Cellpath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", i, ColNo);
-                        if (TempXDRoot.SelectSingleNode(Cellpath).Attributes["Type"].Value == "1")
+                        if (TempXDRoot.RootNode.SelectSingleNode(Cellpath).Attributes["Type"].Value == "1")
                         {
-                            if (TempXDRoot.SelectSingleNode(Cellpath).Attributes["IsFormula"].Value == "1")
+                            if (TempXDRoot.RootNode.SelectSingleNode(Cellpath).Attributes["IsFormula"].Value == "1")
                             {
-                                string FormulaText = TempXDRoot.SelectSingleNode(Cellpath).Attributes["FormulaText"].Value;
+                                string FormulaText = TempXDRoot.RootNode.SelectSingleNode(Cellpath).Attributes["FormulaText"].Value;
                                 string pattern = @"[^(]~\d{6}~";
                                 foreach (Match match in Regex.Matches(FormulaText, pattern))
                                 {
-                                    Console.WriteLine(match.Value);
-
-                                    if (ztname.IndexOf(match.Value.Replace("~", "").Replace(",","")) < 0)
+                                    if (ztname.IndexOf(match.Value.Replace("~", "").Replace(",", "")) < 0)
                                     {
                                         ztname.Add(match.Value.Replace("~", "").Replace(",", ""));
                                     }
@@ -379,7 +515,7 @@ namespace T_报表设置工具
                 }
                 if (ztname.Count <= 0)
                 {
-                    nmsg.Text +="未匹配到有效的账套编码；";
+                    nmsg.Text += "未匹配到有效的账套编码；";
                 }
                 else if (ztname.Count > 1)
                 {
@@ -391,17 +527,17 @@ namespace T_报表设置工具
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            
+
         }
 
         //冲抵
         private void Temp_CDWorkRep_ColRow_indexChanged(object sender, EventArgs e)
         {
-            BCD_Basic_C_Cell.Text= IndexToASCiiTitle(this.BCD_Basic_C.Value);
+            BCD_Basic_C_Cell.Text = IndexToASCiiTitle(this.BCD_Basic_C.Value);
             BCD_CCount_C_Cell.Text = IndexToASCiiTitle(this.BCD_CCount_C.Value);
             BCD_CStart_C_Cell.Text = IndexToASCiiTitle(this.BCD_CStart_C.Value);
             BCD_CEnd_C_Cell.Text = IndexToASCiiTitle(this.BCD_CEnd_C.Value);
@@ -416,105 +552,41 @@ namespace T_报表设置工具
 
         private void BTN_ReadCDValue_Click(object sender, EventArgs e)
         {
-            string sql = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_CDB_ID.Text);
-            SqlCommand cmd = new SqlCommand(sql, MainSQL);
-            SqlDataReader sdr = cmd.ExecuteReader();
-            while (sdr.Read())
+            try
             {
-                string RepXMLStr = (string)sdr.GetSqlString(0);
-                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
+                BCD_Basic_C_No.Text = GetXMLValueByRC(CDBXML, BCD_NO_R, BCD_Basic_C); 
+                BCD_CStart_C_No.Text = GetXMLValueByRC(CDBXML, BCD_NO_R, BCD_CStart_C); 
+                BCD_CEnd_C_No.Text = GetXMLValueByRC(CDBXML, BCD_NO_R, BCD_CEnd_C); 
 
-                CDBXML = new XmlDocument();
-                CDBXML.LoadXml(RepXMLStr);
-                CDBXML_root= CDBXML.DocumentElement;
-
-                //richTextBox3.Text = TempXDRoot.InnerXml;
-                try
-                {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_NO_R.Value, BCD_Basic_C.Value);
-                    BCD_Basic_C_No.Text = CDBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_NO_R.Value, BCD_CStart_C.Value);
-                    BCD_CStart_C_No.Text = CDBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_NO_R.Value, BCD_CEnd_C.Value);
-                    BCD_CEnd_C_No.Text = CDBXML_root.SelectSingleNode(namepath).InnerText;
-
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_Name_R.Value, BCD_Basic_C.Value);
-                    BCD_Basic_C_Name.Text = CDBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_Name_R.Value, BCD_CStart_C.Value);
-                    BCD_CStart_C_Name.Text = CDBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_Name_R.Value, BCD_CEnd_C.Value);
-                    BCD_CEnd_C_Name.Text = CDBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_CCount_R1.Value, BCD_CCount_C.Value);
-                    BCD_CCount_C_F1.Text = CDBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.BCD_CCount_R2.Value, BCD_CCount_C.Value);
-                    BCD_CCount_C_F2.Text = CDBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                }
-                catch
-                {
-
-                }
+                BCD_Basic_C_Name.Text = GetXMLValueByRC(CDBXML, BCD_Name_R, BCD_Basic_C); 
+                BCD_CStart_C_Name.Text = GetXMLValueByRC(CDBXML, BCD_Name_R, BCD_CStart_C); 
+                BCD_CEnd_C_Name.Text = GetXMLValueByRC(CDBXML, BCD_Name_R, BCD_CEnd_C); 
+                
+                BCD_CCount_C_F1.Text = GetXMLValueByRC(CDBXML, BCD_CCount_R1, BCD_CCount_C, "snafv"); 
+                BCD_CCount_C_F2.Text = GetXMLValueByRC(CDBXML, BCD_CCount_R2, BCD_CCount_C, "snafv"); 
             }
-            sdr.Close();
-            cmd.Dispose();
-
-            string sql2 = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_CDJ_ID.Text);
-            SqlCommand cmd2 = new SqlCommand(sql2, MainSQL);
-            SqlDataReader sdr2 = cmd2.ExecuteReader();
-            while (sdr2.Read())
+            catch
             {
-                string RepXMLStr = (string)sdr2.GetSqlString(0);
-                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
-
-                CDJXML = new XmlDocument();
-                CDJXML.LoadXml(RepXMLStr);
-                CDJXML_root = CDJXML.DocumentElement;
-
-                //richTextBox3.Text = TempXDRoot.InnerXml;
-                try
-                {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_NO_R.Value, JCD_Basic_C.Value);
-                    JCD_Basic_C_No.Text = CDJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_NO_R.Value, JCD_CStart_C.Value);
-                    JCD_CStart_C_No.Text = CDJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_NO_R.Value, JCD_CEnd_C.Value);
-                    JCD_CEnd_C_No.Text = CDJXML_root.SelectSingleNode(namepath).InnerText;
-
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_Name_R.Value, JCD_Basic_C.Value);
-                    JCD_Basic_C_Name.Text = CDJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_Name_R.Value, JCD_CStart_C.Value);
-                    JCD_CStart_C_Name.Text = CDJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_Name_R.Value, JCD_CEnd_C.Value);
-                    JCD_CEnd_C_Name.Text = CDJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_CCount_R1.Value, JCD_CCount_C.Value);
-                    JCD_CCount_C_F1.Text = CDJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.JCD_CCount_R2.Value, JCD_CCount_C.Value);
-                    JCD_CCount_C_F2.Text = CDJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                }
-                catch
-                {
-
-                }
-
 
             }
-            sdr2.Close();
-            cmd2.Dispose();
 
+            try
+            {
+                JCD_Basic_C_No.Text = GetXMLValueByRC(CDJXML, JCD_NO_R, JCD_Basic_C); 
+                JCD_CStart_C_No.Text = GetXMLValueByRC(CDJXML, JCD_NO_R, JCD_CStart_C); 
+                JCD_CEnd_C_No.Text = GetXMLValueByRC(CDJXML, JCD_NO_R, JCD_CEnd_C); 
 
+                JCD_Basic_C_Name.Text = GetXMLValueByRC(CDJXML, JCD_Name_R, JCD_Basic_C); 
+                JCD_CStart_C_Name.Text = GetXMLValueByRC(CDJXML, JCD_Name_R, JCD_CStart_C); 
+                JCD_CEnd_C_Name.Text = GetXMLValueByRC(CDJXML, JCD_Name_R, JCD_CEnd_C); 
+
+                JCD_CCount_C_F1.Text = GetXMLValueByRC(CDJXML, JCD_CCount_R1, JCD_CCount_C, "snafv");
+                JCD_CCount_C_F2.Text = GetXMLValueByRC(CDJXML, JCD_CCount_R2, JCD_CCount_C, "snafv");
+            }
+            catch
+            {
+
+            }
         }
 
         //资产负债工作表
@@ -543,149 +615,63 @@ namespace T_报表设置工具
 
         private void ReadZCFZValue_Click(object sender, EventArgs e)
         {
-            string sql1 = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_ZCFZB_ID.Text);
-            SqlCommand cmd1 = new SqlCommand(sql1, MainSQL);
-            SqlDataReader sdr1 = cmd1.ExecuteReader();
-            while (sdr1.Read())
+            try
             {
-                string RepXMLStr = (string)sdr1.GetSqlString(0);
-                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
+                ZCFZ_M_B_Z_C_No.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_No_R, ZCFZ_M_B_Z_C); 
+                ZCFZ_M_B_CStart_C_No.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_No_R, ZCFZ_M_B_CStart_C); 
+                ZCFZ_M_B_CEnd_C_No.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_No_R, ZCFZ_M_B_CEnd_C); 
 
-                ZCFZBXML = new XmlDocument();
-                ZCFZBXML.LoadXml(RepXMLStr);
-                ZCFZBXML_root = ZCFZBXML.DocumentElement;
+                ZCFZ_M_B_Z_C_Name.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_Name_R, ZCFZ_M_B_Z_C); 
+                ZCFZ_M_B_CStart_C_Name.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_Name_R, ZCFZ_M_B_CStart_C); 
+                ZCFZ_M_B_CEnd_C_Name.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_Name_R, ZCFZ_M_B_CEnd_C); 
 
-                //richTextBox3.Text = TempXDRoot.InnerXml;
-                try
-                {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_No_R.Value, ZCFZ_M_B_Z_C.Value);
-                    ZCFZ_M_B_Z_C_No.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
+                ZCFZ_M_B_Count_C_F1.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_F1_R, ZCFZ_M_B_Count_C, "snafv");
+                ZCFZ_M_B_Count_C_F2.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_F1_R, ZCFZ_M_B_Count_C, "snafv"); 
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_No_R.Value, ZCFZ_M_B_CStart_C.Value);
-                    ZCFZ_M_B_CStart_C_No.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
+                //
+                ZCFZ_C_B_Z_C_No.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_No_R, ZCFZ_C_B_Z_C); 
+                ZCFZ_C_B_CStart_C_No.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_No_R, ZCFZ_C_B_CStart_C); 
+                ZCFZ_C_B_CEnd_C_No.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_No_R, ZCFZ_C_B_CEnd_C); 
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_No_R.Value, ZCFZ_M_B_CEnd_C.Value);
-                    ZCFZ_M_B_CEnd_C_No.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
+                ZCFZ_C_B_Z_C_Name.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_Name_R, ZCFZ_C_B_Z_C); 
+                ZCFZ_C_B_CStart_C_Name.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_Name_R, ZCFZ_C_B_CStart_C); 
+                ZCFZ_C_B_CEnd_C_Name.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_Name_R, ZCFZ_C_B_CEnd_C); 
 
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_Name_R.Value, ZCFZ_M_B_Z_C.Value);
-                    ZCFZ_M_B_Z_C_Name.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_Name_R.Value, ZCFZ_M_B_CStart_C.Value);
-                    ZCFZ_M_B_CStart_C_Name.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_Name_R.Value, ZCFZ_M_B_CEnd_C.Value);
-                    ZCFZ_M_B_CEnd_C_Name.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_F1_R.Value, ZCFZ_M_B_Count_C.Value);
-                    ZCFZ_M_B_Count_C_F1.Text = ZCFZBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_F2_R.Value, ZCFZ_M_B_Count_C.Value);
-                    ZCFZ_M_B_Count_C_F2.Text = ZCFZBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                    //
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_No_R.Value, ZCFZ_C_B_Z_C.Value);
-                    ZCFZ_C_B_Z_C_No.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_No_R.Value, ZCFZ_C_B_CStart_C.Value);
-                    ZCFZ_C_B_CStart_C_No.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_No_R.Value, ZCFZ_C_B_CEnd_C.Value);
-                    ZCFZ_C_B_CEnd_C_No.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_Name_R.Value, ZCFZ_C_B_Z_C.Value);
-                    ZCFZ_C_B_Z_C_Name.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_Name_R.Value, ZCFZ_C_B_CStart_C.Value);
-                    ZCFZ_C_B_CStart_C_Name.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_Name_R.Value, ZCFZ_C_B_CEnd_C.Value);
-                    ZCFZ_C_B_CEnd_C_Name.Text = ZCFZBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_F1_R.Value, ZCFZ_C_B_Count_C.Value);
-                    ZCFZ_C_B_Count_C_F1.Text = ZCFZBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_F2_R.Value, ZCFZ_C_B_Count_C.Value);
-                    ZCFZ_C_B_Count_C_F2.Text = ZCFZBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                }
-                catch
-                {
-
-                }
+                ZCFZ_C_B_Count_C_F1.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_F1_R, ZCFZ_C_B_Count_C, "snafv"); 
+                ZCFZ_C_B_Count_C_F2.Text = GetXMLValueByRC(ZCFZBXML, ZCFZ_B_F2_R, ZCFZ_C_B_Count_C, "snafv"); 
             }
-            sdr1.Close();
-            cmd1.Dispose();
-
-            //尽调
-
-            string sql2 = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_ZCFZJ_ID.Text);
-            SqlCommand cmd2 = new SqlCommand(sql2, MainSQL);
-            SqlDataReader sdr2 = cmd2.ExecuteReader();
-            while (sdr2.Read())
+            catch
             {
-                string RepXMLStr = (string)sdr2.GetSqlString(0);
-                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
 
-                ZCFZJXML = new XmlDocument();
-                ZCFZJXML.LoadXml(RepXMLStr);
-                ZCFZJXML_root = ZCFZJXML.DocumentElement;
-
-                //richTextBox3.Text = TempXDRoot.InnerXml;
-                try
-                {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_No_R.Value, ZCFZ_M_J_Z_C.Value);
-                    ZCFZ_M_J_Z_C_No.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_No_R.Value, ZCFZ_M_J_CStart_C.Value);
-                    ZCFZ_M_J_CStart_C_No.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_No_R.Value, ZCFZ_M_J_CEnd_C.Value);
-                    ZCFZ_M_J_CEnd_C_No.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_Name_R.Value, ZCFZ_M_J_Z_C.Value);
-                    ZCFZ_M_J_Z_C_Name.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_Name_R.Value, ZCFZ_M_J_CStart_C.Value);
-                    ZCFZ_M_J_CStart_C_Name.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_Name_R.Value, ZCFZ_M_J_CEnd_C.Value);
-                    ZCFZ_M_J_CEnd_C_Name.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_F1_R.Value, ZCFZ_M_J_Count_C.Value);
-                    ZCFZ_M_J_Count_C_F1.Text = ZCFZJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_F2_R.Value, ZCFZ_M_J_Count_C.Value);
-                    ZCFZ_M_J_Count_C_F2.Text = ZCFZJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                    //
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_No_R.Value, ZCFZ_C_J_Z_C.Value);
-                    ZCFZ_C_J_Z_C_No.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_No_R.Value, ZCFZ_C_J_CStart_C.Value);
-                    ZCFZ_C_J_CStart_C_No.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_No_R.Value, ZCFZ_C_J_CEnd_C.Value);
-                    ZCFZ_C_J_CEnd_C_No.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_Name_R.Value, ZCFZ_C_J_Z_C.Value);
-                    ZCFZ_C_J_Z_C_Name.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_Name_R.Value, ZCFZ_C_J_CStart_C.Value);
-                    ZCFZ_C_J_CStart_C_Name.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_J_Name_R.Value, ZCFZ_C_J_CEnd_C.Value);
-                    ZCFZ_C_J_CEnd_C_Name.Text = ZCFZJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_F1_R.Value, ZCFZ_C_J_Count_C.Value);
-                    ZCFZ_C_J_Count_C_F1.Text = ZCFZJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.ZCFZ_B_F2_R.Value, ZCFZ_C_J_Count_C.Value);
-                    ZCFZ_C_J_Count_C_F2.Text = ZCFZJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                }
-                catch
-                {
-
-                }
             }
-            sdr2.Close();
-            cmd2.Dispose();
+            try
+            {
+                ZCFZ_M_J_Z_C_No.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_No_R, ZCFZ_M_J_Z_C); 
+                ZCFZ_M_J_CStart_C_No.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_No_R, ZCFZ_M_J_CStart_C); 
+                ZCFZ_M_J_CEnd_C_No.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_No_R, ZCFZ_M_J_CEnd_C); 
+
+                ZCFZ_M_J_Z_C_Name.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_Name_R, ZCFZ_M_J_Z_C); 
+                ZCFZ_M_J_CStart_C_Name.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_Name_R, ZCFZ_M_J_CStart_C);
+                ZCFZ_M_J_CEnd_C_Name.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_Name_R, ZCFZ_M_J_CEnd_C);
+
+                ZCFZ_M_J_Count_C_F1.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_F1_R, ZCFZ_M_J_Count_C,"snafv"); 
+                ZCFZ_M_J_Count_C_F2.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_F2_R, ZCFZ_M_J_Count_C, "snafv");
+                //
+                ZCFZ_C_J_Z_C_No.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_No_R, ZCFZ_C_J_Z_C);
+                ZCFZ_C_J_CStart_C_No.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_No_R, ZCFZ_C_J_CStart_C); 
+                ZCFZ_C_J_CEnd_C_No.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_No_R, ZCFZ_C_J_CEnd_C); 
+
+                ZCFZ_C_J_Z_C_Name.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_Name_R, ZCFZ_C_J_Z_C); 
+                ZCFZ_C_J_CStart_C_Name.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_Name_R, ZCFZ_C_J_CStart_C);
+                ZCFZ_C_J_CEnd_C_Name.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_J_Name_R, ZCFZ_C_J_CEnd_C); 
+
+                ZCFZ_C_J_Count_C_F1.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_B_F1_R, ZCFZ_C_J_Count_C, "snafv"); 
+                ZCFZ_C_J_Count_C_F2.Text = GetXMLValueByRC(ZCFZJXML, ZCFZ_B_F2_R, ZCFZ_C_J_Count_C, "snafv");
+            }
+            catch
+            {
+
+            }
         }
 
         //利润表
@@ -714,174 +700,145 @@ namespace T_报表设置工具
         }
         private void ReadLRValue_Click(object sender, EventArgs e)
         {
-            string sql1 = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_LRB_ID.Text);
-            SqlCommand cmd1 = new SqlCommand(sql1, MainSQL);
-            SqlDataReader sdr1 = cmd1.ExecuteReader();
-            while (sdr1.Read())
+            try
             {
-                string RepXMLStr = (string)sdr1.GetSqlString(0);
-                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
+                LR_M_B_Z_C_No.Text = GetXMLValueByRC(LRBXML, LR_B_No_R, LR_M_B_Z_C); 
+                LR_M_B_CStart_C_No.Text = GetXMLValueByRC(LRBXML, LR_B_No_R, LR_M_B_CStart_C); 
+                LR_M_B_CEnd_C_No.Text = GetXMLValueByRC(LRBXML, LR_B_No_R, LR_M_B_CEnd_C); 
 
-                LRBXML = new XmlDocument();
-                LRBXML.LoadXml(RepXMLStr);
-                LRBXML_root = LRBXML.DocumentElement;
+                LR_M_B_Z_C_Name.Text = GetXMLValueByRC(LRBXML, LR_B_Name_R, LR_M_B_Z_C); 
+                LR_M_B_CStart_C_Name.Text = GetXMLValueByRC(LRBXML, LR_B_Name_R, LR_M_B_CStart_C); 
+                LR_M_B_CEnd_C_Name.Text = GetXMLValueByRC(LRBXML, LR_B_Name_R, LR_M_B_CEnd_C); 
 
-                //richTextBox3.Text = TempXDRoot.InnerXml;
-                try
+                LR_M_B_Count_C_F1.Text = GetXMLValueByRC(LRBXML, LR_B_F1_R, LR_M_B_Count_C, "snafv"); 
+                LR_M_B_Count_C_F2.Text = GetXMLValueByRC(LRBXML, LR_B_F2_R, LR_M_B_Count_C, "snafv"); 
+                //
+                LR_C_B_Z_C_No.Text = GetXMLValueByRC(LRBXML, LR_B_No_R, LR_C_B_Z_C); 
+                LR_C_B_CStart_C_No.Text = GetXMLValueByRC(LRBXML, LR_B_No_R, LR_C_B_CStart_C); 
+                LR_C_B_CEnd_C_No.Text = GetXMLValueByRC(LRBXML, LR_B_No_R, LR_C_B_CEnd_C); 
+
+                LR_C_B_Z_C_Name.Text = GetXMLValueByRC(LRBXML, LR_B_Name_R, LR_C_B_Z_C); 
+                LR_C_B_CStart_C_Name.Text = GetXMLValueByRC(LRBXML, LR_B_Name_R, LR_C_B_CStart_C); 
+                LR_C_B_CEnd_C_Name.Text = GetXMLValueByRC(LRBXML, LR_B_Name_R, LR_C_B_CEnd_C); 
+
+                LR_C_B_Count_C_F1.Text = GetXMLValueByRC(LRBXML, LR_B_F1_R, LR_C_B_Count_C, "snafv"); 
+                LR_C_B_Count_C_F2.Text = GetXMLValueByRC(LRBXML, LR_B_F2_R, LR_C_B_Count_C, "snafv"); 
+            }
+            catch
+            {
+
+            }
+
+            try
+            {
+                LR_M_J_Z_C_No.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_M_J_Z_C); 
+                LR_M_J_CStart_C_No.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_M_J_CStart_C); 
+                LR_M_J_CEnd_C_No.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_M_J_CEnd_C); 
+
+                LR_M_J_Z_C_Name.Text = GetXMLValueByRC(LRJXML, LR_J_Name_R, LR_M_J_Z_C); 
+                LR_M_J_CStart_C_Name.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_M_J_CStart_C);
+                LR_M_J_CEnd_C_Name.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_M_J_CEnd_C); 
+
+                LR_M_J_Count_C_F1.Text = GetXMLValueByRC(LRJXML, LR_J_F1_R, LR_M_J_Count_C, "snafv"); 
+                LR_M_J_Count_C_F2.Text = GetXMLValueByRC(LRJXML, LR_J_F2_R, LR_M_J_Count_C, "snafv");
+
+                LR_C_J_Z_C_No.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_C_J_Z_C); 
+                LR_C_J_CStart_C_No.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_C_J_CStart_C); 
+                LR_C_J_CEnd_C_No.Text = GetXMLValueByRC(LRJXML, LR_J_No_R, LR_C_J_CEnd_C); 
+
+                LR_C_J_Z_C_Name.Text = GetXMLValueByRC(LRJXML, LR_J_Name_R, LR_C_J_Z_C);
+                LR_C_J_CStart_C_Name.Text = GetXMLValueByRC(LRJXML, LR_J_Name_R, LR_C_J_CStart_C); 
+                LR_C_J_CEnd_C_Name.Text = GetXMLValueByRC(LRJXML, LR_J_Name_R, LR_C_J_CEnd_C); 
+
+                LR_C_J_Count_C_F1.Text = GetXMLValueByRC(LRJXML, LR_B_F1_R, LR_C_J_Count_C, "snafv"); 
+                LR_C_J_Count_C_F2.Text = GetXMLValueByRC(LRJXML, LR_B_F2_R, LR_C_J_Count_C, "snafv"); 
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void WriteZTListInfo_Click(object sender, EventArgs e)
+        {
+            zDT.Clear();
+
+            for (decimal i = BCD_CStart_C.Value; i <= BCD_CEnd_C.Value; i++)
+            {
+                string bno = GetXMLValueByRC(CDBXML, this.BCD_NO_R.Value, i);
+
+                string bname = GetXMLValueByRC(CDBXML, this.BCD_Name_R.Value, i); 
+
+                DataRow NEWZ = zDT.NewRow();
+
+                while (bno.Length < 6)
                 {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_No_R.Value, LR_M_B_Z_C.Value);
-                    LR_M_B_Z_C_No.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_No_R.Value, LR_M_B_CStart_C.Value);
-                    LR_M_B_CStart_C_No.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_No_R.Value, LR_M_B_CEnd_C.Value);
-                    LR_M_B_CEnd_C_No.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_Name_R.Value, LR_M_B_Z_C.Value);
-                    LR_M_B_Z_C_Name.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_Name_R.Value, LR_M_B_CStart_C.Value);
-                    LR_M_B_CStart_C_Name.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_Name_R.Value, LR_M_B_CEnd_C.Value);
-                    LR_M_B_CEnd_C_Name.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_F1_R.Value, LR_M_B_Count_C.Value);
-                    LR_M_B_Count_C_F1.Text = LRBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_F2_R.Value, LR_M_B_Count_C.Value);
-                    LR_M_B_Count_C_F2.Text = LRBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                    //
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_No_R.Value, LR_C_B_Z_C.Value);
-                    LR_C_B_Z_C_No.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_No_R.Value, LR_C_B_CStart_C.Value);
-                    LR_C_B_CStart_C_No.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_No_R.Value, LR_C_B_CEnd_C.Value);
-                    LR_C_B_CEnd_C_No.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_Name_R.Value, LR_C_B_Z_C.Value);
-                    LR_C_B_Z_C_Name.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_Name_R.Value, LR_C_B_CStart_C.Value);
-                    LR_C_B_CStart_C_Name.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_Name_R.Value, LR_C_B_CEnd_C.Value);
-                    LR_C_B_CEnd_C_Name.Text = LRBXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_F1_R.Value, LR_C_B_Count_C.Value);
-                    LR_C_B_Count_C_F1.Text = LRBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_F2_R.Value, LR_C_B_Count_C.Value);
-                    LR_C_B_Count_C_F2.Text = LRBXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
+                    bno = "0" + bno;
                 }
-                catch
-                {
 
+                NEWZ["RepNo"]= BaseRepNoFront.Text + bname;
+                foreach (DataRow rDTdr in rDT.Rows)
+                {
+                    if (rDTdr["Code"].ToString() == NEWZ["RepNo"].ToString())
+                    {
+                        NEWZ["RepName"] = rDTdr["Name"];
+                        NEWZ["RepID"] = rDTdr["TemplateID"];
+                    }
+                }
+                NEWZ["zName"] =bname;
+                NEWZ["BzNo"] = bno;
+                NEWZ["BzCDCol"] = i;
+                NEWZ["BzZCFZCol1"] = ZCFZ_M_B_CStart_C.Value + i - BCD_CStart_C.Value;
+                NEWZ["BzZCFZCol2"] = ZCFZ_C_B_CStart_C.Value + i - BCD_CStart_C.Value;
+                NEWZ["BzLRCol1"] = LR_M_B_CStart_C.Value + i - BCD_CStart_C.Value;
+                NEWZ["BzLRCol2"] = LR_C_B_CStart_C.Value + i - BCD_CStart_C.Value;
+
+                zDT.Rows.Add(NEWZ);
+            }
+
+            for (decimal i = JCD_CStart_C.Value; i <= JCD_CEnd_C.Value; i++)
+            {
+                string bno = GetXMLValueByRC(CDJXML, this.JCD_NO_R.Value, i); 
+                string bname = GetXMLValueByRC(CDJXML, this.JCD_Name_R.Value, i); 
+
+                while (bno.Length < 6)
+                {
+                    bno = "0" + bno;
+                }
+
+                foreach (DataRow ZDTdr in zDT.Rows)
+                {
+                    if (ZDTdr["RepNo"].ToString() == BaseRepNoFront.Text + bname)
+                    {
+                        ZDTdr["JzNo"] = bno;
+                        ZDTdr["JzCDCol"] = i;
+                        ZDTdr["JzZCFZCol1"] = ZCFZ_M_J_CStart_C.Value + i - JCD_CStart_C.Value;
+                        ZDTdr["JzZCFZCol2"] = ZCFZ_C_J_CStart_C.Value + i - JCD_CStart_C.Value;
+                        ZDTdr["JzLRCol1"] = LR_M_J_CStart_C.Value + i - JCD_CStart_C.Value;
+                        ZDTdr["JzLRCol2"] = LR_C_J_CStart_C.Value + i - JCD_CStart_C.Value;
+                    }
                 }
             }
-            sdr1.Close();
-            cmd1.Dispose();
+            ZTListShow.DataSource = zDT;
 
-            //尽调
+            MainWork.SelectTab(WorkPage);
+        }
 
-            string sql2 = String.Format("select TemplateStyle from TUFO_ReportTemplateModel where TemplateID={0}", this.Temp_LRJ_ID.Text);
-            SqlCommand cmd2 = new SqlCommand(sql2, MainSQL);
-            SqlDataReader sdr2 = cmd2.ExecuteReader();
-            while (sdr2.Read())
-            {
-                string RepXMLStr = (string)sdr2.GetSqlString(0);
-                RepXMLStr = RepXMLStr.Replace("=\"", " ='").Replace("\" ", "' ").Replace("类 ='", "类 =\"").Replace("\"", "~").Replace("'", "\"");
+        private void StartWorking_Click(object sender, EventArgs e)
+        {
+            BackgroundWorker wk = new BackgroundWorker();
+            wk.WorkerReportsProgress = true;
+            wk.DoWork += Main_DoWork;
+        }
+        private void Main_DoWork(object sender, DoWorkEventArgs e)
+        {
 
-                LRJXML = new XmlDocument();
-                LRJXML.LoadXml(RepXMLStr);
-                LRJXML_root = LRJXML.DocumentElement;
-
-                //richTextBox3.Text = TempXDRoot.InnerXml;
-                try
-                {
-                    string namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_No_R.Value, LR_M_J_Z_C.Value);
-                    LR_M_J_Z_C_No.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_No_R.Value, LR_M_J_CStart_C.Value);
-                    LR_M_J_CStart_C_No.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_No_R.Value, LR_M_J_CEnd_C.Value);
-                    LR_M_J_CEnd_C_No.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_Name_R.Value, LR_M_J_Z_C.Value);
-                    LR_M_J_Z_C_Name.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_Name_R.Value, LR_M_J_CStart_C.Value);
-                    LR_M_J_CStart_C_Name.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_Name_R.Value, LR_M_J_CEnd_C.Value);
-                    LR_M_J_CEnd_C_Name.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_F1_R.Value, LR_M_J_Count_C.Value);
-                    LR_M_J_Count_C_F1.Text = LRJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_F2_R.Value, LR_M_J_Count_C.Value);
-                    LR_M_J_Count_C_F2.Text = LRJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                    //
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_No_R.Value, LR_C_J_Z_C.Value);
-                    LR_C_J_Z_C_No.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_No_R.Value, LR_C_J_CStart_C.Value);
-                    LR_C_J_CStart_C_No.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_No_R.Value, LR_C_J_CEnd_C.Value);
-                    LR_C_J_CEnd_C_No.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_Name_R.Value, LR_C_J_Z_C.Value);
-                    LR_C_J_Z_C_Name.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_Name_R.Value, LR_C_J_CStart_C.Value);
-                    LR_C_J_CStart_C_Name.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_J_Name_R.Value, LR_C_J_CEnd_C.Value);
-                    LR_C_J_CEnd_C_Name.Text = LRJXML_root.SelectSingleNode(namepath).InnerText;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_F1_R.Value, LR_C_J_Count_C.Value);
-                    LR_C_J_Count_C_F1.Text = LRJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-
-                    namepath = String.Format("Sheet/cell[@row='{0}' and @col='{1}']", this.LR_B_F2_R.Value, LR_C_J_Count_C.Value);
-                    LR_C_J_Count_C_F2.Text = LRJXML_root.SelectSingleNode(namepath).Attributes["FormulaText"].Value;
-                }
-                catch
-                {
-
-                }
-            }
-            sdr2.Close();
-            cmd2.Dispose();
         }
     }
 
-    class ztinfos
+    public class RepXML
     {
-        public ztinfo B = new ztinfo();
-        public ztinfo J = new ztinfo();
-    }
-
-    class ztinfo
-    {
-        public string no = "";
-        public string name = "";
-        public string BaseRepNo = "";
-        public string BaseRepName = "";
-        public string BaseRepID = "";
-
-        public Boolean isMainCompany = false;
-
-        public string CDColNo = "";
-
-        public string ZCFZCol1 = "";
-        public string ZCFZCol2 = "";
-
-        public string LRCol1 = "";
-        public string LRCol2 = "";
+        public XmlDocument Doc;
+        public XmlNode RootNode { get { return Doc.DocumentElement; } }
     }
 }
