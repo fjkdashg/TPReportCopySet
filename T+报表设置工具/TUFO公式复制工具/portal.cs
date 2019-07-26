@@ -75,13 +75,10 @@ namespace TUFO公式复制工具
             {
                 this.BaseRepTemp_Path.Text = WS.Work_Path.BaseRepTemp_Path;
             }
-            Console.WriteLine("NoCol Portal " + WS.BNoCol + "       " + WS.JNoCol);
         }
         private void GetPath_Click(object sender, EventArgs e)
         {
             Button BTN = (Button)sender;
-            //BTN.GetNextControl
-             
             
             if (BTN.Name == "GetOuterPath")
             {
@@ -91,7 +88,6 @@ namespace TUFO公式复制工具
                 {
                     string file = dialog.SelectedPath;
                     BTN.Parent.GetNextControl(BTN, false).Text = file;
-                    //Console.WriteLine(file);
                 }
             }
             else
@@ -104,7 +100,6 @@ namespace TUFO公式复制工具
                 {
                     string file = dialog.FileName;
                     BTN.Parent.GetNextControl(BTN, false).Text = file;
-                    //Console.WriteLine(file);
                 }
             }
         }

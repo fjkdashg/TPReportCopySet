@@ -58,7 +58,7 @@ namespace TUFO公式复制工具
             int si = 1;
             foreach (DataRow dr in ChildDT.Rows)
             {
-                string filename = dr["ShortTitle"].ToString() + "-" + dr["ChildIndex"].ToString() + ".txt";
+                string filename = dr["ChildIndex"].ToString() + "-" + dr["ShortTitle"].ToString() + ".txt";
                 if (string.IsNullOrWhiteSpace(dr["ChildIndex"].ToString()) || string.IsNullOrWhiteSpace(dr["ShortTitle"].ToString()) || string.IsNullOrWhiteSpace(dr["BNo"].ToString()) || string.IsNullOrWhiteSpace(dr["JNo"].ToString()))
                 {
                     MessageBox.Show("关键参数不能为空");

@@ -38,8 +38,6 @@ namespace TUFO公式复制工具
             }
             Console.WriteLine(fe.EncodingName);
 
-            //string ssql = "";
-
             List<string> ztno = new List<string>();
             string pattern = @"[^(],""\d{6}""";
             using (StreamReader sr = new StreamReader(WS.Work_Path.BaseRepTemp_Path))
@@ -54,7 +52,6 @@ namespace TUFO公式复制工具
                         {
                             ztno.Add(match.Value.Replace(",\"", "").Replace("\"", ""));
                         }
-                        //Console.WriteLine(match);
                     }
                 }
                 sr.Close();
@@ -80,7 +77,7 @@ namespace TUFO公式复制工具
         private void GetExcelPath_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Multiselect = false;//该值确定是否可以选择多个文件
+            dialog.Multiselect = false;
             dialog.Title = "请选择公式文件";
             dialog.Filter = "文本文件(*.xlsx)|*.xlsx";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -211,12 +208,6 @@ namespace TUFO公式复制工具
             else
             {
                 main.ShowNewForm(this.MdiParent, new A(WS, ChildDT));
-                /*
-                Form n = new A(WS, ChildDT);
-                this.Hide();
-                n.ShowDialog();
-                this.Close();
-                */
             }
         }
 
@@ -228,12 +219,10 @@ namespace TUFO公式复制工具
                 OleDbConnection ODC = new OleDbConnection(connstr);
                 ODC.Open();
                 DataTable schemaTable = ODC.GetOleDbSchemaTable(System.Data.OleDb.OleDbSchemaGuid.Tables, null);
-                Console.WriteLine(schemaTable.Rows[0][2].ToString().Trim());
 
                 OleDbDataAdapter odda = new OleDbDataAdapter("select * from ["+ schemaTable.Rows[0][2].ToString().Trim() + "]", connstr);
                 DataTable dt = new DataTable();
                 odda.Fill(ExcelDT);
-                //DGV.DataSource = dt;
                 Col_ValueChanged(new object(), new EventArgs());
                 ODC.Close();
             }
@@ -250,12 +239,6 @@ namespace TUFO公式复制工具
             if (MessageBox.Show("要手动执行吗？", "", buttons: MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 main.ShowNewForm(this.MdiParent, new M(WS));
-                /*
-                Form n = new M(WS);
-                this.Hide();
-                n.ShowDialog();
-                this.Close();
-                */
             }
         }
 
