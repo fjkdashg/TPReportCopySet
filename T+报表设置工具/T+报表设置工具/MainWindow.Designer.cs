@@ -37,12 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.GetWorkDB = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.WorkSetting = new System.Windows.Forms.TabControl();
             this.BaseSetting = new System.Windows.Forms.TabPage();
-            this.ReadBaseRepSet = new System.Windows.Forms.Button();
             this.ZTInfoBox = new System.Windows.Forms.GroupBox();
             this.Temp_BaseRep_ZTNoMsg = new System.Windows.Forms.TextBox();
             this.Temp_BaseRep_JZTNo_ListShow = new System.Windows.Forms.TextBox();
@@ -54,85 +52,83 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.Temp_BaseRep_ZTName_CellName = new System.Windows.Forms.TextBox();
-            this.Temp_BaseRep_ZTName_Col = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTName_C = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
-            this.Temp_BaseRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTTitle_R = new System.Windows.Forms.NumericUpDown();
             this.Temp_BaseRep_JZTNo_New = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.Temp_BaseRep_JZTNo = new System.Windows.Forms.TextBox();
-            this.Temp_BaseRep_ZTName_Row = new System.Windows.Forms.NumericUpDown();
-            this.Temp_BaseRep_ZTNo_ZBC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTTitle_BZCFZ_C = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.Temp_BaseRep_BZTNo_New = new System.Windows.Forms.TextBox();
             this.Temp_BaseRep_ZTNo_LJCV = new System.Windows.Forms.TextBox();
             this.Temp_BaseRep_ZTNo_ZBCV = new System.Windows.Forms.TextBox();
             this.Temp_BaseRep_BZTNo = new System.Windows.Forms.TextBox();
-            this.Temp_BaseRep_ZTNo_LJC = new System.Windows.Forms.NumericUpDown();
-            this.Temp_BaseRep_ZTNo_ZJC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTTitle_JLR_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTTitle_JZCFZ_C = new System.Windows.Forms.NumericUpDown();
             this.Temp_BaseRep_ZTNo_LBCV = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.Temp_BaseRep_ZTNo_ZJCV = new System.Windows.Forms.TextBox();
-            this.Temp_BaseRep_ZTNo_LBC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_ZTTitle_BLR_C = new System.Windows.Forms.NumericUpDown();
             this.ZTDataBox = new System.Windows.Forms.GroupBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.JZQCC = new System.Windows.Forms.NumericUpDown();
-            this.BLNC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JZCFZ_QC_CD_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BLR_LFS_C = new System.Windows.Forms.NumericUpDown();
             this.JZQCCS = new System.Windows.Forms.TextBox();
             this.BLNCS = new System.Windows.Forms.TextBox();
-            this.JZMCC = new System.Windows.Forms.NumericUpDown();
-            this.BLYC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JZCFZ_QM_CD_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BLR_FS_C = new System.Windows.Forms.NumericUpDown();
             this.JZMCCS = new System.Windows.Forms.TextBox();
             this.BLYCS = new System.Windows.Forms.TextBox();
-            this.BZQCC = new System.Windows.Forms.NumericUpDown();
-            this.JLNC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BZCFZ_QC_CD_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JLR_LFS_C = new System.Windows.Forms.NumericUpDown();
             this.BZQCCS = new System.Windows.Forms.TextBox();
             this.JLNCS = new System.Windows.Forms.TextBox();
-            this.BZMCC = new System.Windows.Forms.NumericUpDown();
-            this.JLYC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BZCFZ_QM_CD_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JLR_FS_C = new System.Windows.Forms.NumericUpDown();
             this.BZMCCS = new System.Windows.Forms.TextBox();
             this.JLYCS = new System.Windows.Forms.TextBox();
             this.JLYCCS = new System.Windows.Forms.TextBox();
             this.BZMCS = new System.Windows.Forms.TextBox();
-            this.JLYCC = new System.Windows.Forms.NumericUpDown();
-            this.BZMC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JLR_FS_CD_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BZCFZ_QM_C = new System.Windows.Forms.NumericUpDown();
             this.JLNCCS = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.JLNCC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JLR_LFS_CD_C = new System.Windows.Forms.NumericUpDown();
             this.BZQCS = new System.Windows.Forms.TextBox();
             this.BLYCCS = new System.Windows.Forms.TextBox();
-            this.BZQC = new System.Windows.Forms.NumericUpDown();
-            this.BLYCC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BZCFZ_QC_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BLR_FS_CD_C = new System.Windows.Forms.NumericUpDown();
             this.label34 = new System.Windows.Forms.Label();
             this.BLNCCS = new System.Windows.Forms.TextBox();
             this.JZMCS = new System.Windows.Forms.TextBox();
-            this.BLNCC = new System.Windows.Forms.NumericUpDown();
-            this.JZMC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_BLR_LFS_CD_C = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JZCFZ_QM_C = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.JZQCS = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.JZQC = new System.Windows.Forms.NumericUpDown();
+            this.BaseRep_JZCFZ_QC_C = new System.Windows.Forms.NumericUpDown();
             this.label39 = new System.Windows.Forms.Label();
-            this.SaveSetting = new System.Windows.Forms.Button();
-            this.Temp_BaseRep_No = new System.Windows.Forms.ComboBox();
-            this.Temp_BaseRep_ID = new System.Windows.Forms.ComboBox();
+            this.BaseRep_No = new System.Windows.Forms.ComboBox();
+            this.BaseRep_ID = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.Temp_BaseRep_Name = new System.Windows.Forms.ComboBox();
+            this.BaseRep = new System.Windows.Forms.ComboBox();
             this.CDSetting = new System.Windows.Forms.TabPage();
-            this.BTN_ReadCDValue = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.JCD_CCount_R2 = new System.Windows.Forms.NumericUpDown();
-            this.JCD_CCount_R1 = new System.Windows.Forms.NumericUpDown();
+            this.JCDRep_F_R = new System.Windows.Forms.NumericUpDown();
             this.label49 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.JCD_CCount_C_F2 = new System.Windows.Forms.TextBox();
             this.JCD_CStart_C_Name = new System.Windows.Forms.TextBox();
-            this.JCD_Name_R = new System.Windows.Forms.NumericUpDown();
+            this.JCDRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
             this.JCD_Basic_C_Name = new System.Windows.Forms.TextBox();
             this.JCD_CEnd_C_Name = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
@@ -142,23 +138,23 @@
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.JCD_CEnd_C_Cell = new System.Windows.Forms.TextBox();
-            this.JCD_CStart_C = new System.Windows.Forms.NumericUpDown();
+            this.JCDREP_CC_C = new System.Windows.Forms.NumericUpDown();
             this.JCD_CStart_C_Cell = new System.Windows.Forms.TextBox();
             this.JCD_CCount_C_F1 = new System.Windows.Forms.TextBox();
             this.JCD_CCount_C_Cell = new System.Windows.Forms.TextBox();
             this.JCD_CStart_C_No = new System.Windows.Forms.TextBox();
             this.JCD_Basic_C_Cell = new System.Windows.Forms.TextBox();
-            this.JCD_CCount_C = new System.Windows.Forms.NumericUpDown();
+            this.JCDRep_F_C = new System.Windows.Forms.NumericUpDown();
             this.JCD_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.JCD_NO_R = new System.Windows.Forms.NumericUpDown();
+            this.JCDRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
             this.JCD_Basic_C_No = new System.Windows.Forms.TextBox();
-            this.JCD_Basic_C = new System.Windows.Forms.NumericUpDown();
+            this.JCDRep_MC_C = new System.Windows.Forms.NumericUpDown();
             this.JCD_CEnd_C_No = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
             this.BaseRepNoFront = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BCD_CCount_R2 = new System.Windows.Forms.NumericUpDown();
-            this.BCD_CCount_R1 = new System.Windows.Forms.NumericUpDown();
+            this.BCDRep_F_R = new System.Windows.Forms.NumericUpDown();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.BCD_CEnd_C_Cell = new System.Windows.Forms.TextBox();
@@ -174,33 +170,31 @@
             this.BCD_Basic_C_No = new System.Windows.Forms.TextBox();
             this.BCD_CEnd_C_No = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.BCD_Name_R = new System.Windows.Forms.NumericUpDown();
+            this.BCDRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.BCD_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.BCD_CCount_C = new System.Windows.Forms.NumericUpDown();
+            this.BCDREP_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.BCDRep_F_C = new System.Windows.Forms.NumericUpDown();
             this.BCD_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.BCD_NO_R = new System.Windows.Forms.NumericUpDown();
-            this.BCD_Basic_C = new System.Windows.Forms.NumericUpDown();
-            this.Temp_CDJ_ID = new System.Windows.Forms.ComboBox();
-            this.Temp_CDJ_No = new System.Windows.Forms.ComboBox();
-            this.Temp_CDB_ID = new System.Windows.Forms.ComboBox();
-            this.Temp_CDB_No = new System.Windows.Forms.ComboBox();
+            this.BCDRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
+            this.BCDRep_MC_C = new System.Windows.Forms.NumericUpDown();
+            this.JCDRep_ID = new System.Windows.Forms.ComboBox();
+            this.JCDRep_No = new System.Windows.Forms.ComboBox();
+            this.BCDRep_ID = new System.Windows.Forms.ComboBox();
+            this.BCDRep_No = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.Temp_CDJ_Name = new System.Windows.Forms.ComboBox();
+            this.JCDRep = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.Temp_CDB_Name = new System.Windows.Forms.ComboBox();
+            this.BCDRep = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ZCFZSetting = new System.Windows.Forms.TabPage();
-            this.label71 = new System.Windows.Forms.Label();
-            this.ReadZCFZValue = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.ZCFZ_C_J_CEnd_C_Cell = new System.Windows.Forms.TextBox();
             this.ZCFZ_C_J_Count_C_F2 = new System.Windows.Forms.TextBox();
@@ -219,13 +213,13 @@
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
-            this.ZCFZ_C_J_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_C_J_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_QC_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_QC_F_C = new System.Windows.Forms.NumericUpDown();
             this.ZCFZ_C_J_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_C_J_Z_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_QC_MC_C = new System.Windows.Forms.NumericUpDown();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.ZCFZ_J_F2_R = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_J_F1_R = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_F_R = new System.Windows.Forms.NumericUpDown();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.ZCFZ_M_J_CEnd_C_Cell = new System.Windows.Forms.TextBox();
@@ -241,18 +235,18 @@
             this.ZCFZ_M_J_Z_C_No = new System.Windows.Forms.TextBox();
             this.ZCFZ_M_J_CEnd_C_No = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
-            this.ZCFZ_J_Name_R = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
-            this.ZCFZ_M_J_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_M_J_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_QM_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_QM_F_C = new System.Windows.Forms.NumericUpDown();
             this.ZCFZ_M_J_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_J_No_R = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_M_J_Z_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_QM_MC_C = new System.Windows.Forms.NumericUpDown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.ZCFZ_C_B_CEnd_C_Cell = new System.Windows.Forms.TextBox();
             this.ZCFZ_C_B_Count_C_F2 = new System.Windows.Forms.TextBox();
@@ -271,13 +265,13 @@
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
-            this.ZCFZ_C_B_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_C_B_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_QC_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_QC_F_C = new System.Windows.Forms.NumericUpDown();
             this.ZCFZ_C_B_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_C_B_Z_C = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_QC_MC_C = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.ZCFZ_B_F2_R = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_B_F1_R = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_F_R = new System.Windows.Forms.NumericUpDown();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.ZCFZ_M_B_CEnd_C_Cell = new System.Windows.Forms.TextBox();
@@ -293,32 +287,31 @@
             this.ZCFZ_M_B_Z_C_No = new System.Windows.Forms.TextBox();
             this.ZCFZ_M_B_CEnd_C_No = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.ZCFZ_B_Name_R = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.ZCFZ_M_B_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_M_B_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_QM_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_QM_F_C = new System.Windows.Forms.NumericUpDown();
             this.ZCFZ_M_B_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_B_No_R = new System.Windows.Forms.NumericUpDown();
-            this.ZCFZ_M_B_Z_C = new System.Windows.Forms.NumericUpDown();
-            this.Temp_ZCFZJ_ID = new System.Windows.Forms.ComboBox();
-            this.Temp_ZCFZJ_No = new System.Windows.Forms.ComboBox();
+            this.BZCFZRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
+            this.BZCFZRep_QM_MC_C = new System.Windows.Forms.NumericUpDown();
+            this.JZCFZRep_ID = new System.Windows.Forms.ComboBox();
+            this.JZCFZRep_No = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.Temp_ZCFZJ_Name = new System.Windows.Forms.ComboBox();
+            this.JZCFZRep = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.Temp_ZCFZB_ID = new System.Windows.Forms.ComboBox();
-            this.Temp_ZCFZB_No = new System.Windows.Forms.ComboBox();
+            this.BZCFZRep_ID = new System.Windows.Forms.ComboBox();
+            this.BZCFZRep_No = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.Temp_ZCFZB_Name = new System.Windows.Forms.ComboBox();
+            this.BZCFZRep = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.LRSetting = new System.Windows.Forms.TabPage();
-            this.ReadLRValue = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.LR_C_J_CEnd_C_Cell = new System.Windows.Forms.TextBox();
             this.LR_C_J_Count_C_F2 = new System.Windows.Forms.TextBox();
@@ -337,10 +330,10 @@
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
-            this.LR_C_J_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_C_J_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_FS_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_FS_F_C = new System.Windows.Forms.NumericUpDown();
             this.LR_C_J_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_C_J_Z_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_FS_MC_C = new System.Windows.Forms.NumericUpDown();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.LR_C_B_CEnd_C_Cell = new System.Windows.Forms.TextBox();
             this.LR_C_B_Count_C_F2 = new System.Windows.Forms.TextBox();
@@ -359,13 +352,13 @@
             this.label79 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.LR_C_B_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_C_B_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_FS_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_FS_F_C = new System.Windows.Forms.NumericUpDown();
             this.LR_C_B_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_C_B_Z_C = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_FS_MC_C = new System.Windows.Forms.NumericUpDown();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.LR_J_F2_R = new System.Windows.Forms.NumericUpDown();
-            this.LR_J_F1_R = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_F_R = new System.Windows.Forms.NumericUpDown();
             this.label110 = new System.Windows.Forms.Label();
             this.label111 = new System.Windows.Forms.Label();
             this.LR_M_J_CEnd_C_Cell = new System.Windows.Forms.TextBox();
@@ -381,21 +374,21 @@
             this.LR_M_J_Z_C_No = new System.Windows.Forms.TextBox();
             this.LR_M_J_CEnd_C_No = new System.Windows.Forms.TextBox();
             this.label112 = new System.Windows.Forms.Label();
-            this.LR_J_Name_R = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
             this.label113 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
-            this.LR_M_J_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_M_J_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_LFS_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_LFS_F_C = new System.Windows.Forms.NumericUpDown();
             this.LR_M_J_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_J_No_R = new System.Windows.Forms.NumericUpDown();
-            this.LR_M_J_Z_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_LFS_MC_C = new System.Windows.Forms.NumericUpDown();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.LR_B_F2_R = new System.Windows.Forms.NumericUpDown();
-            this.LR_B_F1_R = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_F_R = new System.Windows.Forms.NumericUpDown();
             this.label92 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.LR_M_B_CEnd_C_Cell = new System.Windows.Forms.TextBox();
@@ -411,144 +404,149 @@
             this.LR_M_B_Z_C_No = new System.Windows.Forms.TextBox();
             this.LR_M_B_CEnd_C_No = new System.Windows.Forms.TextBox();
             this.label98 = new System.Windows.Forms.Label();
-            this.LR_B_Name_R = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_ZTName_R = new System.Windows.Forms.NumericUpDown();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
-            this.LR_M_B_CStart_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_M_B_Count_C = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_LFS_CC_C = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_LFS_F_C = new System.Windows.Forms.NumericUpDown();
             this.LR_M_B_CEnd_C = new System.Windows.Forms.NumericUpDown();
-            this.LR_B_No_R = new System.Windows.Forms.NumericUpDown();
-            this.LR_M_B_Z_C = new System.Windows.Forms.NumericUpDown();
-            this.Temp_LRJ_ID = new System.Windows.Forms.ComboBox();
-            this.Temp_LRJ_No = new System.Windows.Forms.ComboBox();
+            this.BLRRep_ZTNo_R = new System.Windows.Forms.NumericUpDown();
+            this.BLRRep_LFS_MC_C = new System.Windows.Forms.NumericUpDown();
+            this.JLRRep_ID = new System.Windows.Forms.ComboBox();
+            this.JLRRep_No = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.Temp_LRJ_Name = new System.Windows.Forms.ComboBox();
-            this.Temp_LRB_ID = new System.Windows.Forms.ComboBox();
-            this.Temp_LRB_No = new System.Windows.Forms.ComboBox();
+            this.JLRRep = new System.Windows.Forms.ComboBox();
+            this.BLRRep_ID = new System.Windows.Forms.ComboBox();
+            this.BLRRep_No = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.Temp_LRB_Name = new System.Windows.Forms.ComboBox();
+            this.BLRRep = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.WriteZTListInfo = new System.Windows.Forms.Button();
-            this.SaveSQLConn = new System.Windows.Forms.Button();
+            this.ReadSetting = new System.Windows.Forms.Button();
             this.MainWork = new System.Windows.Forms.TabControl();
             this.MainWorkSetting = new System.Windows.Forms.TabPage();
             this.WorkPage = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ProgressMSG = new System.Windows.Forms.TextBox();
             this.StartWorking = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.ZTListShow = new System.Windows.Forms.DataGridView();
-            this.GetXNL = new System.Windows.Forms.Button();
+            this.ViewSetting = new System.Windows.Forms.Button();
+            this.ZtListRep = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ZtListRepID = new System.Windows.Forms.ComboBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.SaveSetting = new System.Windows.Forms.Button();
             this.WorkSetting.SuspendLayout();
             this.BaseSetting.SuspendLayout();
             this.ZTInfoBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTName_Col)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTName_Row)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_ZBC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_LJC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_ZJC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_LBC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTName_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_BZCFZ_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_JLR_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_JZCFZ_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_BLR_C)).BeginInit();
             this.ZTDataBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.JZQCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLNC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JZMCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLYC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZQCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLNC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZMCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLYC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLYCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZMC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLNCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZQC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLYCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLNCC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JZMC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JZQC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QC_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_LFS_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QM_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_FS_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QC_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_LFS_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QM_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_FS_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_FS_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QM_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_LFS_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_FS_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_LFS_CD_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QM_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QC_C)).BeginInit();
             this.CDSetting.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JCD_CCount_R2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_CCount_R1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_Name_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_CCount_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_F_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDREP_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JCD_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_NO_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_Basic_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_ZTNo_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_MC_C)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BCD_CCount_R2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_CCount_R1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_Name_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_CCount_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_F_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDREP_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BCD_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_NO_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_Basic_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_ZTNo_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_MC_C)).BeginInit();
             this.ZCFZSetting.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QC_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QC_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QC_MC_C)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_F2_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_F1_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_Name_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_F_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QM_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QM_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_No_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_ZTNo_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QM_MC_C)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QC_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QC_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QC_MC_C)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_F2_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_F1_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_Name_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_F_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QM_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QM_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_No_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_ZTNo_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QM_MC_C)).BeginInit();
             this.LRSetting.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_FS_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_FS_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_FS_MC_C)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_FS_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_FS_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_FS_MC_C)).BeginInit();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LR_J_F2_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_J_F1_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_J_Name_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_F_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_LFS_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_LFS_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_J_No_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_ZTNo_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_LFS_MC_C)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LR_B_F2_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_B_F1_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_B_Name_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_CStart_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_Count_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_F_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_ZTName_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_LFS_CC_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_LFS_F_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_CEnd_C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_B_No_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_Z_C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_ZTNo_R)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_LFS_MC_C)).BeginInit();
             this.MainWork.SuspendLayout();
             this.MainWorkSetting.SuspendLayout();
             this.WorkPage.SuspendLayout();
@@ -559,29 +557,29 @@
             // 
             this.SQL_Host.Location = new System.Drawing.Point(111, 11);
             this.SQL_Host.Name = "SQL_Host";
-            this.SQL_Host.Size = new System.Drawing.Size(275, 25);
+            this.SQL_Host.Size = new System.Drawing.Size(173, 25);
             this.SQL_Host.TabIndex = 0;
             this.SQL_Host.Text = "192.168.100.115";
             // 
             // SQL_Port
             // 
-            this.SQL_Port.Location = new System.Drawing.Point(491, 11);
+            this.SQL_Port.Location = new System.Drawing.Point(394, 13);
             this.SQL_Port.Name = "SQL_Port";
-            this.SQL_Port.Size = new System.Drawing.Size(86, 25);
+            this.SQL_Port.Size = new System.Drawing.Size(63, 25);
             this.SQL_Port.TabIndex = 2;
             this.SQL_Port.Text = "1433";
             // 
             // SQL_User
             // 
-            this.SQL_User.Location = new System.Drawing.Point(723, 11);
+            this.SQL_User.Location = new System.Drawing.Point(581, 13);
             this.SQL_User.Name = "SQL_User";
-            this.SQL_User.Size = new System.Drawing.Size(131, 25);
+            this.SQL_User.Size = new System.Drawing.Size(78, 25);
             this.SQL_User.TabIndex = 3;
             this.SQL_User.Text = "sa";
             // 
             // SQL_Pwd
             // 
-            this.SQL_Pwd.Location = new System.Drawing.Point(956, 11);
+            this.SQL_Pwd.Location = new System.Drawing.Point(773, 11);
             this.SQL_Pwd.Name = "SQL_Pwd";
             this.SQL_Pwd.PasswordChar = '*';
             this.SQL_Pwd.Size = new System.Drawing.Size(145, 25);
@@ -592,9 +590,9 @@
             // 
             this.SQL_WorkDB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SQL_WorkDB.FormattingEnabled = true;
-            this.SQL_WorkDB.Location = new System.Drawing.Point(276, 50);
+            this.SQL_WorkDB.Location = new System.Drawing.Point(23, 69);
             this.SQL_WorkDB.Name = "SQL_WorkDB";
-            this.SQL_WorkDB.Size = new System.Drawing.Size(259, 23);
+            this.SQL_WorkDB.Size = new System.Drawing.Size(230, 23);
             this.SQL_WorkDB.TabIndex = 5;
             // 
             // label1
@@ -609,7 +607,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(410, 16);
+            this.label2.Location = new System.Drawing.Point(313, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 7;
@@ -618,7 +616,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(619, 16);
+            this.label3.Location = new System.Drawing.Point(477, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 15);
             this.label3.TabIndex = 8;
@@ -627,28 +625,19 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(887, 16);
+            this.label4.Location = new System.Drawing.Point(704, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 9;
             this.label4.Text = "SQL密码";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 15);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "工作账套库";
-            // 
             // GetWorkDB
             // 
-            this.GetWorkDB.Location = new System.Drawing.Point(111, 44);
+            this.GetWorkDB.Location = new System.Drawing.Point(967, 8);
             this.GetWorkDB.Name = "GetWorkDB";
-            this.GetWorkDB.Size = new System.Drawing.Size(141, 32);
+            this.GetWorkDB.Size = new System.Drawing.Size(115, 32);
             this.GetWorkDB.TabIndex = 12;
-            this.GetWorkDB.Text = "获取工作库";
+            this.GetWorkDB.Text = "加载账套库";
             this.GetWorkDB.UseVisualStyleBackColor = true;
             this.GetWorkDB.Click += new System.EventHandler(this.GetWorkDB_Click);
             // 
@@ -674,38 +663,26 @@
             this.WorkSetting.Location = new System.Drawing.Point(0, 0);
             this.WorkSetting.Name = "WorkSetting";
             this.WorkSetting.SelectedIndex = 0;
-            this.WorkSetting.Size = new System.Drawing.Size(1107, 454);
+            this.WorkSetting.Size = new System.Drawing.Size(1107, 444);
             this.WorkSetting.TabIndex = 19;
             // 
             // BaseSetting
             // 
-            this.BaseSetting.Controls.Add(this.ReadBaseRepSet);
             this.BaseSetting.Controls.Add(this.ZTInfoBox);
             this.BaseSetting.Controls.Add(this.ZTDataBox);
-            this.BaseSetting.Controls.Add(this.SaveSetting);
-            this.BaseSetting.Controls.Add(this.Temp_BaseRep_No);
-            this.BaseSetting.Controls.Add(this.Temp_BaseRep_ID);
+            this.BaseSetting.Controls.Add(this.BaseRep_No);
+            this.BaseSetting.Controls.Add(this.BaseRep_ID);
             this.BaseSetting.Controls.Add(this.label18);
             this.BaseSetting.Controls.Add(this.label17);
-            this.BaseSetting.Controls.Add(this.Temp_BaseRep_Name);
+            this.BaseSetting.Controls.Add(this.BaseRep);
             this.BaseSetting.Controls.Add(this.label8);
             this.BaseSetting.Location = new System.Drawing.Point(4, 25);
             this.BaseSetting.Name = "BaseSetting";
             this.BaseSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.BaseSetting.Size = new System.Drawing.Size(1099, 425);
+            this.BaseSetting.Size = new System.Drawing.Size(1099, 415);
             this.BaseSetting.TabIndex = 0;
             this.BaseSetting.Text = "基本数据模板设置";
             this.BaseSetting.UseVisualStyleBackColor = true;
-            // 
-            // ReadBaseRepSet
-            // 
-            this.ReadBaseRepSet.Location = new System.Drawing.Point(868, 319);
-            this.ReadBaseRepSet.Name = "ReadBaseRepSet";
-            this.ReadBaseRepSet.Size = new System.Drawing.Size(121, 40);
-            this.ReadBaseRepSet.TabIndex = 131;
-            this.ReadBaseRepSet.Text = "读取报表设置";
-            this.ReadBaseRepSet.UseVisualStyleBackColor = true;
-            this.ReadBaseRepSet.Click += new System.EventHandler(this.ReadBaseRepSet_Click);
             // 
             // ZTInfoBox
             // 
@@ -719,25 +696,25 @@
             this.ZTInfoBox.Controls.Add(this.label31);
             this.ZTInfoBox.Controls.Add(this.label40);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTName_CellName);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTName_Col);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTName_C);
             this.ZTInfoBox.Controls.Add(this.label16);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_R);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTTitle_R);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_JZTNo_New);
             this.ZTInfoBox.Controls.Add(this.label15);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_JZTNo);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTName_Row);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_ZBC);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTName_R);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTTitle_BZCFZ_C);
             this.ZTInfoBox.Controls.Add(this.label14);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_BZTNo_New);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_LJCV);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_ZBCV);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_BZTNo);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_LJC);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_ZJC);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTTitle_JLR_C);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTTitle_JZCFZ_C);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_LBCV);
             this.ZTInfoBox.Controls.Add(this.label13);
             this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_ZJCV);
-            this.ZTInfoBox.Controls.Add(this.Temp_BaseRep_ZTNo_LBC);
+            this.ZTInfoBox.Controls.Add(this.BaseRep_ZTTitle_BLR_C);
             this.ZTInfoBox.Location = new System.Drawing.Point(7, 40);
             this.ZTInfoBox.Name = "ZTInfoBox";
             this.ZTInfoBox.Size = new System.Drawing.Size(1089, 165);
@@ -827,28 +804,28 @@
             this.Temp_BaseRep_ZTName_CellName.Size = new System.Drawing.Size(49, 25);
             this.Temp_BaseRep_ZTName_CellName.TabIndex = 71;
             // 
-            // Temp_BaseRep_ZTName_Col
+            // BaseRep_ZTName_C
             // 
-            this.Temp_BaseRep_ZTName_Col.Location = new System.Drawing.Point(92, 26);
-            this.Temp_BaseRep_ZTName_Col.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTName_C.Location = new System.Drawing.Point(92, 26);
+            this.BaseRep_ZTName_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTName_Col.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTName_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTName_Col.Name = "Temp_BaseRep_ZTName_Col";
-            this.Temp_BaseRep_ZTName_Col.Size = new System.Drawing.Size(52, 25);
-            this.Temp_BaseRep_ZTName_Col.TabIndex = 73;
-            this.Temp_BaseRep_ZTName_Col.Value = new decimal(new int[] {
+            this.BaseRep_ZTName_C.Name = "BaseRep_ZTName_C";
+            this.BaseRep_ZTName_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_ZTName_C.TabIndex = 73;
+            this.BaseRep_ZTName_C.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTName_Col.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTName_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
             // label16
             // 
@@ -859,28 +836,28 @@
             this.label16.TabIndex = 29;
             this.label16.Text = "→";
             // 
-            // Temp_BaseRep_ZTNo_R
+            // BaseRep_ZTTitle_R
             // 
-            this.Temp_BaseRep_ZTNo_R.Location = new System.Drawing.Point(183, 58);
-            this.Temp_BaseRep_ZTNo_R.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_R.Location = new System.Drawing.Point(183, 58);
+            this.BaseRep_ZTTitle_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_R.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_R.Name = "Temp_BaseRep_ZTNo_R";
-            this.Temp_BaseRep_ZTNo_R.Size = new System.Drawing.Size(61, 25);
-            this.Temp_BaseRep_ZTNo_R.TabIndex = 107;
-            this.Temp_BaseRep_ZTNo_R.Value = new decimal(new int[] {
+            this.BaseRep_ZTTitle_R.Name = "BaseRep_ZTTitle_R";
+            this.BaseRep_ZTTitle_R.Size = new System.Drawing.Size(61, 25);
+            this.BaseRep_ZTTitle_R.TabIndex = 107;
+            this.BaseRep_ZTTitle_R.Value = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_R.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTTitle_R.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
             // Temp_BaseRep_JZTNo_New
             // 
@@ -906,51 +883,51 @@
             this.Temp_BaseRep_JZTNo.Size = new System.Drawing.Size(100, 25);
             this.Temp_BaseRep_JZTNo.TabIndex = 25;
             // 
-            // Temp_BaseRep_ZTName_Row
+            // BaseRep_ZTName_R
             // 
-            this.Temp_BaseRep_ZTName_Row.Location = new System.Drawing.Point(15, 58);
-            this.Temp_BaseRep_ZTName_Row.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTName_R.Location = new System.Drawing.Point(15, 58);
+            this.BaseRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTName_Row.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTName_Row.Name = "Temp_BaseRep_ZTName_Row";
-            this.Temp_BaseRep_ZTName_Row.Size = new System.Drawing.Size(61, 25);
-            this.Temp_BaseRep_ZTName_Row.TabIndex = 74;
-            this.Temp_BaseRep_ZTName_Row.Value = new decimal(new int[] {
+            this.BaseRep_ZTName_R.Name = "BaseRep_ZTName_R";
+            this.BaseRep_ZTName_R.Size = new System.Drawing.Size(61, 25);
+            this.BaseRep_ZTName_R.TabIndex = 74;
+            this.BaseRep_ZTName_R.Value = new decimal(new int[] {
             2,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTName_Row.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTName_R.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
-            // Temp_BaseRep_ZTNo_ZBC
+            // BaseRep_ZTTitle_BZCFZ_C
             // 
-            this.Temp_BaseRep_ZTNo_ZBC.Location = new System.Drawing.Point(259, 26);
-            this.Temp_BaseRep_ZTNo_ZBC.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_BZCFZ_C.Location = new System.Drawing.Point(259, 26);
+            this.BaseRep_ZTTitle_BZCFZ_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_ZBC.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_BZCFZ_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_ZBC.Name = "Temp_BaseRep_ZTNo_ZBC";
-            this.Temp_BaseRep_ZTNo_ZBC.Size = new System.Drawing.Size(78, 25);
-            this.Temp_BaseRep_ZTNo_ZBC.TabIndex = 75;
-            this.Temp_BaseRep_ZTNo_ZBC.Value = new decimal(new int[] {
+            this.BaseRep_ZTTitle_BZCFZ_C.Name = "BaseRep_ZTTitle_BZCFZ_C";
+            this.BaseRep_ZTTitle_BZCFZ_C.Size = new System.Drawing.Size(78, 25);
+            this.BaseRep_ZTTitle_BZCFZ_C.TabIndex = 75;
+            this.BaseRep_ZTTitle_BZCFZ_C.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_ZBC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTTitle_BZCFZ_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
             // label14
             // 
@@ -992,51 +969,51 @@
             this.Temp_BaseRep_BZTNo.Size = new System.Drawing.Size(100, 25);
             this.Temp_BaseRep_BZTNo.TabIndex = 24;
             // 
-            // Temp_BaseRep_ZTNo_LJC
+            // BaseRep_ZTTitle_JLR_C
             // 
-            this.Temp_BaseRep_ZTNo_LJC.Location = new System.Drawing.Point(858, 26);
-            this.Temp_BaseRep_ZTNo_LJC.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_JLR_C.Location = new System.Drawing.Point(858, 26);
+            this.BaseRep_ZTTitle_JLR_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_LJC.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_JLR_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_LJC.Name = "Temp_BaseRep_ZTNo_LJC";
-            this.Temp_BaseRep_ZTNo_LJC.Size = new System.Drawing.Size(78, 25);
-            this.Temp_BaseRep_ZTNo_LJC.TabIndex = 81;
-            this.Temp_BaseRep_ZTNo_LJC.Value = new decimal(new int[] {
+            this.BaseRep_ZTTitle_JLR_C.Name = "BaseRep_ZTTitle_JLR_C";
+            this.BaseRep_ZTTitle_JLR_C.Size = new System.Drawing.Size(78, 25);
+            this.BaseRep_ZTTitle_JLR_C.TabIndex = 81;
+            this.BaseRep_ZTTitle_JLR_C.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_LJC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTTitle_JLR_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
-            // Temp_BaseRep_ZTNo_ZJC
+            // BaseRep_ZTTitle_JZCFZ_C
             // 
-            this.Temp_BaseRep_ZTNo_ZJC.Location = new System.Drawing.Point(457, 26);
-            this.Temp_BaseRep_ZTNo_ZJC.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_JZCFZ_C.Location = new System.Drawing.Point(457, 26);
+            this.BaseRep_ZTTitle_JZCFZ_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_ZJC.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_JZCFZ_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_ZJC.Name = "Temp_BaseRep_ZTNo_ZJC";
-            this.Temp_BaseRep_ZTNo_ZJC.Size = new System.Drawing.Size(78, 25);
-            this.Temp_BaseRep_ZTNo_ZJC.TabIndex = 77;
-            this.Temp_BaseRep_ZTNo_ZJC.Value = new decimal(new int[] {
+            this.BaseRep_ZTTitle_JZCFZ_C.Name = "BaseRep_ZTTitle_JZCFZ_C";
+            this.BaseRep_ZTTitle_JZCFZ_C.Size = new System.Drawing.Size(78, 25);
+            this.BaseRep_ZTTitle_JZCFZ_C.TabIndex = 77;
+            this.BaseRep_ZTTitle_JZCFZ_C.Value = new decimal(new int[] {
             7,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_ZJC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTTitle_JZCFZ_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
             // Temp_BaseRep_ZTNo_LBCV
             // 
@@ -1063,72 +1040,72 @@
             this.Temp_BaseRep_ZTNo_ZJCV.Size = new System.Drawing.Size(162, 25);
             this.Temp_BaseRep_ZTNo_ZJCV.TabIndex = 78;
             // 
-            // Temp_BaseRep_ZTNo_LBC
+            // BaseRep_ZTTitle_BLR_C
             // 
-            this.Temp_BaseRep_ZTNo_LBC.Location = new System.Drawing.Point(655, 26);
-            this.Temp_BaseRep_ZTNo_LBC.Maximum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_BLR_C.Location = new System.Drawing.Point(655, 26);
+            this.BaseRep_ZTTitle_BLR_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_LBC.Minimum = new decimal(new int[] {
+            this.BaseRep_ZTTitle_BLR_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_LBC.Name = "Temp_BaseRep_ZTNo_LBC";
-            this.Temp_BaseRep_ZTNo_LBC.Size = new System.Drawing.Size(78, 25);
-            this.Temp_BaseRep_ZTNo_LBC.TabIndex = 79;
-            this.Temp_BaseRep_ZTNo_LBC.Value = new decimal(new int[] {
+            this.BaseRep_ZTTitle_BLR_C.Name = "BaseRep_ZTTitle_BLR_C";
+            this.BaseRep_ZTTitle_BLR_C.Size = new System.Drawing.Size(78, 25);
+            this.BaseRep_ZTTitle_BLR_C.TabIndex = 79;
+            this.BaseRep_ZTTitle_BLR_C.Value = new decimal(new int[] {
             14,
             0,
             0,
             0});
-            this.Temp_BaseRep_ZTNo_LBC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
+            this.BaseRep_ZTTitle_BLR_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_ZTInfo_ColRow_indexChanged);
             // 
             // ZTDataBox
             // 
             this.ZTDataBox.Controls.Add(this.label42);
             this.ZTDataBox.Controls.Add(this.label41);
             this.ZTDataBox.Controls.Add(this.label32);
-            this.ZTDataBox.Controls.Add(this.JZQCC);
-            this.ZTDataBox.Controls.Add(this.BLNC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JZCFZ_QC_CD_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BLR_LFS_C);
             this.ZTDataBox.Controls.Add(this.JZQCCS);
             this.ZTDataBox.Controls.Add(this.BLNCS);
-            this.ZTDataBox.Controls.Add(this.JZMCC);
-            this.ZTDataBox.Controls.Add(this.BLYC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JZCFZ_QM_CD_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BLR_FS_C);
             this.ZTDataBox.Controls.Add(this.JZMCCS);
             this.ZTDataBox.Controls.Add(this.BLYCS);
-            this.ZTDataBox.Controls.Add(this.BZQCC);
-            this.ZTDataBox.Controls.Add(this.JLNC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BZCFZ_QC_CD_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JLR_LFS_C);
             this.ZTDataBox.Controls.Add(this.BZQCCS);
             this.ZTDataBox.Controls.Add(this.JLNCS);
-            this.ZTDataBox.Controls.Add(this.BZMCC);
-            this.ZTDataBox.Controls.Add(this.JLYC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BZCFZ_QM_CD_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JLR_FS_C);
             this.ZTDataBox.Controls.Add(this.BZMCCS);
             this.ZTDataBox.Controls.Add(this.JLYCS);
             this.ZTDataBox.Controls.Add(this.JLYCCS);
             this.ZTDataBox.Controls.Add(this.BZMCS);
-            this.ZTDataBox.Controls.Add(this.JLYCC);
-            this.ZTDataBox.Controls.Add(this.BZMC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JLR_FS_CD_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BZCFZ_QM_C);
             this.ZTDataBox.Controls.Add(this.JLNCCS);
             this.ZTDataBox.Controls.Add(this.label33);
-            this.ZTDataBox.Controls.Add(this.JLNCC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JLR_LFS_CD_C);
             this.ZTDataBox.Controls.Add(this.BZQCS);
             this.ZTDataBox.Controls.Add(this.BLYCCS);
-            this.ZTDataBox.Controls.Add(this.BZQC);
-            this.ZTDataBox.Controls.Add(this.BLYCC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BZCFZ_QC_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BLR_FS_CD_C);
             this.ZTDataBox.Controls.Add(this.label34);
             this.ZTDataBox.Controls.Add(this.BLNCCS);
             this.ZTDataBox.Controls.Add(this.JZMCS);
-            this.ZTDataBox.Controls.Add(this.BLNCC);
-            this.ZTDataBox.Controls.Add(this.JZMC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_BLR_LFS_CD_C);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JZCFZ_QM_C);
             this.ZTDataBox.Controls.Add(this.label36);
             this.ZTDataBox.Controls.Add(this.label35);
             this.ZTDataBox.Controls.Add(this.label37);
             this.ZTDataBox.Controls.Add(this.JZQCS);
             this.ZTDataBox.Controls.Add(this.label38);
-            this.ZTDataBox.Controls.Add(this.JZQC);
+            this.ZTDataBox.Controls.Add(this.BaseRep_JZCFZ_QC_C);
             this.ZTDataBox.Controls.Add(this.label39);
             this.ZTDataBox.Location = new System.Drawing.Point(15, 211);
             this.ZTDataBox.Name = "ZTDataBox";
@@ -1164,51 +1141,51 @@
             this.label32.TabIndex = 91;
             this.label32.Text = "标资末";
             // 
-            // JZQCC
+            // BaseRep_JZCFZ_QC_CD_C
             // 
-            this.JZQCC.Location = new System.Drawing.Point(326, 115);
-            this.JZQCC.Maximum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QC_CD_C.Location = new System.Drawing.Point(326, 115);
+            this.BaseRep_JZCFZ_QC_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JZQCC.Minimum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QC_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JZQCC.Name = "JZQCC";
-            this.JZQCC.Size = new System.Drawing.Size(52, 25);
-            this.JZQCC.TabIndex = 127;
-            this.JZQCC.Value = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QC_CD_C.Name = "BaseRep_JZCFZ_QC_CD_C";
+            this.BaseRep_JZCFZ_QC_CD_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_JZCFZ_QC_CD_C.TabIndex = 127;
+            this.BaseRep_JZCFZ_QC_CD_C.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.JZQCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JZCFZ_QC_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // BLNC
+            // BaseRep_BLR_LFS_C
             // 
-            this.BLNC.Location = new System.Drawing.Point(406, 44);
-            this.BLNC.Maximum = new decimal(new int[] {
+            this.BaseRep_BLR_LFS_C.Location = new System.Drawing.Point(406, 44);
+            this.BaseRep_BLR_LFS_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BLNC.Minimum = new decimal(new int[] {
+            this.BaseRep_BLR_LFS_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BLNC.Name = "BLNC";
-            this.BLNC.Size = new System.Drawing.Size(49, 25);
-            this.BLNC.TabIndex = 83;
-            this.BLNC.Value = new decimal(new int[] {
+            this.BaseRep_BLR_LFS_C.Name = "BaseRep_BLR_LFS_C";
+            this.BaseRep_BLR_LFS_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_BLR_LFS_C.TabIndex = 83;
+            this.BaseRep_BLR_LFS_C.Value = new decimal(new int[] {
             14,
             0,
             0,
             0});
-            this.BLNC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BLR_LFS_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // JZQCCS
             // 
@@ -1226,51 +1203,51 @@
             this.BLNCS.Size = new System.Drawing.Size(49, 25);
             this.BLNCS.TabIndex = 84;
             // 
-            // JZMCC
+            // BaseRep_JZCFZ_QM_CD_C
             // 
-            this.JZMCC.Location = new System.Drawing.Point(246, 115);
-            this.JZMCC.Maximum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QM_CD_C.Location = new System.Drawing.Point(246, 115);
+            this.BaseRep_JZCFZ_QM_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JZMCC.Minimum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QM_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JZMCC.Name = "JZMCC";
-            this.JZMCC.Size = new System.Drawing.Size(52, 25);
-            this.JZMCC.TabIndex = 125;
-            this.JZMCC.Value = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QM_CD_C.Name = "BaseRep_JZCFZ_QM_CD_C";
+            this.BaseRep_JZCFZ_QM_CD_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_JZCFZ_QM_CD_C.TabIndex = 125;
+            this.BaseRep_JZCFZ_QM_CD_C.Value = new decimal(new int[] {
             9,
             0,
             0,
             0});
-            this.JZMCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JZCFZ_QM_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // BLYC
+            // BaseRep_BLR_FS_C
             // 
-            this.BLYC.Location = new System.Drawing.Point(486, 44);
-            this.BLYC.Maximum = new decimal(new int[] {
+            this.BaseRep_BLR_FS_C.Location = new System.Drawing.Point(486, 44);
+            this.BaseRep_BLR_FS_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BLYC.Minimum = new decimal(new int[] {
+            this.BaseRep_BLR_FS_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BLYC.Name = "BLYC";
-            this.BLYC.Size = new System.Drawing.Size(49, 25);
-            this.BLYC.TabIndex = 85;
-            this.BLYC.Value = new decimal(new int[] {
+            this.BaseRep_BLR_FS_C.Name = "BaseRep_BLR_FS_C";
+            this.BaseRep_BLR_FS_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_BLR_FS_C.TabIndex = 85;
+            this.BaseRep_BLR_FS_C.Value = new decimal(new int[] {
             15,
             0,
             0,
             0});
-            this.BLYC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BLR_FS_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // JZMCCS
             // 
@@ -1288,51 +1265,51 @@
             this.BLYCS.Size = new System.Drawing.Size(49, 25);
             this.BLYCS.TabIndex = 86;
             // 
-            // BZQCC
+            // BaseRep_BZCFZ_QC_CD_C
             // 
-            this.BZQCC.Location = new System.Drawing.Point(166, 115);
-            this.BZQCC.Maximum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QC_CD_C.Location = new System.Drawing.Point(166, 115);
+            this.BaseRep_BZCFZ_QC_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BZQCC.Minimum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QC_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BZQCC.Name = "BZQCC";
-            this.BZQCC.Size = new System.Drawing.Size(52, 25);
-            this.BZQCC.TabIndex = 123;
-            this.BZQCC.Value = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QC_CD_C.Name = "BaseRep_BZCFZ_QC_CD_C";
+            this.BaseRep_BZCFZ_QC_CD_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_BZCFZ_QC_CD_C.TabIndex = 123;
+            this.BaseRep_BZCFZ_QC_CD_C.Value = new decimal(new int[] {
             6,
             0,
             0,
             0});
-            this.BZQCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BZCFZ_QC_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // JLNC
+            // BaseRep_JLR_LFS_C
             // 
-            this.JLNC.Location = new System.Drawing.Point(566, 44);
-            this.JLNC.Maximum = new decimal(new int[] {
+            this.BaseRep_JLR_LFS_C.Location = new System.Drawing.Point(566, 44);
+            this.BaseRep_JLR_LFS_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JLNC.Minimum = new decimal(new int[] {
+            this.BaseRep_JLR_LFS_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JLNC.Name = "JLNC";
-            this.JLNC.Size = new System.Drawing.Size(49, 25);
-            this.JLNC.TabIndex = 87;
-            this.JLNC.Value = new decimal(new int[] {
+            this.BaseRep_JLR_LFS_C.Name = "BaseRep_JLR_LFS_C";
+            this.BaseRep_JLR_LFS_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_JLR_LFS_C.TabIndex = 87;
+            this.BaseRep_JLR_LFS_C.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.JLNC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JLR_LFS_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // BZQCCS
             // 
@@ -1350,51 +1327,51 @@
             this.JLNCS.Size = new System.Drawing.Size(49, 25);
             this.JLNCS.TabIndex = 88;
             // 
-            // BZMCC
+            // BaseRep_BZCFZ_QM_CD_C
             // 
-            this.BZMCC.Location = new System.Drawing.Point(86, 115);
-            this.BZMCC.Maximum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QM_CD_C.Location = new System.Drawing.Point(86, 115);
+            this.BaseRep_BZCFZ_QM_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BZMCC.Minimum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QM_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BZMCC.Name = "BZMCC";
-            this.BZMCC.Size = new System.Drawing.Size(52, 25);
-            this.BZMCC.TabIndex = 121;
-            this.BZMCC.Value = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QM_CD_C.Name = "BaseRep_BZCFZ_QM_CD_C";
+            this.BaseRep_BZCFZ_QM_CD_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_BZCFZ_QM_CD_C.TabIndex = 121;
+            this.BaseRep_BZCFZ_QM_CD_C.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.BZMCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BZCFZ_QM_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // JLYC
+            // BaseRep_JLR_FS_C
             // 
-            this.JLYC.Location = new System.Drawing.Point(646, 44);
-            this.JLYC.Maximum = new decimal(new int[] {
+            this.BaseRep_JLR_FS_C.Location = new System.Drawing.Point(646, 44);
+            this.BaseRep_JLR_FS_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JLYC.Minimum = new decimal(new int[] {
+            this.BaseRep_JLR_FS_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JLYC.Name = "JLYC";
-            this.JLYC.Size = new System.Drawing.Size(49, 25);
-            this.JLYC.TabIndex = 89;
-            this.JLYC.Value = new decimal(new int[] {
+            this.BaseRep_JLR_FS_C.Name = "BaseRep_JLR_FS_C";
+            this.BaseRep_JLR_FS_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_JLR_FS_C.TabIndex = 89;
+            this.BaseRep_JLR_FS_C.Value = new decimal(new int[] {
             19,
             0,
             0,
             0});
-            this.JLYC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JLR_FS_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // BZMCCS
             // 
@@ -1428,51 +1405,51 @@
             this.BZMCS.Size = new System.Drawing.Size(49, 25);
             this.BZMCS.TabIndex = 92;
             // 
-            // JLYCC
+            // BaseRep_JLR_FS_CD_C
             // 
-            this.JLYCC.Location = new System.Drawing.Point(648, 115);
-            this.JLYCC.Maximum = new decimal(new int[] {
+            this.BaseRep_JLR_FS_CD_C.Location = new System.Drawing.Point(648, 115);
+            this.BaseRep_JLR_FS_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JLYCC.Minimum = new decimal(new int[] {
+            this.BaseRep_JLR_FS_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JLYCC.Name = "JLYCC";
-            this.JLYCC.Size = new System.Drawing.Size(49, 25);
-            this.JLYCC.TabIndex = 118;
-            this.JLYCC.Value = new decimal(new int[] {
+            this.BaseRep_JLR_FS_CD_C.Name = "BaseRep_JLR_FS_CD_C";
+            this.BaseRep_JLR_FS_CD_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_JLR_FS_CD_C.TabIndex = 118;
+            this.BaseRep_JLR_FS_CD_C.Value = new decimal(new int[] {
             21,
             0,
             0,
             0});
-            this.JLYCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JLR_FS_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // BZMC
+            // BaseRep_BZCFZ_QM_C
             // 
-            this.BZMC.Location = new System.Drawing.Point(84, 44);
-            this.BZMC.Maximum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QM_C.Location = new System.Drawing.Point(84, 44);
+            this.BaseRep_BZCFZ_QM_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BZMC.Minimum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QM_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BZMC.Name = "BZMC";
-            this.BZMC.Size = new System.Drawing.Size(52, 25);
-            this.BZMC.TabIndex = 93;
-            this.BZMC.Value = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QM_C.Name = "BaseRep_BZCFZ_QM_C";
+            this.BaseRep_BZCFZ_QM_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_BZCFZ_QM_C.TabIndex = 93;
+            this.BaseRep_BZCFZ_QM_C.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.BZMC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BZCFZ_QM_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // JLNCCS
             // 
@@ -1491,28 +1468,28 @@
             this.label33.TabIndex = 95;
             this.label33.Text = "标资初";
             // 
-            // JLNCC
+            // BaseRep_JLR_LFS_CD_C
             // 
-            this.JLNCC.Location = new System.Drawing.Point(568, 115);
-            this.JLNCC.Maximum = new decimal(new int[] {
+            this.BaseRep_JLR_LFS_CD_C.Location = new System.Drawing.Point(568, 115);
+            this.BaseRep_JLR_LFS_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JLNCC.Minimum = new decimal(new int[] {
+            this.BaseRep_JLR_LFS_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JLNCC.Name = "JLNCC";
-            this.JLNCC.Size = new System.Drawing.Size(49, 25);
-            this.JLNCC.TabIndex = 116;
-            this.JLNCC.Value = new decimal(new int[] {
+            this.BaseRep_JLR_LFS_CD_C.Name = "BaseRep_JLR_LFS_CD_C";
+            this.BaseRep_JLR_LFS_CD_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_JLR_LFS_CD_C.TabIndex = 116;
+            this.BaseRep_JLR_LFS_CD_C.Value = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.JLNCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JLR_LFS_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // BZQCS
             // 
@@ -1530,51 +1507,51 @@
             this.BLYCCS.Size = new System.Drawing.Size(49, 25);
             this.BLYCCS.TabIndex = 115;
             // 
-            // BZQC
+            // BaseRep_BZCFZ_QC_C
             // 
-            this.BZQC.Location = new System.Drawing.Point(164, 44);
-            this.BZQC.Maximum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QC_C.Location = new System.Drawing.Point(164, 44);
+            this.BaseRep_BZCFZ_QC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BZQC.Minimum = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BZQC.Name = "BZQC";
-            this.BZQC.Size = new System.Drawing.Size(52, 25);
-            this.BZQC.TabIndex = 97;
-            this.BZQC.Value = new decimal(new int[] {
+            this.BaseRep_BZCFZ_QC_C.Name = "BaseRep_BZCFZ_QC_C";
+            this.BaseRep_BZCFZ_QC_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_BZCFZ_QC_C.TabIndex = 97;
+            this.BaseRep_BZCFZ_QC_C.Value = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.BZQC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BZCFZ_QC_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // BLYCC
+            // BaseRep_BLR_FS_CD_C
             // 
-            this.BLYCC.Location = new System.Drawing.Point(488, 115);
-            this.BLYCC.Maximum = new decimal(new int[] {
+            this.BaseRep_BLR_FS_CD_C.Location = new System.Drawing.Point(488, 115);
+            this.BaseRep_BLR_FS_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BLYCC.Minimum = new decimal(new int[] {
+            this.BaseRep_BLR_FS_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BLYCC.Name = "BLYCC";
-            this.BLYCC.Size = new System.Drawing.Size(49, 25);
-            this.BLYCC.TabIndex = 114;
-            this.BLYCC.Value = new decimal(new int[] {
+            this.BaseRep_BLR_FS_CD_C.Name = "BaseRep_BLR_FS_CD_C";
+            this.BaseRep_BLR_FS_CD_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_BLR_FS_CD_C.TabIndex = 114;
+            this.BaseRep_BLR_FS_CD_C.Value = new decimal(new int[] {
             17,
             0,
             0,
             0});
-            this.BLYCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BLR_FS_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // label34
             // 
@@ -1601,51 +1578,51 @@
             this.JZMCS.Size = new System.Drawing.Size(49, 25);
             this.JZMCS.TabIndex = 100;
             // 
-            // BLNCC
+            // BaseRep_BLR_LFS_CD_C
             // 
-            this.BLNCC.Location = new System.Drawing.Point(408, 115);
-            this.BLNCC.Maximum = new decimal(new int[] {
+            this.BaseRep_BLR_LFS_CD_C.Location = new System.Drawing.Point(408, 115);
+            this.BaseRep_BLR_LFS_CD_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BLNCC.Minimum = new decimal(new int[] {
+            this.BaseRep_BLR_LFS_CD_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BLNCC.Name = "BLNCC";
-            this.BLNCC.Size = new System.Drawing.Size(49, 25);
-            this.BLNCC.TabIndex = 112;
-            this.BLNCC.Value = new decimal(new int[] {
+            this.BaseRep_BLR_LFS_CD_C.Name = "BaseRep_BLR_LFS_CD_C";
+            this.BaseRep_BLR_LFS_CD_C.Size = new System.Drawing.Size(49, 25);
+            this.BaseRep_BLR_LFS_CD_C.TabIndex = 112;
+            this.BaseRep_BLR_LFS_CD_C.Value = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.BLNCC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_BLR_LFS_CD_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
-            // JZMC
+            // BaseRep_JZCFZ_QM_C
             // 
-            this.JZMC.Location = new System.Drawing.Point(244, 44);
-            this.JZMC.Maximum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QM_C.Location = new System.Drawing.Point(244, 44);
+            this.BaseRep_JZCFZ_QM_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JZMC.Minimum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QM_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JZMC.Name = "JZMC";
-            this.JZMC.Size = new System.Drawing.Size(52, 25);
-            this.JZMC.TabIndex = 101;
-            this.JZMC.Value = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QM_C.Name = "BaseRep_JZCFZ_QM_C";
+            this.BaseRep_JZCFZ_QM_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_JZCFZ_QM_C.TabIndex = 101;
+            this.BaseRep_JZCFZ_QM_C.Value = new decimal(new int[] {
             7,
             0,
             0,
             0});
-            this.JZMC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JZCFZ_QM_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // label36
             // 
@@ -1691,28 +1668,28 @@
             this.label38.TabIndex = 109;
             this.label38.Text = "标利月";
             // 
-            // JZQC
+            // BaseRep_JZCFZ_QC_C
             // 
-            this.JZQC.Location = new System.Drawing.Point(324, 44);
-            this.JZQC.Maximum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QC_C.Location = new System.Drawing.Point(324, 44);
+            this.BaseRep_JZCFZ_QC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JZQC.Minimum = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JZQC.Name = "JZQC";
-            this.JZQC.Size = new System.Drawing.Size(52, 25);
-            this.JZQC.TabIndex = 105;
-            this.JZQC.Value = new decimal(new int[] {
+            this.BaseRep_JZCFZ_QC_C.Name = "BaseRep_JZCFZ_QC_C";
+            this.BaseRep_JZCFZ_QC_C.Size = new System.Drawing.Size(52, 25);
+            this.BaseRep_JZCFZ_QC_C.TabIndex = 105;
+            this.BaseRep_JZCFZ_QC_C.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.JZQC.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
+            this.BaseRep_JZCFZ_QC_C.ValueChanged += new System.EventHandler(this.Temp_BaseRep_DataInfo_ColRow_indexChanged);
             // 
             // label39
             // 
@@ -1723,33 +1700,25 @@
             this.label39.TabIndex = 108;
             this.label39.Text = "标利年";
             // 
-            // SaveSetting
+            // BaseRep_No
             // 
-            this.SaveSetting.Location = new System.Drawing.Point(868, 375);
-            this.SaveSetting.Name = "SaveSetting";
-            this.SaveSetting.Size = new System.Drawing.Size(121, 39);
-            this.SaveSetting.TabIndex = 72;
-            this.SaveSetting.Text = "保存设置";
-            this.SaveSetting.UseVisualStyleBackColor = true;
-            this.SaveSetting.Click += new System.EventHandler(this.SaveSetting_Click);
+            this.BaseRep_No.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BaseRep_No.Enabled = false;
+            this.BaseRep_No.FormattingEnabled = true;
+            this.BaseRep_No.Location = new System.Drawing.Point(718, 11);
+            this.BaseRep_No.Name = "BaseRep_No";
+            this.BaseRep_No.Size = new System.Drawing.Size(156, 23);
+            this.BaseRep_No.TabIndex = 43;
             // 
-            // Temp_BaseRep_No
+            // BaseRep_ID
             // 
-            this.Temp_BaseRep_No.Enabled = false;
-            this.Temp_BaseRep_No.FormattingEnabled = true;
-            this.Temp_BaseRep_No.Location = new System.Drawing.Point(718, 11);
-            this.Temp_BaseRep_No.Name = "Temp_BaseRep_No";
-            this.Temp_BaseRep_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_BaseRep_No.TabIndex = 43;
-            // 
-            // Temp_BaseRep_ID
-            // 
-            this.Temp_BaseRep_ID.Enabled = false;
-            this.Temp_BaseRep_ID.FormattingEnabled = true;
-            this.Temp_BaseRep_ID.Location = new System.Drawing.Point(939, 11);
-            this.Temp_BaseRep_ID.Name = "Temp_BaseRep_ID";
-            this.Temp_BaseRep_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_BaseRep_ID.TabIndex = 42;
+            this.BaseRep_ID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BaseRep_ID.Enabled = false;
+            this.BaseRep_ID.FormattingEnabled = true;
+            this.BaseRep_ID.Location = new System.Drawing.Point(939, 11);
+            this.BaseRep_ID.Name = "BaseRep_ID";
+            this.BaseRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.BaseRep_ID.TabIndex = 42;
             // 
             // label18
             // 
@@ -1769,61 +1738,50 @@
             this.label17.TabIndex = 30;
             this.label17.Text = "编码";
             // 
-            // Temp_BaseRep_Name
+            // BaseRep
             // 
-            this.Temp_BaseRep_Name.FormattingEnabled = true;
-            this.Temp_BaseRep_Name.Location = new System.Drawing.Point(161, 11);
-            this.Temp_BaseRep_Name.Name = "Temp_BaseRep_Name";
-            this.Temp_BaseRep_Name.Size = new System.Drawing.Size(460, 23);
-            this.Temp_BaseRep_Name.TabIndex = 22;
+            this.BaseRep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BaseRep.FormattingEnabled = true;
+            this.BaseRep.Location = new System.Drawing.Point(161, 11);
+            this.BaseRep.Name = "BaseRep";
+            this.BaseRep.Size = new System.Drawing.Size(460, 23);
+            this.BaseRep.TabIndex = 22;
             // 
             // CDSetting
             // 
-            this.CDSetting.Controls.Add(this.BTN_ReadCDValue);
             this.CDSetting.Controls.Add(this.groupBox2);
             this.CDSetting.Controls.Add(this.label52);
             this.CDSetting.Controls.Add(this.BaseRepNoFront);
             this.CDSetting.Controls.Add(this.groupBox1);
-            this.CDSetting.Controls.Add(this.Temp_CDJ_ID);
-            this.CDSetting.Controls.Add(this.Temp_CDJ_No);
-            this.CDSetting.Controls.Add(this.Temp_CDB_ID);
-            this.CDSetting.Controls.Add(this.Temp_CDB_No);
+            this.CDSetting.Controls.Add(this.JCDRep_ID);
+            this.CDSetting.Controls.Add(this.JCDRep_No);
+            this.CDSetting.Controls.Add(this.BCDRep_ID);
+            this.CDSetting.Controls.Add(this.BCDRep_No);
             this.CDSetting.Controls.Add(this.label21);
             this.CDSetting.Controls.Add(this.label22);
-            this.CDSetting.Controls.Add(this.Temp_CDJ_Name);
+            this.CDSetting.Controls.Add(this.JCDRep);
             this.CDSetting.Controls.Add(this.label19);
             this.CDSetting.Controls.Add(this.label20);
-            this.CDSetting.Controls.Add(this.Temp_CDB_Name);
+            this.CDSetting.Controls.Add(this.BCDRep);
             this.CDSetting.Controls.Add(this.label6);
             this.CDSetting.Controls.Add(this.label7);
             this.CDSetting.Location = new System.Drawing.Point(4, 25);
             this.CDSetting.Name = "CDSetting";
-            this.CDSetting.Size = new System.Drawing.Size(1099, 425);
+            this.CDSetting.Size = new System.Drawing.Size(1099, 415);
             this.CDSetting.TabIndex = 2;
             this.CDSetting.Text = "冲抵工作表设置";
             this.CDSetting.UseVisualStyleBackColor = true;
             // 
-            // BTN_ReadCDValue
-            // 
-            this.BTN_ReadCDValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_ReadCDValue.Location = new System.Drawing.Point(722, 382);
-            this.BTN_ReadCDValue.Name = "BTN_ReadCDValue";
-            this.BTN_ReadCDValue.Size = new System.Drawing.Size(134, 32);
-            this.BTN_ReadCDValue.TabIndex = 162;
-            this.BTN_ReadCDValue.Text = "读取参数";
-            this.BTN_ReadCDValue.UseVisualStyleBackColor = true;
-            this.BTN_ReadCDValue.Click += new System.EventHandler(this.BTN_ReadCDValue_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.JCD_CCount_R2);
-            this.groupBox2.Controls.Add(this.JCD_CCount_R1);
+            this.groupBox2.Controls.Add(this.JCDRep_F_R);
             this.groupBox2.Controls.Add(this.label49);
             this.groupBox2.Controls.Add(this.label61);
             this.groupBox2.Controls.Add(this.label51);
             this.groupBox2.Controls.Add(this.JCD_CCount_C_F2);
             this.groupBox2.Controls.Add(this.JCD_CStart_C_Name);
-            this.groupBox2.Controls.Add(this.JCD_Name_R);
+            this.groupBox2.Controls.Add(this.JCDRep_ZTName_R);
             this.groupBox2.Controls.Add(this.JCD_Basic_C_Name);
             this.groupBox2.Controls.Add(this.JCD_CEnd_C_Name);
             this.groupBox2.Controls.Add(this.label53);
@@ -1833,17 +1791,17 @@
             this.groupBox2.Controls.Add(this.label57);
             this.groupBox2.Controls.Add(this.label58);
             this.groupBox2.Controls.Add(this.JCD_CEnd_C_Cell);
-            this.groupBox2.Controls.Add(this.JCD_CStart_C);
+            this.groupBox2.Controls.Add(this.JCDREP_CC_C);
             this.groupBox2.Controls.Add(this.JCD_CStart_C_Cell);
             this.groupBox2.Controls.Add(this.JCD_CCount_C_F1);
             this.groupBox2.Controls.Add(this.JCD_CCount_C_Cell);
             this.groupBox2.Controls.Add(this.JCD_CStart_C_No);
             this.groupBox2.Controls.Add(this.JCD_Basic_C_Cell);
-            this.groupBox2.Controls.Add(this.JCD_CCount_C);
+            this.groupBox2.Controls.Add(this.JCDRep_F_C);
             this.groupBox2.Controls.Add(this.JCD_CEnd_C);
-            this.groupBox2.Controls.Add(this.JCD_NO_R);
+            this.groupBox2.Controls.Add(this.JCDRep_ZTNo_R);
             this.groupBox2.Controls.Add(this.JCD_Basic_C_No);
-            this.groupBox2.Controls.Add(this.JCD_Basic_C);
+            this.groupBox2.Controls.Add(this.JCDRep_MC_C);
             this.groupBox2.Controls.Add(this.JCD_CEnd_C_No);
             this.groupBox2.Location = new System.Drawing.Point(25, 233);
             this.groupBox2.Name = "groupBox2";
@@ -1874,23 +1832,23 @@
             0,
             0});
             // 
-            // JCD_CCount_R1
+            // JCDRep_F_R
             // 
-            this.JCD_CCount_R1.Location = new System.Drawing.Point(362, 74);
-            this.JCD_CCount_R1.Maximum = new decimal(new int[] {
+            this.JCDRep_F_R.Location = new System.Drawing.Point(362, 74);
+            this.JCDRep_F_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JCD_CCount_R1.Minimum = new decimal(new int[] {
+            this.JCDRep_F_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JCD_CCount_R1.Name = "JCD_CCount_R1";
-            this.JCD_CCount_R1.Size = new System.Drawing.Size(48, 25);
-            this.JCD_CCount_R1.TabIndex = 175;
-            this.JCD_CCount_R1.Value = new decimal(new int[] {
+            this.JCDRep_F_R.Name = "JCDRep_F_R";
+            this.JCDRep_F_R.Size = new System.Drawing.Size(48, 25);
+            this.JCDRep_F_R.TabIndex = 175;
+            this.JCDRep_F_R.Value = new decimal(new int[] {
             6,
             0,
             0,
@@ -1940,23 +1898,23 @@
             this.JCD_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.JCD_CStart_C_Name.TabIndex = 155;
             // 
-            // JCD_Name_R
+            // JCDRep_ZTName_R
             // 
-            this.JCD_Name_R.Location = new System.Drawing.Point(87, 106);
-            this.JCD_Name_R.Maximum = new decimal(new int[] {
+            this.JCDRep_ZTName_R.Location = new System.Drawing.Point(87, 106);
+            this.JCDRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JCD_Name_R.Minimum = new decimal(new int[] {
+            this.JCDRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JCD_Name_R.Name = "JCD_Name_R";
-            this.JCD_Name_R.Size = new System.Drawing.Size(53, 25);
-            this.JCD_Name_R.TabIndex = 157;
-            this.JCD_Name_R.Value = new decimal(new int[] {
+            this.JCDRep_ZTName_R.Name = "JCDRep_ZTName_R";
+            this.JCDRep_ZTName_R.Size = new System.Drawing.Size(53, 25);
+            this.JCDRep_ZTName_R.TabIndex = 157;
+            this.JCDRep_ZTName_R.Value = new decimal(new int[] {
             5,
             0,
             0,
@@ -2040,28 +1998,28 @@
             this.JCD_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.JCD_CEnd_C_Cell.TabIndex = 147;
             // 
-            // JCD_CStart_C
+            // JCDREP_CC_C
             // 
-            this.JCD_CStart_C.Location = new System.Drawing.Point(651, 42);
-            this.JCD_CStart_C.Maximum = new decimal(new int[] {
+            this.JCDREP_CC_C.Location = new System.Drawing.Point(651, 42);
+            this.JCDREP_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JCD_CStart_C.Minimum = new decimal(new int[] {
+            this.JCDREP_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JCD_CStart_C.Name = "JCD_CStart_C";
-            this.JCD_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.JCD_CStart_C.TabIndex = 138;
-            this.JCD_CStart_C.Value = new decimal(new int[] {
+            this.JCDREP_CC_C.Name = "JCDREP_CC_C";
+            this.JCDREP_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.JCDREP_CC_C.TabIndex = 138;
+            this.JCDREP_CC_C.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.JCD_CStart_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
+            this.JCDREP_CC_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
             // JCD_CStart_C_Cell
             // 
@@ -2103,28 +2061,28 @@
             this.JCD_Basic_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.JCD_Basic_C_Cell.TabIndex = 144;
             // 
-            // JCD_CCount_C
+            // JCDRep_F_C
             // 
-            this.JCD_CCount_C.Location = new System.Drawing.Point(420, 42);
-            this.JCD_CCount_C.Maximum = new decimal(new int[] {
+            this.JCDRep_F_C.Location = new System.Drawing.Point(420, 42);
+            this.JCDRep_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JCD_CCount_C.Minimum = new decimal(new int[] {
+            this.JCDRep_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JCD_CCount_C.Name = "JCD_CCount_C";
-            this.JCD_CCount_C.Size = new System.Drawing.Size(53, 25);
-            this.JCD_CCount_C.TabIndex = 136;
-            this.JCD_CCount_C.Value = new decimal(new int[] {
+            this.JCDRep_F_C.Name = "JCDRep_F_C";
+            this.JCDRep_F_C.Size = new System.Drawing.Size(53, 25);
+            this.JCDRep_F_C.TabIndex = 136;
+            this.JCDRep_F_C.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.JCD_CCount_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
+            this.JCDRep_F_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
             // JCD_CEnd_C
             // 
@@ -2149,23 +2107,23 @@
             0});
             this.JCD_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
-            // JCD_NO_R
+            // JCDRep_ZTNo_R
             // 
-            this.JCD_NO_R.Location = new System.Drawing.Point(87, 74);
-            this.JCD_NO_R.Maximum = new decimal(new int[] {
+            this.JCDRep_ZTNo_R.Location = new System.Drawing.Point(87, 74);
+            this.JCDRep_ZTNo_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JCD_NO_R.Minimum = new decimal(new int[] {
+            this.JCDRep_ZTNo_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JCD_NO_R.Name = "JCD_NO_R";
-            this.JCD_NO_R.Size = new System.Drawing.Size(53, 25);
-            this.JCD_NO_R.TabIndex = 142;
-            this.JCD_NO_R.Value = new decimal(new int[] {
+            this.JCDRep_ZTNo_R.Name = "JCDRep_ZTNo_R";
+            this.JCDRep_ZTNo_R.Size = new System.Drawing.Size(53, 25);
+            this.JCDRep_ZTNo_R.TabIndex = 142;
+            this.JCDRep_ZTNo_R.Value = new decimal(new int[] {
             4,
             0,
             0,
@@ -2179,28 +2137,28 @@
             this.JCD_Basic_C_No.Size = new System.Drawing.Size(150, 25);
             this.JCD_Basic_C_No.TabIndex = 135;
             // 
-            // JCD_Basic_C
+            // JCDRep_MC_C
             // 
-            this.JCD_Basic_C.Location = new System.Drawing.Point(149, 42);
-            this.JCD_Basic_C.Maximum = new decimal(new int[] {
+            this.JCDRep_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.JCDRep_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.JCD_Basic_C.Minimum = new decimal(new int[] {
+            this.JCDRep_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.JCD_Basic_C.Name = "JCD_Basic_C";
-            this.JCD_Basic_C.Size = new System.Drawing.Size(53, 25);
-            this.JCD_Basic_C.TabIndex = 134;
-            this.JCD_Basic_C.Value = new decimal(new int[] {
+            this.JCDRep_MC_C.Name = "JCDRep_MC_C";
+            this.JCDRep_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.JCDRep_MC_C.TabIndex = 134;
+            this.JCDRep_MC_C.Value = new decimal(new int[] {
             6,
             0,
             0,
             0});
-            this.JCD_Basic_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
+            this.JCDRep_MC_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
             // JCD_CEnd_C_No
             // 
@@ -2214,7 +2172,7 @@
             // 
             this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(33, 395);
+            this.label52.Location = new System.Drawing.Point(33, 385);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(67, 15);
             this.label52.TabIndex = 159;
@@ -2223,7 +2181,7 @@
             // BaseRepNoFront
             // 
             this.BaseRepNoFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BaseRepNoFront.Location = new System.Drawing.Point(108, 390);
+            this.BaseRepNoFront.Location = new System.Drawing.Point(108, 380);
             this.BaseRepNoFront.Name = "BaseRepNoFront";
             this.BaseRepNoFront.Size = new System.Drawing.Size(61, 25);
             this.BaseRepNoFront.TabIndex = 158;
@@ -2232,7 +2190,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.BCD_CCount_R2);
-            this.groupBox1.Controls.Add(this.BCD_CCount_R1);
+            this.groupBox1.Controls.Add(this.BCDRep_F_R);
             this.groupBox1.Controls.Add(this.label60);
             this.groupBox1.Controls.Add(this.label59);
             this.groupBox1.Controls.Add(this.BCD_CEnd_C_Cell);
@@ -2248,18 +2206,18 @@
             this.groupBox1.Controls.Add(this.BCD_Basic_C_No);
             this.groupBox1.Controls.Add(this.BCD_CEnd_C_No);
             this.groupBox1.Controls.Add(this.label50);
-            this.groupBox1.Controls.Add(this.BCD_Name_R);
+            this.groupBox1.Controls.Add(this.BCDRep_ZTName_R);
             this.groupBox1.Controls.Add(this.label48);
             this.groupBox1.Controls.Add(this.label47);
             this.groupBox1.Controls.Add(this.label46);
             this.groupBox1.Controls.Add(this.label45);
             this.groupBox1.Controls.Add(this.label44);
             this.groupBox1.Controls.Add(this.label43);
-            this.groupBox1.Controls.Add(this.BCD_CStart_C);
-            this.groupBox1.Controls.Add(this.BCD_CCount_C);
+            this.groupBox1.Controls.Add(this.BCDREP_CC_C);
+            this.groupBox1.Controls.Add(this.BCDRep_F_C);
             this.groupBox1.Controls.Add(this.BCD_CEnd_C);
-            this.groupBox1.Controls.Add(this.BCD_NO_R);
-            this.groupBox1.Controls.Add(this.BCD_Basic_C);
+            this.groupBox1.Controls.Add(this.BCDRep_ZTNo_R);
+            this.groupBox1.Controls.Add(this.BCDRep_MC_C);
             this.groupBox1.Location = new System.Drawing.Point(21, 39);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1073, 139);
@@ -2289,23 +2247,23 @@
             0,
             0});
             // 
-            // BCD_CCount_R1
+            // BCDRep_F_R
             // 
-            this.BCD_CCount_R1.Location = new System.Drawing.Point(362, 74);
-            this.BCD_CCount_R1.Maximum = new decimal(new int[] {
+            this.BCDRep_F_R.Location = new System.Drawing.Point(362, 74);
+            this.BCDRep_F_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BCD_CCount_R1.Minimum = new decimal(new int[] {
+            this.BCDRep_F_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BCD_CCount_R1.Name = "BCD_CCount_R1";
-            this.BCD_CCount_R1.Size = new System.Drawing.Size(48, 25);
-            this.BCD_CCount_R1.TabIndex = 171;
-            this.BCD_CCount_R1.Value = new decimal(new int[] {
+            this.BCDRep_F_R.Name = "BCDRep_F_R";
+            this.BCDRep_F_R.Size = new System.Drawing.Size(48, 25);
+            this.BCDRep_F_R.TabIndex = 171;
+            this.BCDRep_F_R.Value = new decimal(new int[] {
             6,
             0,
             0,
@@ -2435,23 +2393,23 @@
             this.label50.TabIndex = 160;
             this.label50.Text = "→";
             // 
-            // BCD_Name_R
+            // BCDRep_ZTName_R
             // 
-            this.BCD_Name_R.Location = new System.Drawing.Point(87, 106);
-            this.BCD_Name_R.Maximum = new decimal(new int[] {
+            this.BCDRep_ZTName_R.Location = new System.Drawing.Point(87, 106);
+            this.BCDRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BCD_Name_R.Minimum = new decimal(new int[] {
+            this.BCDRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BCD_Name_R.Name = "BCD_Name_R";
-            this.BCD_Name_R.Size = new System.Drawing.Size(53, 25);
-            this.BCD_Name_R.TabIndex = 157;
-            this.BCD_Name_R.Value = new decimal(new int[] {
+            this.BCDRep_ZTName_R.Name = "BCDRep_ZTName_R";
+            this.BCDRep_ZTName_R.Size = new System.Drawing.Size(53, 25);
+            this.BCDRep_ZTName_R.TabIndex = 157;
+            this.BCDRep_ZTName_R.Value = new decimal(new int[] {
             5,
             0,
             0,
@@ -2511,51 +2469,51 @@
             this.label43.TabIndex = 143;
             this.label43.Text = "账套编码";
             // 
-            // BCD_CStart_C
+            // BCDREP_CC_C
             // 
-            this.BCD_CStart_C.Location = new System.Drawing.Point(651, 42);
-            this.BCD_CStart_C.Maximum = new decimal(new int[] {
+            this.BCDREP_CC_C.Location = new System.Drawing.Point(651, 42);
+            this.BCDREP_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BCD_CStart_C.Minimum = new decimal(new int[] {
+            this.BCDREP_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BCD_CStart_C.Name = "BCD_CStart_C";
-            this.BCD_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.BCD_CStart_C.TabIndex = 138;
-            this.BCD_CStart_C.Value = new decimal(new int[] {
+            this.BCDREP_CC_C.Name = "BCDREP_CC_C";
+            this.BCDREP_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.BCDREP_CC_C.TabIndex = 138;
+            this.BCDREP_CC_C.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.BCD_CStart_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
+            this.BCDREP_CC_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
-            // BCD_CCount_C
+            // BCDRep_F_C
             // 
-            this.BCD_CCount_C.Location = new System.Drawing.Point(420, 42);
-            this.BCD_CCount_C.Maximum = new decimal(new int[] {
+            this.BCDRep_F_C.Location = new System.Drawing.Point(420, 42);
+            this.BCDRep_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BCD_CCount_C.Minimum = new decimal(new int[] {
+            this.BCDRep_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BCD_CCount_C.Name = "BCD_CCount_C";
-            this.BCD_CCount_C.Size = new System.Drawing.Size(53, 25);
-            this.BCD_CCount_C.TabIndex = 136;
-            this.BCD_CCount_C.Value = new decimal(new int[] {
+            this.BCDRep_F_C.Name = "BCDRep_F_C";
+            this.BCDRep_F_C.Size = new System.Drawing.Size(53, 25);
+            this.BCDRep_F_C.TabIndex = 136;
+            this.BCDRep_F_C.Value = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.BCD_CCount_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
+            this.BCDRep_F_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
             // BCD_CEnd_C
             // 
@@ -2580,86 +2538,86 @@
             0});
             this.BCD_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
-            // BCD_NO_R
+            // BCDRep_ZTNo_R
             // 
-            this.BCD_NO_R.Location = new System.Drawing.Point(87, 74);
-            this.BCD_NO_R.Maximum = new decimal(new int[] {
+            this.BCDRep_ZTNo_R.Location = new System.Drawing.Point(87, 74);
+            this.BCDRep_ZTNo_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BCD_NO_R.Minimum = new decimal(new int[] {
+            this.BCDRep_ZTNo_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BCD_NO_R.Name = "BCD_NO_R";
-            this.BCD_NO_R.Size = new System.Drawing.Size(53, 25);
-            this.BCD_NO_R.TabIndex = 142;
-            this.BCD_NO_R.Value = new decimal(new int[] {
+            this.BCDRep_ZTNo_R.Name = "BCDRep_ZTNo_R";
+            this.BCDRep_ZTNo_R.Size = new System.Drawing.Size(53, 25);
+            this.BCDRep_ZTNo_R.TabIndex = 142;
+            this.BCDRep_ZTNo_R.Value = new decimal(new int[] {
             4,
             0,
             0,
             0});
             // 
-            // BCD_Basic_C
+            // BCDRep_MC_C
             // 
-            this.BCD_Basic_C.Location = new System.Drawing.Point(149, 42);
-            this.BCD_Basic_C.Maximum = new decimal(new int[] {
+            this.BCDRep_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.BCDRep_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.BCD_Basic_C.Minimum = new decimal(new int[] {
+            this.BCDRep_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.BCD_Basic_C.Name = "BCD_Basic_C";
-            this.BCD_Basic_C.Size = new System.Drawing.Size(53, 25);
-            this.BCD_Basic_C.TabIndex = 134;
-            this.BCD_Basic_C.Value = new decimal(new int[] {
+            this.BCDRep_MC_C.Name = "BCDRep_MC_C";
+            this.BCDRep_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.BCDRep_MC_C.TabIndex = 134;
+            this.BCDRep_MC_C.Value = new decimal(new int[] {
             6,
             0,
             0,
             0});
-            this.BCD_Basic_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
+            this.BCDRep_MC_C.ValueChanged += new System.EventHandler(this.Temp_CDWorkRep_ColRow_indexChanged);
             // 
-            // Temp_CDJ_ID
+            // JCDRep_ID
             // 
-            this.Temp_CDJ_ID.Enabled = false;
-            this.Temp_CDJ_ID.FormattingEnabled = true;
-            this.Temp_CDJ_ID.Location = new System.Drawing.Point(932, 195);
-            this.Temp_CDJ_ID.Name = "Temp_CDJ_ID";
-            this.Temp_CDJ_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_CDJ_ID.TabIndex = 103;
+            this.JCDRep_ID.Enabled = false;
+            this.JCDRep_ID.FormattingEnabled = true;
+            this.JCDRep_ID.Location = new System.Drawing.Point(932, 195);
+            this.JCDRep_ID.Name = "JCDRep_ID";
+            this.JCDRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.JCDRep_ID.TabIndex = 103;
             // 
-            // Temp_CDJ_No
+            // JCDRep_No
             // 
-            this.Temp_CDJ_No.Enabled = false;
-            this.Temp_CDJ_No.FormattingEnabled = true;
-            this.Temp_CDJ_No.Location = new System.Drawing.Point(711, 195);
-            this.Temp_CDJ_No.Name = "Temp_CDJ_No";
-            this.Temp_CDJ_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_CDJ_No.TabIndex = 102;
+            this.JCDRep_No.Enabled = false;
+            this.JCDRep_No.FormattingEnabled = true;
+            this.JCDRep_No.Location = new System.Drawing.Point(711, 195);
+            this.JCDRep_No.Name = "JCDRep_No";
+            this.JCDRep_No.Size = new System.Drawing.Size(156, 23);
+            this.JCDRep_No.TabIndex = 102;
             // 
-            // Temp_CDB_ID
+            // BCDRep_ID
             // 
-            this.Temp_CDB_ID.Enabled = false;
-            this.Temp_CDB_ID.FormattingEnabled = true;
-            this.Temp_CDB_ID.Location = new System.Drawing.Point(932, 10);
-            this.Temp_CDB_ID.Name = "Temp_CDB_ID";
-            this.Temp_CDB_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_CDB_ID.TabIndex = 101;
+            this.BCDRep_ID.Enabled = false;
+            this.BCDRep_ID.FormattingEnabled = true;
+            this.BCDRep_ID.Location = new System.Drawing.Point(932, 10);
+            this.BCDRep_ID.Name = "BCDRep_ID";
+            this.BCDRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.BCDRep_ID.TabIndex = 101;
             // 
-            // Temp_CDB_No
+            // BCDRep_No
             // 
-            this.Temp_CDB_No.Enabled = false;
-            this.Temp_CDB_No.FormattingEnabled = true;
-            this.Temp_CDB_No.Location = new System.Drawing.Point(711, 10);
-            this.Temp_CDB_No.Name = "Temp_CDB_No";
-            this.Temp_CDB_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_CDB_No.TabIndex = 100;
+            this.BCDRep_No.Enabled = false;
+            this.BCDRep_No.FormattingEnabled = true;
+            this.BCDRep_No.Location = new System.Drawing.Point(711, 10);
+            this.BCDRep_No.Name = "BCDRep_No";
+            this.BCDRep_No.Size = new System.Drawing.Size(156, 23);
+            this.BCDRep_No.TabIndex = 100;
             // 
             // label21
             // 
@@ -2679,13 +2637,13 @@
             this.label22.TabIndex = 98;
             this.label22.Text = "编码";
             // 
-            // Temp_CDJ_Name
+            // JCDRep
             // 
-            this.Temp_CDJ_Name.FormattingEnabled = true;
-            this.Temp_CDJ_Name.Location = new System.Drawing.Point(154, 195);
-            this.Temp_CDJ_Name.Name = "Temp_CDJ_Name";
-            this.Temp_CDJ_Name.Size = new System.Drawing.Size(460, 23);
-            this.Temp_CDJ_Name.TabIndex = 97;
+            this.JCDRep.FormattingEnabled = true;
+            this.JCDRep.Location = new System.Drawing.Point(154, 195);
+            this.JCDRep.Name = "JCDRep";
+            this.JCDRep.Size = new System.Drawing.Size(460, 23);
+            this.JCDRep.TabIndex = 97;
             // 
             // label19
             // 
@@ -2705,13 +2663,13 @@
             this.label20.TabIndex = 95;
             this.label20.Text = "编码";
             // 
-            // Temp_CDB_Name
+            // BCDRep
             // 
-            this.Temp_CDB_Name.FormattingEnabled = true;
-            this.Temp_CDB_Name.Location = new System.Drawing.Point(154, 10);
-            this.Temp_CDB_Name.Name = "Temp_CDB_Name";
-            this.Temp_CDB_Name.Size = new System.Drawing.Size(460, 23);
-            this.Temp_CDB_Name.TabIndex = 94;
+            this.BCDRep.FormattingEnabled = true;
+            this.BCDRep.Location = new System.Drawing.Point(154, 10);
+            this.BCDRep.Name = "BCDRep";
+            this.BCDRep.Size = new System.Drawing.Size(460, 23);
+            this.BCDRep.TabIndex = 94;
             // 
             // label6
             // 
@@ -2734,55 +2692,32 @@
             // ZCFZSetting
             // 
             this.ZCFZSetting.AutoScroll = true;
-            this.ZCFZSetting.Controls.Add(this.label71);
-            this.ZCFZSetting.Controls.Add(this.ReadZCFZValue);
             this.ZCFZSetting.Controls.Add(this.groupBox6);
             this.ZCFZSetting.Controls.Add(this.groupBox5);
             this.ZCFZSetting.Controls.Add(this.groupBox4);
             this.ZCFZSetting.Controls.Add(this.groupBox3);
-            this.ZCFZSetting.Controls.Add(this.Temp_ZCFZJ_ID);
-            this.ZCFZSetting.Controls.Add(this.Temp_ZCFZJ_No);
+            this.ZCFZSetting.Controls.Add(this.JZCFZRep_ID);
+            this.ZCFZSetting.Controls.Add(this.JZCFZRep_No);
             this.ZCFZSetting.Controls.Add(this.label29);
             this.ZCFZSetting.Controls.Add(this.label30);
-            this.ZCFZSetting.Controls.Add(this.Temp_ZCFZJ_Name);
+            this.ZCFZSetting.Controls.Add(this.JZCFZRep);
             this.ZCFZSetting.Controls.Add(this.label11);
-            this.ZCFZSetting.Controls.Add(this.Temp_ZCFZB_ID);
-            this.ZCFZSetting.Controls.Add(this.Temp_ZCFZB_No);
+            this.ZCFZSetting.Controls.Add(this.BZCFZRep_ID);
+            this.ZCFZSetting.Controls.Add(this.BZCFZRep_No);
             this.ZCFZSetting.Controls.Add(this.label25);
             this.ZCFZSetting.Controls.Add(this.label26);
-            this.ZCFZSetting.Controls.Add(this.Temp_ZCFZB_Name);
+            this.ZCFZSetting.Controls.Add(this.BZCFZRep);
             this.ZCFZSetting.Controls.Add(this.label9);
             this.ZCFZSetting.Location = new System.Drawing.Point(4, 25);
             this.ZCFZSetting.Name = "ZCFZSetting";
-            this.ZCFZSetting.Size = new System.Drawing.Size(1099, 425);
+            this.ZCFZSetting.Size = new System.Drawing.Size(1099, 415);
             this.ZCFZSetting.TabIndex = 3;
             this.ZCFZSetting.Text = "资产负债工作表设置";
             this.ZCFZSetting.UseVisualStyleBackColor = true;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(18, 721);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(15, 15);
-            this.label71.TabIndex = 177;
-            this.label71.Text = ".";
-            // 
-            // ReadZCFZValue
-            // 
-            this.ReadZCFZValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReadZCFZValue.Location = new System.Drawing.Point(650, 695);
-            this.ReadZCFZValue.Name = "ReadZCFZValue";
-            this.ReadZCFZValue.Size = new System.Drawing.Size(95, 31);
-            this.ReadZCFZValue.TabIndex = 176;
-            this.ReadZCFZValue.Text = "读取数据";
-            this.ReadZCFZValue.UseVisualStyleBackColor = true;
-            this.ReadZCFZValue.Click += new System.EventHandler(this.ReadZCFZValue_Click);
+            this.ZCFZSetting.Click += new System.EventHandler(this.ZCFZSetting_Click);
             // 
             // groupBox6
             // 
-            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox6.Controls.Add(this.ZCFZ_C_J_CEnd_C_Cell);
             this.groupBox6.Controls.Add(this.ZCFZ_C_J_Count_C_F2);
             this.groupBox6.Controls.Add(this.ZCFZ_C_J_CStart_C_Cell);
@@ -2800,13 +2735,13 @@
             this.groupBox6.Controls.Add(this.label94);
             this.groupBox6.Controls.Add(this.label95);
             this.groupBox6.Controls.Add(this.label96);
-            this.groupBox6.Controls.Add(this.ZCFZ_C_J_CStart_C);
-            this.groupBox6.Controls.Add(this.ZCFZ_C_J_Count_C);
+            this.groupBox6.Controls.Add(this.JZCFZRep_QC_CC_C);
+            this.groupBox6.Controls.Add(this.JZCFZRep_QC_F_C);
             this.groupBox6.Controls.Add(this.ZCFZ_C_J_CEnd_C);
-            this.groupBox6.Controls.Add(this.ZCFZ_C_J_Z_C);
+            this.groupBox6.Controls.Add(this.JZCFZRep_QC_MC_C);
             this.groupBox6.Location = new System.Drawing.Point(6, 548);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1006, 139);
+            this.groupBox6.Size = new System.Drawing.Size(1065, 139);
             this.groupBox6.TabIndex = 175;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "尽调表信息-初";
@@ -2815,7 +2750,7 @@
             // 
             this.ZCFZ_C_J_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_CEnd_C_Cell.Enabled = false;
-            this.ZCFZ_C_J_CEnd_C_Cell.Location = new System.Drawing.Point(937, 42);
+            this.ZCFZ_C_J_CEnd_C_Cell.Location = new System.Drawing.Point(996, 42);
             this.ZCFZ_C_J_CEnd_C_Cell.Name = "ZCFZ_C_J_CEnd_C_Cell";
             this.ZCFZ_C_J_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.ZCFZ_C_J_CEnd_C_Cell.TabIndex = 164;
@@ -2827,14 +2762,14 @@
             this.ZCFZ_C_J_Count_C_F2.Enabled = false;
             this.ZCFZ_C_J_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.ZCFZ_C_J_Count_C_F2.Name = "ZCFZ_C_J_Count_C_F2";
-            this.ZCFZ_C_J_Count_C_F2.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_C_J_Count_C_F2.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_C_J_Count_C_F2.TabIndex = 166;
             // 
             // ZCFZ_C_J_CStart_C_Cell
             // 
             this.ZCFZ_C_J_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_CStart_C_Cell.Enabled = false;
-            this.ZCFZ_C_J_CStart_C_Cell.Location = new System.Drawing.Point(686, 42);
+            this.ZCFZ_C_J_CStart_C_Cell.Location = new System.Drawing.Point(745, 42);
             this.ZCFZ_C_J_CStart_C_Cell.Name = "ZCFZ_C_J_CStart_C_Cell";
             this.ZCFZ_C_J_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.ZCFZ_C_J_CStart_C_Cell.TabIndex = 163;
@@ -2843,7 +2778,7 @@
             // 
             this.ZCFZ_C_J_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_CStart_C_Name.Enabled = false;
-            this.ZCFZ_C_J_CStart_C_Name.Location = new System.Drawing.Point(589, 106);
+            this.ZCFZ_C_J_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.ZCFZ_C_J_CStart_C_Name.Name = "ZCFZ_C_J_CStart_C_Name";
             this.ZCFZ_C_J_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_J_CStart_C_Name.TabIndex = 167;
@@ -2853,9 +2788,9 @@
             this.ZCFZ_C_J_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_Count_C_Cell.Enabled = false;
-            this.ZCFZ_C_J_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.ZCFZ_C_J_Count_C_Cell.Location = new System.Drawing.Point(479, 43);
             this.ZCFZ_C_J_Count_C_Cell.Name = "ZCFZ_C_J_Count_C_Cell";
-            this.ZCFZ_C_J_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.ZCFZ_C_J_Count_C_Cell.Size = new System.Drawing.Size(138, 25);
             this.ZCFZ_C_J_Count_C_Cell.TabIndex = 162;
             // 
             // ZCFZ_C_J_Z_C_Name
@@ -2878,7 +2813,7 @@
             // 
             this.ZCFZ_C_J_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_CEnd_C_Name.Enabled = false;
-            this.ZCFZ_C_J_CEnd_C_Name.Location = new System.Drawing.Point(840, 106);
+            this.ZCFZ_C_J_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.ZCFZ_C_J_CEnd_C_Name.Name = "ZCFZ_C_J_CEnd_C_Name";
             this.ZCFZ_C_J_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_J_CEnd_C_Name.TabIndex = 168;
@@ -2890,14 +2825,14 @@
             this.ZCFZ_C_J_Count_C_F1.Enabled = false;
             this.ZCFZ_C_J_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.ZCFZ_C_J_Count_C_F1.Name = "ZCFZ_C_J_Count_C_F1";
-            this.ZCFZ_C_J_Count_C_F1.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_C_J_Count_C_F1.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_C_J_Count_C_F1.TabIndex = 162;
             // 
             // ZCFZ_C_J_CStart_C_No
             // 
             this.ZCFZ_C_J_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_CStart_C_No.Enabled = false;
-            this.ZCFZ_C_J_CStart_C_No.Location = new System.Drawing.Point(589, 74);
+            this.ZCFZ_C_J_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.ZCFZ_C_J_CStart_C_No.Name = "ZCFZ_C_J_CStart_C_No";
             this.ZCFZ_C_J_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_J_CStart_C_No.TabIndex = 163;
@@ -2914,7 +2849,7 @@
             // 
             this.ZCFZ_C_J_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_J_CEnd_C_No.Enabled = false;
-            this.ZCFZ_C_J_CEnd_C_No.Location = new System.Drawing.Point(840, 74);
+            this.ZCFZ_C_J_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.ZCFZ_C_J_CEnd_C_No.Name = "ZCFZ_C_J_CEnd_C_No";
             this.ZCFZ_C_J_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_J_CEnd_C_No.TabIndex = 164;
@@ -2924,7 +2859,7 @@
             this.label91.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label91.AutoSize = true;
             this.label91.Font = new System.Drawing.Font("宋体", 30F);
-            this.label91.Location = new System.Drawing.Point(753, 61);
+            this.label91.Location = new System.Drawing.Point(812, 61);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(72, 50);
             this.label91.TabIndex = 160;
@@ -2934,7 +2869,7 @@
             // 
             this.label93.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(852, 20);
+            this.label93.Location = new System.Drawing.Point(911, 20);
             this.label93.Name = "label93";
             this.label93.Size = new System.Drawing.Size(127, 15);
             this.label93.TabIndex = 151;
@@ -2944,7 +2879,7 @@
             // 
             this.label94.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(601, 20);
+            this.label94.Location = new System.Drawing.Point(660, 20);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(127, 15);
             this.label94.TabIndex = 150;
@@ -2968,57 +2903,57 @@
             this.label96.TabIndex = 148;
             this.label96.Text = "总公司数据列";
             // 
-            // ZCFZ_C_J_CStart_C
+            // JZCFZRep_QC_CC_C
             // 
-            this.ZCFZ_C_J_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_C_J_CStart_C.Location = new System.Drawing.Point(589, 42);
-            this.ZCFZ_C_J_CStart_C.Maximum = new decimal(new int[] {
+            this.JZCFZRep_QC_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JZCFZRep_QC_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.JZCFZRep_QC_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_C_J_CStart_C.Minimum = new decimal(new int[] {
+            this.JZCFZRep_QC_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_C_J_CStart_C.Name = "ZCFZ_C_J_CStart_C";
-            this.ZCFZ_C_J_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_C_J_CStart_C.TabIndex = 138;
-            this.ZCFZ_C_J_CStart_C.Value = new decimal(new int[] {
+            this.JZCFZRep_QC_CC_C.Name = "JZCFZRep_QC_CC_C";
+            this.JZCFZRep_QC_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_QC_CC_C.TabIndex = 138;
+            this.JZCFZRep_QC_CC_C.Value = new decimal(new int[] {
             51,
             0,
             0,
             0});
-            this.ZCFZ_C_J_CStart_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.JZCFZRep_QC_CC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_C_J_Count_C
+            // JZCFZRep_QC_F_C
             // 
-            this.ZCFZ_C_J_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.ZCFZ_C_J_Count_C.Maximum = new decimal(new int[] {
+            this.JZCFZRep_QC_F_C.Location = new System.Drawing.Point(420, 42);
+            this.JZCFZRep_QC_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_C_J_Count_C.Minimum = new decimal(new int[] {
+            this.JZCFZRep_QC_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_C_J_Count_C.Name = "ZCFZ_C_J_Count_C";
-            this.ZCFZ_C_J_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_C_J_Count_C.TabIndex = 136;
-            this.ZCFZ_C_J_Count_C.Value = new decimal(new int[] {
+            this.JZCFZRep_QC_F_C.Name = "JZCFZRep_QC_F_C";
+            this.JZCFZRep_QC_F_C.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_QC_F_C.TabIndex = 136;
+            this.JZCFZRep_QC_F_C.Value = new decimal(new int[] {
             49,
             0,
             0,
             0});
-            this.ZCFZ_C_J_Count_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.JZCFZRep_QC_F_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // ZCFZ_C_J_CEnd_C
             // 
             this.ZCFZ_C_J_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_C_J_CEnd_C.Location = new System.Drawing.Point(840, 42);
+            this.ZCFZ_C_J_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.ZCFZ_C_J_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -3039,35 +2974,33 @@
             0});
             this.ZCFZ_C_J_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_C_J_Z_C
+            // JZCFZRep_QC_MC_C
             // 
-            this.ZCFZ_C_J_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.ZCFZ_C_J_Z_C.Maximum = new decimal(new int[] {
+            this.JZCFZRep_QC_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.JZCFZRep_QC_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_C_J_Z_C.Minimum = new decimal(new int[] {
+            this.JZCFZRep_QC_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_C_J_Z_C.Name = "ZCFZ_C_J_Z_C";
-            this.ZCFZ_C_J_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_C_J_Z_C.TabIndex = 134;
-            this.ZCFZ_C_J_Z_C.Value = new decimal(new int[] {
+            this.JZCFZRep_QC_MC_C.Name = "JZCFZRep_QC_MC_C";
+            this.JZCFZRep_QC_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_QC_MC_C.TabIndex = 134;
+            this.JZCFZRep_QC_MC_C.Value = new decimal(new int[] {
             47,
             0,
             0,
             0});
-            this.ZCFZ_C_J_Z_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.JZCFZRep_QC_MC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // groupBox5
             // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.ZCFZ_J_F2_R);
-            this.groupBox5.Controls.Add(this.ZCFZ_J_F1_R);
+            this.groupBox5.Controls.Add(this.JZCFZRep_F_R);
             this.groupBox5.Controls.Add(this.label80);
             this.groupBox5.Controls.Add(this.label81);
             this.groupBox5.Controls.Add(this.ZCFZ_M_J_CEnd_C_Cell);
@@ -3083,21 +3016,21 @@
             this.groupBox5.Controls.Add(this.ZCFZ_M_J_Z_C_No);
             this.groupBox5.Controls.Add(this.ZCFZ_M_J_CEnd_C_No);
             this.groupBox5.Controls.Add(this.label82);
-            this.groupBox5.Controls.Add(this.ZCFZ_J_Name_R);
+            this.groupBox5.Controls.Add(this.JZCFZRep_ZTName_R);
             this.groupBox5.Controls.Add(this.label83);
             this.groupBox5.Controls.Add(this.label84);
             this.groupBox5.Controls.Add(this.label85);
             this.groupBox5.Controls.Add(this.label86);
             this.groupBox5.Controls.Add(this.label87);
             this.groupBox5.Controls.Add(this.label88);
-            this.groupBox5.Controls.Add(this.ZCFZ_M_J_CStart_C);
-            this.groupBox5.Controls.Add(this.ZCFZ_M_J_Count_C);
+            this.groupBox5.Controls.Add(this.JZCFZRep_QM_CC_C);
+            this.groupBox5.Controls.Add(this.JZCFZRep_QM_F_C);
             this.groupBox5.Controls.Add(this.ZCFZ_M_J_CEnd_C);
-            this.groupBox5.Controls.Add(this.ZCFZ_J_No_R);
-            this.groupBox5.Controls.Add(this.ZCFZ_M_J_Z_C);
+            this.groupBox5.Controls.Add(this.JZCFZRep_ZTNo_R);
+            this.groupBox5.Controls.Add(this.JZCFZRep_QM_MC_C);
             this.groupBox5.Location = new System.Drawing.Point(6, 392);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1006, 139);
+            this.groupBox5.Size = new System.Drawing.Size(1065, 139);
             this.groupBox5.TabIndex = 174;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "尽调表信息-末";
@@ -3124,23 +3057,23 @@
             0,
             0});
             // 
-            // ZCFZ_J_F1_R
+            // JZCFZRep_F_R
             // 
-            this.ZCFZ_J_F1_R.Location = new System.Drawing.Point(362, 74);
-            this.ZCFZ_J_F1_R.Maximum = new decimal(new int[] {
+            this.JZCFZRep_F_R.Location = new System.Drawing.Point(362, 74);
+            this.JZCFZRep_F_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_J_F1_R.Minimum = new decimal(new int[] {
+            this.JZCFZRep_F_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_J_F1_R.Name = "ZCFZ_J_F1_R";
-            this.ZCFZ_J_F1_R.Size = new System.Drawing.Size(48, 25);
-            this.ZCFZ_J_F1_R.TabIndex = 171;
-            this.ZCFZ_J_F1_R.Value = new decimal(new int[] {
+            this.JZCFZRep_F_R.Name = "JZCFZRep_F_R";
+            this.JZCFZRep_F_R.Size = new System.Drawing.Size(48, 25);
+            this.JZCFZRep_F_R.TabIndex = 171;
+            this.JZCFZRep_F_R.Value = new decimal(new int[] {
             7,
             0,
             0,
@@ -3168,7 +3101,7 @@
             // 
             this.ZCFZ_M_J_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_CEnd_C_Cell.Enabled = false;
-            this.ZCFZ_M_J_CEnd_C_Cell.Location = new System.Drawing.Point(937, 42);
+            this.ZCFZ_M_J_CEnd_C_Cell.Location = new System.Drawing.Point(996, 42);
             this.ZCFZ_M_J_CEnd_C_Cell.Name = "ZCFZ_M_J_CEnd_C_Cell";
             this.ZCFZ_M_J_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.ZCFZ_M_J_CEnd_C_Cell.TabIndex = 164;
@@ -3180,14 +3113,14 @@
             this.ZCFZ_M_J_Count_C_F2.Enabled = false;
             this.ZCFZ_M_J_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.ZCFZ_M_J_Count_C_F2.Name = "ZCFZ_M_J_Count_C_F2";
-            this.ZCFZ_M_J_Count_C_F2.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_M_J_Count_C_F2.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_M_J_Count_C_F2.TabIndex = 166;
             // 
             // ZCFZ_M_J_CStart_C_Cell
             // 
             this.ZCFZ_M_J_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_CStart_C_Cell.Enabled = false;
-            this.ZCFZ_M_J_CStart_C_Cell.Location = new System.Drawing.Point(686, 42);
+            this.ZCFZ_M_J_CStart_C_Cell.Location = new System.Drawing.Point(745, 42);
             this.ZCFZ_M_J_CStart_C_Cell.Name = "ZCFZ_M_J_CStart_C_Cell";
             this.ZCFZ_M_J_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.ZCFZ_M_J_CStart_C_Cell.TabIndex = 163;
@@ -3196,7 +3129,7 @@
             // 
             this.ZCFZ_M_J_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_CStart_C_Name.Enabled = false;
-            this.ZCFZ_M_J_CStart_C_Name.Location = new System.Drawing.Point(589, 106);
+            this.ZCFZ_M_J_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.ZCFZ_M_J_CStart_C_Name.Name = "ZCFZ_M_J_CStart_C_Name";
             this.ZCFZ_M_J_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_J_CStart_C_Name.TabIndex = 167;
@@ -3206,9 +3139,9 @@
             this.ZCFZ_M_J_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_Count_C_Cell.Enabled = false;
-            this.ZCFZ_M_J_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.ZCFZ_M_J_Count_C_Cell.Location = new System.Drawing.Point(479, 43);
             this.ZCFZ_M_J_Count_C_Cell.Name = "ZCFZ_M_J_Count_C_Cell";
-            this.ZCFZ_M_J_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.ZCFZ_M_J_Count_C_Cell.Size = new System.Drawing.Size(138, 25);
             this.ZCFZ_M_J_Count_C_Cell.TabIndex = 162;
             // 
             // ZCFZ_M_J_Z_C_Name
@@ -3231,7 +3164,7 @@
             // 
             this.ZCFZ_M_J_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_CEnd_C_Name.Enabled = false;
-            this.ZCFZ_M_J_CEnd_C_Name.Location = new System.Drawing.Point(840, 106);
+            this.ZCFZ_M_J_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.ZCFZ_M_J_CEnd_C_Name.Name = "ZCFZ_M_J_CEnd_C_Name";
             this.ZCFZ_M_J_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_J_CEnd_C_Name.TabIndex = 168;
@@ -3243,14 +3176,14 @@
             this.ZCFZ_M_J_Count_C_F1.Enabled = false;
             this.ZCFZ_M_J_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.ZCFZ_M_J_Count_C_F1.Name = "ZCFZ_M_J_Count_C_F1";
-            this.ZCFZ_M_J_Count_C_F1.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_M_J_Count_C_F1.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_M_J_Count_C_F1.TabIndex = 162;
             // 
             // ZCFZ_M_J_CStart_C_No
             // 
             this.ZCFZ_M_J_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_CStart_C_No.Enabled = false;
-            this.ZCFZ_M_J_CStart_C_No.Location = new System.Drawing.Point(589, 74);
+            this.ZCFZ_M_J_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.ZCFZ_M_J_CStart_C_No.Name = "ZCFZ_M_J_CStart_C_No";
             this.ZCFZ_M_J_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_J_CStart_C_No.TabIndex = 163;
@@ -3267,7 +3200,7 @@
             // 
             this.ZCFZ_M_J_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_J_CEnd_C_No.Enabled = false;
-            this.ZCFZ_M_J_CEnd_C_No.Location = new System.Drawing.Point(840, 74);
+            this.ZCFZ_M_J_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.ZCFZ_M_J_CEnd_C_No.Name = "ZCFZ_M_J_CEnd_C_No";
             this.ZCFZ_M_J_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_J_CEnd_C_No.TabIndex = 164;
@@ -3277,29 +3210,29 @@
             this.label82.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("宋体", 30F);
-            this.label82.Location = new System.Drawing.Point(753, 61);
+            this.label82.Location = new System.Drawing.Point(812, 61);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(72, 50);
             this.label82.TabIndex = 160;
             this.label82.Text = "→";
             // 
-            // ZCFZ_J_Name_R
+            // JZCFZRep_ZTName_R
             // 
-            this.ZCFZ_J_Name_R.Location = new System.Drawing.Point(87, 106);
-            this.ZCFZ_J_Name_R.Maximum = new decimal(new int[] {
+            this.JZCFZRep_ZTName_R.Location = new System.Drawing.Point(87, 106);
+            this.JZCFZRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_J_Name_R.Minimum = new decimal(new int[] {
+            this.JZCFZRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_J_Name_R.Name = "ZCFZ_J_Name_R";
-            this.ZCFZ_J_Name_R.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_J_Name_R.TabIndex = 157;
-            this.ZCFZ_J_Name_R.Value = new decimal(new int[] {
+            this.JZCFZRep_ZTName_R.Name = "JZCFZRep_ZTName_R";
+            this.JZCFZRep_ZTName_R.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_ZTName_R.TabIndex = 157;
+            this.JZCFZRep_ZTName_R.Value = new decimal(new int[] {
             4,
             0,
             0,
@@ -3318,7 +3251,7 @@
             // 
             this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(852, 20);
+            this.label84.Location = new System.Drawing.Point(911, 20);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(127, 15);
             this.label84.TabIndex = 151;
@@ -3328,7 +3261,7 @@
             // 
             this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(601, 20);
+            this.label85.Location = new System.Drawing.Point(660, 20);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(127, 15);
             this.label85.TabIndex = 150;
@@ -3361,57 +3294,57 @@
             this.label88.TabIndex = 143;
             this.label88.Text = "账套编码";
             // 
-            // ZCFZ_M_J_CStart_C
+            // JZCFZRep_QM_CC_C
             // 
-            this.ZCFZ_M_J_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_M_J_CStart_C.Location = new System.Drawing.Point(589, 42);
-            this.ZCFZ_M_J_CStart_C.Maximum = new decimal(new int[] {
+            this.JZCFZRep_QM_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JZCFZRep_QM_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.JZCFZRep_QM_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_M_J_CStart_C.Minimum = new decimal(new int[] {
+            this.JZCFZRep_QM_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_M_J_CStart_C.Name = "ZCFZ_M_J_CStart_C";
-            this.ZCFZ_M_J_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_M_J_CStart_C.TabIndex = 138;
-            this.ZCFZ_M_J_CStart_C.Value = new decimal(new int[] {
+            this.JZCFZRep_QM_CC_C.Name = "JZCFZRep_QM_CC_C";
+            this.JZCFZRep_QM_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_QM_CC_C.TabIndex = 138;
+            this.JZCFZRep_QM_CC_C.Value = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.ZCFZ_M_J_CStart_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.JZCFZRep_QM_CC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_M_J_Count_C
+            // JZCFZRep_QM_F_C
             // 
-            this.ZCFZ_M_J_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.ZCFZ_M_J_Count_C.Maximum = new decimal(new int[] {
+            this.JZCFZRep_QM_F_C.Location = new System.Drawing.Point(420, 42);
+            this.JZCFZRep_QM_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_M_J_Count_C.Minimum = new decimal(new int[] {
+            this.JZCFZRep_QM_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_M_J_Count_C.Name = "ZCFZ_M_J_Count_C";
-            this.ZCFZ_M_J_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_M_J_Count_C.TabIndex = 136;
-            this.ZCFZ_M_J_Count_C.Value = new decimal(new int[] {
+            this.JZCFZRep_QM_F_C.Name = "JZCFZRep_QM_F_C";
+            this.JZCFZRep_QM_F_C.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_QM_F_C.TabIndex = 136;
+            this.JZCFZRep_QM_F_C.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.ZCFZ_M_J_Count_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.JZCFZRep_QM_F_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // ZCFZ_M_J_CEnd_C
             // 
             this.ZCFZ_M_J_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_M_J_CEnd_C.Location = new System.Drawing.Point(840, 42);
+            this.ZCFZ_M_J_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.ZCFZ_M_J_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -3432,55 +3365,53 @@
             0});
             this.ZCFZ_M_J_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_J_No_R
+            // JZCFZRep_ZTNo_R
             // 
-            this.ZCFZ_J_No_R.Location = new System.Drawing.Point(87, 74);
-            this.ZCFZ_J_No_R.Maximum = new decimal(new int[] {
+            this.JZCFZRep_ZTNo_R.Location = new System.Drawing.Point(87, 74);
+            this.JZCFZRep_ZTNo_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_J_No_R.Minimum = new decimal(new int[] {
+            this.JZCFZRep_ZTNo_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_J_No_R.Name = "ZCFZ_J_No_R";
-            this.ZCFZ_J_No_R.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_J_No_R.TabIndex = 142;
-            this.ZCFZ_J_No_R.Value = new decimal(new int[] {
+            this.JZCFZRep_ZTNo_R.Name = "JZCFZRep_ZTNo_R";
+            this.JZCFZRep_ZTNo_R.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_ZTNo_R.TabIndex = 142;
+            this.JZCFZRep_ZTNo_R.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
             // 
-            // ZCFZ_M_J_Z_C
+            // JZCFZRep_QM_MC_C
             // 
-            this.ZCFZ_M_J_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.ZCFZ_M_J_Z_C.Maximum = new decimal(new int[] {
+            this.JZCFZRep_QM_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.JZCFZRep_QM_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_M_J_Z_C.Minimum = new decimal(new int[] {
+            this.JZCFZRep_QM_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_M_J_Z_C.Name = "ZCFZ_M_J_Z_C";
-            this.ZCFZ_M_J_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_M_J_Z_C.TabIndex = 134;
-            this.ZCFZ_M_J_Z_C.Value = new decimal(new int[] {
+            this.JZCFZRep_QM_MC_C.Name = "JZCFZRep_QM_MC_C";
+            this.JZCFZRep_QM_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.JZCFZRep_QM_MC_C.TabIndex = 134;
+            this.JZCFZRep_QM_MC_C.Value = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.ZCFZ_M_J_Z_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.JZCFZRep_QM_MC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.ZCFZ_C_B_CEnd_C_Cell);
             this.groupBox4.Controls.Add(this.ZCFZ_C_B_Count_C_F2);
             this.groupBox4.Controls.Add(this.ZCFZ_C_B_CStart_C_Cell);
@@ -3498,13 +3429,13 @@
             this.groupBox4.Controls.Add(this.label76);
             this.groupBox4.Controls.Add(this.label77);
             this.groupBox4.Controls.Add(this.label78);
-            this.groupBox4.Controls.Add(this.ZCFZ_C_B_CStart_C);
-            this.groupBox4.Controls.Add(this.ZCFZ_C_B_Count_C);
+            this.groupBox4.Controls.Add(this.BZCFZRep_QC_CC_C);
+            this.groupBox4.Controls.Add(this.BZCFZRep_QC_F_C);
             this.groupBox4.Controls.Add(this.ZCFZ_C_B_CEnd_C);
-            this.groupBox4.Controls.Add(this.ZCFZ_C_B_Z_C);
+            this.groupBox4.Controls.Add(this.BZCFZRep_QC_MC_C);
             this.groupBox4.Location = new System.Drawing.Point(6, 204);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1006, 139);
+            this.groupBox4.Size = new System.Drawing.Size(1065, 139);
             this.groupBox4.TabIndex = 173;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "标准表信息-初";
@@ -3512,9 +3443,9 @@
             // ZCFZ_C_B_CEnd_C_Cell
             // 
             this.ZCFZ_C_B_CEnd_C_Cell.Enabled = false;
-            this.ZCFZ_C_B_CEnd_C_Cell.Location = new System.Drawing.Point(999, 42);
+            this.ZCFZ_C_B_CEnd_C_Cell.Location = new System.Drawing.Point(962, 42);
             this.ZCFZ_C_B_CEnd_C_Cell.Name = "ZCFZ_C_B_CEnd_C_Cell";
-            this.ZCFZ_C_B_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
+            this.ZCFZ_C_B_CEnd_C_Cell.Size = new System.Drawing.Size(70, 25);
             this.ZCFZ_C_B_CEnd_C_Cell.TabIndex = 164;
             // 
             // ZCFZ_C_B_Count_C_F2
@@ -3524,23 +3455,23 @@
             this.ZCFZ_C_B_Count_C_F2.Enabled = false;
             this.ZCFZ_C_B_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.ZCFZ_C_B_Count_C_F2.Name = "ZCFZ_C_B_Count_C_F2";
-            this.ZCFZ_C_B_Count_C_F2.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_C_B_Count_C_F2.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_C_B_Count_C_F2.TabIndex = 166;
             // 
             // ZCFZ_C_B_CStart_C_Cell
             // 
             this.ZCFZ_C_B_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_B_CStart_C_Cell.Enabled = false;
-            this.ZCFZ_C_B_CStart_C_Cell.Location = new System.Drawing.Point(686, 42);
+            this.ZCFZ_C_B_CStart_C_Cell.Location = new System.Drawing.Point(726, 42);
             this.ZCFZ_C_B_CStart_C_Cell.Name = "ZCFZ_C_B_CStart_C_Cell";
-            this.ZCFZ_C_B_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
+            this.ZCFZ_C_B_CStart_C_Cell.Size = new System.Drawing.Size(72, 25);
             this.ZCFZ_C_B_CStart_C_Cell.TabIndex = 163;
             // 
             // ZCFZ_C_B_CStart_C_Name
             // 
             this.ZCFZ_C_B_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_B_CStart_C_Name.Enabled = false;
-            this.ZCFZ_C_B_CStart_C_Name.Location = new System.Drawing.Point(589, 106);
+            this.ZCFZ_C_B_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.ZCFZ_C_B_CStart_C_Name.Name = "ZCFZ_C_B_CStart_C_Name";
             this.ZCFZ_C_B_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_B_CStart_C_Name.TabIndex = 167;
@@ -3550,9 +3481,9 @@
             this.ZCFZ_C_B_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_B_Count_C_Cell.Enabled = false;
-            this.ZCFZ_C_B_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.ZCFZ_C_B_Count_C_Cell.Location = new System.Drawing.Point(479, 43);
             this.ZCFZ_C_B_Count_C_Cell.Name = "ZCFZ_C_B_Count_C_Cell";
-            this.ZCFZ_C_B_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.ZCFZ_C_B_Count_C_Cell.Size = new System.Drawing.Size(138, 25);
             this.ZCFZ_C_B_Count_C_Cell.TabIndex = 162;
             // 
             // ZCFZ_C_B_Z_C_Name
@@ -3575,7 +3506,7 @@
             // 
             this.ZCFZ_C_B_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_B_CEnd_C_Name.Enabled = false;
-            this.ZCFZ_C_B_CEnd_C_Name.Location = new System.Drawing.Point(840, 106);
+            this.ZCFZ_C_B_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.ZCFZ_C_B_CEnd_C_Name.Name = "ZCFZ_C_B_CEnd_C_Name";
             this.ZCFZ_C_B_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_B_CEnd_C_Name.TabIndex = 168;
@@ -3587,14 +3518,14 @@
             this.ZCFZ_C_B_Count_C_F1.Enabled = false;
             this.ZCFZ_C_B_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.ZCFZ_C_B_Count_C_F1.Name = "ZCFZ_C_B_Count_C_F1";
-            this.ZCFZ_C_B_Count_C_F1.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_C_B_Count_C_F1.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_C_B_Count_C_F1.TabIndex = 162;
             // 
             // ZCFZ_C_B_CStart_C_No
             // 
             this.ZCFZ_C_B_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_B_CStart_C_No.Enabled = false;
-            this.ZCFZ_C_B_CStart_C_No.Location = new System.Drawing.Point(589, 74);
+            this.ZCFZ_C_B_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.ZCFZ_C_B_CStart_C_No.Name = "ZCFZ_C_B_CStart_C_No";
             this.ZCFZ_C_B_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_B_CStart_C_No.TabIndex = 163;
@@ -3611,7 +3542,7 @@
             // 
             this.ZCFZ_C_B_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_C_B_CEnd_C_No.Enabled = false;
-            this.ZCFZ_C_B_CEnd_C_No.Location = new System.Drawing.Point(840, 74);
+            this.ZCFZ_C_B_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.ZCFZ_C_B_CEnd_C_No.Name = "ZCFZ_C_B_CEnd_C_No";
             this.ZCFZ_C_B_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_C_B_CEnd_C_No.TabIndex = 164;
@@ -3621,7 +3552,7 @@
             this.label73.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("宋体", 30F);
-            this.label73.Location = new System.Drawing.Point(753, 61);
+            this.label73.Location = new System.Drawing.Point(812, 61);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(72, 50);
             this.label73.TabIndex = 160;
@@ -3631,7 +3562,7 @@
             // 
             this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(852, 20);
+            this.label75.Location = new System.Drawing.Point(911, 20);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(127, 15);
             this.label75.TabIndex = 151;
@@ -3641,7 +3572,7 @@
             // 
             this.label76.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(601, 20);
+            this.label76.Location = new System.Drawing.Point(660, 20);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(127, 15);
             this.label76.TabIndex = 150;
@@ -3665,57 +3596,57 @@
             this.label78.TabIndex = 148;
             this.label78.Text = "总公司数据列";
             // 
-            // ZCFZ_C_B_CStart_C
+            // BZCFZRep_QC_CC_C
             // 
-            this.ZCFZ_C_B_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_C_B_CStart_C.Location = new System.Drawing.Point(589, 42);
-            this.ZCFZ_C_B_CStart_C.Maximum = new decimal(new int[] {
+            this.BZCFZRep_QC_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BZCFZRep_QC_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.BZCFZRep_QC_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_C_B_CStart_C.Minimum = new decimal(new int[] {
+            this.BZCFZRep_QC_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_C_B_CStart_C.Name = "ZCFZ_C_B_CStart_C";
-            this.ZCFZ_C_B_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_C_B_CStart_C.TabIndex = 138;
-            this.ZCFZ_C_B_CStart_C.Value = new decimal(new int[] {
+            this.BZCFZRep_QC_CC_C.Name = "BZCFZRep_QC_CC_C";
+            this.BZCFZRep_QC_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_QC_CC_C.TabIndex = 138;
+            this.BZCFZRep_QC_CC_C.Value = new decimal(new int[] {
             51,
             0,
             0,
             0});
-            this.ZCFZ_C_B_CStart_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.BZCFZRep_QC_CC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_C_B_Count_C
+            // BZCFZRep_QC_F_C
             // 
-            this.ZCFZ_C_B_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.ZCFZ_C_B_Count_C.Maximum = new decimal(new int[] {
+            this.BZCFZRep_QC_F_C.Location = new System.Drawing.Point(420, 42);
+            this.BZCFZRep_QC_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_C_B_Count_C.Minimum = new decimal(new int[] {
+            this.BZCFZRep_QC_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_C_B_Count_C.Name = "ZCFZ_C_B_Count_C";
-            this.ZCFZ_C_B_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_C_B_Count_C.TabIndex = 136;
-            this.ZCFZ_C_B_Count_C.Value = new decimal(new int[] {
+            this.BZCFZRep_QC_F_C.Name = "BZCFZRep_QC_F_C";
+            this.BZCFZRep_QC_F_C.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_QC_F_C.TabIndex = 136;
+            this.BZCFZRep_QC_F_C.Value = new decimal(new int[] {
             49,
             0,
             0,
             0});
-            this.ZCFZ_C_B_Count_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.BZCFZRep_QC_F_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // ZCFZ_C_B_CEnd_C
             // 
             this.ZCFZ_C_B_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_C_B_CEnd_C.Location = new System.Drawing.Point(840, 42);
+            this.ZCFZ_C_B_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.ZCFZ_C_B_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -3734,37 +3665,34 @@
             0,
             0,
             0});
-            this.ZCFZ_C_B_CEnd_C.ValueChanged += new System.EventHandler(this.BTN_ReadCDValue_Click);
             // 
-            // ZCFZ_C_B_Z_C
+            // BZCFZRep_QC_MC_C
             // 
-            this.ZCFZ_C_B_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.ZCFZ_C_B_Z_C.Maximum = new decimal(new int[] {
+            this.BZCFZRep_QC_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.BZCFZRep_QC_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_C_B_Z_C.Minimum = new decimal(new int[] {
+            this.BZCFZRep_QC_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_C_B_Z_C.Name = "ZCFZ_C_B_Z_C";
-            this.ZCFZ_C_B_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_C_B_Z_C.TabIndex = 134;
-            this.ZCFZ_C_B_Z_C.Value = new decimal(new int[] {
+            this.BZCFZRep_QC_MC_C.Name = "BZCFZRep_QC_MC_C";
+            this.BZCFZRep_QC_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_QC_MC_C.TabIndex = 134;
+            this.BZCFZRep_QC_MC_C.Value = new decimal(new int[] {
             47,
             0,
             0,
             0});
-            this.ZCFZ_C_B_Z_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.BZCFZRep_QC_MC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.ZCFZ_B_F2_R);
-            this.groupBox3.Controls.Add(this.ZCFZ_B_F1_R);
+            this.groupBox3.Controls.Add(this.BZCFZRep_F_R);
             this.groupBox3.Controls.Add(this.label62);
             this.groupBox3.Controls.Add(this.label63);
             this.groupBox3.Controls.Add(this.ZCFZ_M_B_CEnd_C_Cell);
@@ -3780,21 +3708,21 @@
             this.groupBox3.Controls.Add(this.ZCFZ_M_B_Z_C_No);
             this.groupBox3.Controls.Add(this.ZCFZ_M_B_CEnd_C_No);
             this.groupBox3.Controls.Add(this.label64);
-            this.groupBox3.Controls.Add(this.ZCFZ_B_Name_R);
+            this.groupBox3.Controls.Add(this.BZCFZRep_ZTName_R);
             this.groupBox3.Controls.Add(this.label65);
             this.groupBox3.Controls.Add(this.label66);
             this.groupBox3.Controls.Add(this.label67);
             this.groupBox3.Controls.Add(this.label68);
             this.groupBox3.Controls.Add(this.label69);
             this.groupBox3.Controls.Add(this.label70);
-            this.groupBox3.Controls.Add(this.ZCFZ_M_B_CStart_C);
-            this.groupBox3.Controls.Add(this.ZCFZ_M_B_Count_C);
+            this.groupBox3.Controls.Add(this.BZCFZRep_QM_CC_C);
+            this.groupBox3.Controls.Add(this.BZCFZRep_QM_F_C);
             this.groupBox3.Controls.Add(this.ZCFZ_M_B_CEnd_C);
-            this.groupBox3.Controls.Add(this.ZCFZ_B_No_R);
-            this.groupBox3.Controls.Add(this.ZCFZ_M_B_Z_C);
+            this.groupBox3.Controls.Add(this.BZCFZRep_ZTNo_R);
+            this.groupBox3.Controls.Add(this.BZCFZRep_QM_MC_C);
             this.groupBox3.Location = new System.Drawing.Point(6, 48);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1006, 139);
+            this.groupBox3.Size = new System.Drawing.Size(1065, 139);
             this.groupBox3.TabIndex = 149;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "标准表信息-末";
@@ -3821,23 +3749,23 @@
             0,
             0});
             // 
-            // ZCFZ_B_F1_R
+            // BZCFZRep_F_R
             // 
-            this.ZCFZ_B_F1_R.Location = new System.Drawing.Point(362, 74);
-            this.ZCFZ_B_F1_R.Maximum = new decimal(new int[] {
+            this.BZCFZRep_F_R.Location = new System.Drawing.Point(362, 74);
+            this.BZCFZRep_F_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_B_F1_R.Minimum = new decimal(new int[] {
+            this.BZCFZRep_F_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_B_F1_R.Name = "ZCFZ_B_F1_R";
-            this.ZCFZ_B_F1_R.Size = new System.Drawing.Size(48, 25);
-            this.ZCFZ_B_F1_R.TabIndex = 171;
-            this.ZCFZ_B_F1_R.Value = new decimal(new int[] {
+            this.BZCFZRep_F_R.Name = "BZCFZRep_F_R";
+            this.BZCFZRep_F_R.Size = new System.Drawing.Size(48, 25);
+            this.BZCFZRep_F_R.TabIndex = 171;
+            this.BZCFZRep_F_R.Value = new decimal(new int[] {
             7,
             0,
             0,
@@ -3865,9 +3793,9 @@
             // 
             this.ZCFZ_M_B_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_CEnd_C_Cell.Enabled = false;
-            this.ZCFZ_M_B_CEnd_C_Cell.Location = new System.Drawing.Point(937, 42);
+            this.ZCFZ_M_B_CEnd_C_Cell.Location = new System.Drawing.Point(975, 42);
             this.ZCFZ_M_B_CEnd_C_Cell.Name = "ZCFZ_M_B_CEnd_C_Cell";
-            this.ZCFZ_M_B_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
+            this.ZCFZ_M_B_CEnd_C_Cell.Size = new System.Drawing.Size(74, 25);
             this.ZCFZ_M_B_CEnd_C_Cell.TabIndex = 164;
             // 
             // ZCFZ_M_B_Count_C_F2
@@ -3875,25 +3803,25 @@
             this.ZCFZ_M_B_Count_C_F2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_Count_C_F2.Enabled = false;
-            this.ZCFZ_M_B_Count_C_F2.Location = new System.Drawing.Point(420, 106);
+            this.ZCFZ_M_B_Count_C_F2.Location = new System.Drawing.Point(420, 108);
             this.ZCFZ_M_B_Count_C_F2.Name = "ZCFZ_M_B_Count_C_F2";
-            this.ZCFZ_M_B_Count_C_F2.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_M_B_Count_C_F2.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_M_B_Count_C_F2.TabIndex = 166;
             // 
             // ZCFZ_M_B_CStart_C_Cell
             // 
             this.ZCFZ_M_B_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_CStart_C_Cell.Enabled = false;
-            this.ZCFZ_M_B_CStart_C_Cell.Location = new System.Drawing.Point(686, 42);
+            this.ZCFZ_M_B_CStart_C_Cell.Location = new System.Drawing.Point(722, 42);
             this.ZCFZ_M_B_CStart_C_Cell.Name = "ZCFZ_M_B_CStart_C_Cell";
-            this.ZCFZ_M_B_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
+            this.ZCFZ_M_B_CStart_C_Cell.Size = new System.Drawing.Size(76, 25);
             this.ZCFZ_M_B_CStart_C_Cell.TabIndex = 163;
             // 
             // ZCFZ_M_B_CStart_C_Name
             // 
             this.ZCFZ_M_B_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_CStart_C_Name.Enabled = false;
-            this.ZCFZ_M_B_CStart_C_Name.Location = new System.Drawing.Point(589, 106);
+            this.ZCFZ_M_B_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.ZCFZ_M_B_CStart_C_Name.Name = "ZCFZ_M_B_CStart_C_Name";
             this.ZCFZ_M_B_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_B_CStart_C_Name.TabIndex = 167;
@@ -3903,9 +3831,9 @@
             this.ZCFZ_M_B_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_Count_C_Cell.Enabled = false;
-            this.ZCFZ_M_B_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.ZCFZ_M_B_Count_C_Cell.Location = new System.Drawing.Point(479, 42);
             this.ZCFZ_M_B_Count_C_Cell.Name = "ZCFZ_M_B_Count_C_Cell";
-            this.ZCFZ_M_B_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.ZCFZ_M_B_Count_C_Cell.Size = new System.Drawing.Size(138, 25);
             this.ZCFZ_M_B_Count_C_Cell.TabIndex = 162;
             // 
             // ZCFZ_M_B_Z_C_Name
@@ -3928,7 +3856,7 @@
             // 
             this.ZCFZ_M_B_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_CEnd_C_Name.Enabled = false;
-            this.ZCFZ_M_B_CEnd_C_Name.Location = new System.Drawing.Point(840, 106);
+            this.ZCFZ_M_B_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.ZCFZ_M_B_CEnd_C_Name.Name = "ZCFZ_M_B_CEnd_C_Name";
             this.ZCFZ_M_B_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_B_CEnd_C_Name.TabIndex = 168;
@@ -3940,14 +3868,14 @@
             this.ZCFZ_M_B_Count_C_F1.Enabled = false;
             this.ZCFZ_M_B_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.ZCFZ_M_B_Count_C_F1.Name = "ZCFZ_M_B_Count_C_F1";
-            this.ZCFZ_M_B_Count_C_F1.Size = new System.Drawing.Size(88, 25);
+            this.ZCFZ_M_B_Count_C_F1.Size = new System.Drawing.Size(197, 25);
             this.ZCFZ_M_B_Count_C_F1.TabIndex = 162;
             // 
             // ZCFZ_M_B_CStart_C_No
             // 
             this.ZCFZ_M_B_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_CStart_C_No.Enabled = false;
-            this.ZCFZ_M_B_CStart_C_No.Location = new System.Drawing.Point(589, 74);
+            this.ZCFZ_M_B_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.ZCFZ_M_B_CStart_C_No.Name = "ZCFZ_M_B_CStart_C_No";
             this.ZCFZ_M_B_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_B_CStart_C_No.TabIndex = 163;
@@ -3964,7 +3892,7 @@
             // 
             this.ZCFZ_M_B_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ZCFZ_M_B_CEnd_C_No.Enabled = false;
-            this.ZCFZ_M_B_CEnd_C_No.Location = new System.Drawing.Point(840, 74);
+            this.ZCFZ_M_B_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.ZCFZ_M_B_CEnd_C_No.Name = "ZCFZ_M_B_CEnd_C_No";
             this.ZCFZ_M_B_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.ZCFZ_M_B_CEnd_C_No.TabIndex = 164;
@@ -3974,29 +3902,29 @@
             this.label64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("宋体", 30F);
-            this.label64.Location = new System.Drawing.Point(753, 61);
+            this.label64.Location = new System.Drawing.Point(812, 61);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(72, 50);
             this.label64.TabIndex = 160;
             this.label64.Text = "→";
             // 
-            // ZCFZ_B_Name_R
+            // BZCFZRep_ZTName_R
             // 
-            this.ZCFZ_B_Name_R.Location = new System.Drawing.Point(87, 106);
-            this.ZCFZ_B_Name_R.Maximum = new decimal(new int[] {
+            this.BZCFZRep_ZTName_R.Location = new System.Drawing.Point(87, 106);
+            this.BZCFZRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_B_Name_R.Minimum = new decimal(new int[] {
+            this.BZCFZRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_B_Name_R.Name = "ZCFZ_B_Name_R";
-            this.ZCFZ_B_Name_R.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_B_Name_R.TabIndex = 157;
-            this.ZCFZ_B_Name_R.Value = new decimal(new int[] {
+            this.BZCFZRep_ZTName_R.Name = "BZCFZRep_ZTName_R";
+            this.BZCFZRep_ZTName_R.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_ZTName_R.TabIndex = 157;
+            this.BZCFZRep_ZTName_R.Value = new decimal(new int[] {
             4,
             0,
             0,
@@ -4015,7 +3943,7 @@
             // 
             this.label66.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(852, 20);
+            this.label66.Location = new System.Drawing.Point(911, 20);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(127, 15);
             this.label66.TabIndex = 151;
@@ -4025,7 +3953,7 @@
             // 
             this.label67.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(601, 20);
+            this.label67.Location = new System.Drawing.Point(660, 20);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(127, 15);
             this.label67.TabIndex = 150;
@@ -4058,57 +3986,57 @@
             this.label70.TabIndex = 143;
             this.label70.Text = "账套编码";
             // 
-            // ZCFZ_M_B_CStart_C
+            // BZCFZRep_QM_CC_C
             // 
-            this.ZCFZ_M_B_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_M_B_CStart_C.Location = new System.Drawing.Point(589, 42);
-            this.ZCFZ_M_B_CStart_C.Maximum = new decimal(new int[] {
+            this.BZCFZRep_QM_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BZCFZRep_QM_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.BZCFZRep_QM_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_M_B_CStart_C.Minimum = new decimal(new int[] {
+            this.BZCFZRep_QM_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_M_B_CStart_C.Name = "ZCFZ_M_B_CStart_C";
-            this.ZCFZ_M_B_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_M_B_CStart_C.TabIndex = 138;
-            this.ZCFZ_M_B_CStart_C.Value = new decimal(new int[] {
+            this.BZCFZRep_QM_CC_C.Name = "BZCFZRep_QM_CC_C";
+            this.BZCFZRep_QM_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_QM_CC_C.TabIndex = 138;
+            this.BZCFZRep_QM_CC_C.Value = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.ZCFZ_M_B_CStart_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.BZCFZRep_QM_CC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_M_B_Count_C
+            // BZCFZRep_QM_F_C
             // 
-            this.ZCFZ_M_B_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.ZCFZ_M_B_Count_C.Maximum = new decimal(new int[] {
+            this.BZCFZRep_QM_F_C.Location = new System.Drawing.Point(420, 42);
+            this.BZCFZRep_QM_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_M_B_Count_C.Minimum = new decimal(new int[] {
+            this.BZCFZRep_QM_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_M_B_Count_C.Name = "ZCFZ_M_B_Count_C";
-            this.ZCFZ_M_B_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_M_B_Count_C.TabIndex = 136;
-            this.ZCFZ_M_B_Count_C.Value = new decimal(new int[] {
+            this.BZCFZRep_QM_F_C.Name = "BZCFZRep_QM_F_C";
+            this.BZCFZRep_QM_F_C.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_QM_F_C.TabIndex = 136;
+            this.BZCFZRep_QM_F_C.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.ZCFZ_M_B_Count_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.BZCFZRep_QM_F_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
             // ZCFZ_M_B_CEnd_C
             // 
             this.ZCFZ_M_B_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZCFZ_M_B_CEnd_C.Location = new System.Drawing.Point(840, 42);
+            this.ZCFZ_M_B_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.ZCFZ_M_B_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -4129,76 +4057,76 @@
             0});
             this.ZCFZ_M_B_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // ZCFZ_B_No_R
+            // BZCFZRep_ZTNo_R
             // 
-            this.ZCFZ_B_No_R.Location = new System.Drawing.Point(87, 74);
-            this.ZCFZ_B_No_R.Maximum = new decimal(new int[] {
+            this.BZCFZRep_ZTNo_R.Location = new System.Drawing.Point(87, 74);
+            this.BZCFZRep_ZTNo_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_B_No_R.Minimum = new decimal(new int[] {
+            this.BZCFZRep_ZTNo_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_B_No_R.Name = "ZCFZ_B_No_R";
-            this.ZCFZ_B_No_R.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_B_No_R.TabIndex = 142;
-            this.ZCFZ_B_No_R.Value = new decimal(new int[] {
+            this.BZCFZRep_ZTNo_R.Name = "BZCFZRep_ZTNo_R";
+            this.BZCFZRep_ZTNo_R.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_ZTNo_R.TabIndex = 142;
+            this.BZCFZRep_ZTNo_R.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
             // 
-            // ZCFZ_M_B_Z_C
+            // BZCFZRep_QM_MC_C
             // 
-            this.ZCFZ_M_B_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.ZCFZ_M_B_Z_C.Maximum = new decimal(new int[] {
+            this.BZCFZRep_QM_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.BZCFZRep_QM_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.ZCFZ_M_B_Z_C.Minimum = new decimal(new int[] {
+            this.BZCFZRep_QM_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.ZCFZ_M_B_Z_C.Name = "ZCFZ_M_B_Z_C";
-            this.ZCFZ_M_B_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.ZCFZ_M_B_Z_C.TabIndex = 134;
-            this.ZCFZ_M_B_Z_C.Value = new decimal(new int[] {
+            this.BZCFZRep_QM_MC_C.Name = "BZCFZRep_QM_MC_C";
+            this.BZCFZRep_QM_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.BZCFZRep_QM_MC_C.TabIndex = 134;
+            this.BZCFZRep_QM_MC_C.Value = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.ZCFZ_M_B_Z_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
+            this.BZCFZRep_QM_MC_C.ValueChanged += new System.EventHandler(this.Temp_ZCFZWorkRep_ColRow_indexChanged);
             // 
-            // Temp_ZCFZJ_ID
+            // JZCFZRep_ID
             // 
-            this.Temp_ZCFZJ_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Temp_ZCFZJ_ID.Enabled = false;
-            this.Temp_ZCFZJ_ID.FormattingEnabled = true;
-            this.Temp_ZCFZJ_ID.Location = new System.Drawing.Point(748, 356);
-            this.Temp_ZCFZJ_ID.Name = "Temp_ZCFZJ_ID";
-            this.Temp_ZCFZJ_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_ZCFZJ_ID.TabIndex = 101;
+            this.JZCFZRep_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JZCFZRep_ID.Enabled = false;
+            this.JZCFZRep_ID.FormattingEnabled = true;
+            this.JZCFZRep_ID.Location = new System.Drawing.Point(833, 356);
+            this.JZCFZRep_ID.Name = "JZCFZRep_ID";
+            this.JZCFZRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.JZCFZRep_ID.TabIndex = 101;
             // 
-            // Temp_ZCFZJ_No
+            // JZCFZRep_No
             // 
-            this.Temp_ZCFZJ_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Temp_ZCFZJ_No.Enabled = false;
-            this.Temp_ZCFZJ_No.FormattingEnabled = true;
-            this.Temp_ZCFZJ_No.Location = new System.Drawing.Point(527, 356);
-            this.Temp_ZCFZJ_No.Name = "Temp_ZCFZJ_No";
-            this.Temp_ZCFZJ_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_ZCFZJ_No.TabIndex = 100;
+            this.JZCFZRep_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JZCFZRep_No.Enabled = false;
+            this.JZCFZRep_No.FormattingEnabled = true;
+            this.JZCFZRep_No.Location = new System.Drawing.Point(612, 356);
+            this.JZCFZRep_No.Name = "JZCFZRep_No";
+            this.JZCFZRep_No.Size = new System.Drawing.Size(156, 23);
+            this.JZCFZRep_No.TabIndex = 100;
             // 
             // label29
             // 
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(703, 360);
+            this.label29.Location = new System.Drawing.Point(788, 360);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(23, 15);
             this.label29.TabIndex = 99;
@@ -4208,56 +4136,54 @@
             // 
             this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(467, 360);
+            this.label30.Location = new System.Drawing.Point(552, 360);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(37, 15);
             this.label30.TabIndex = 98;
             this.label30.Text = "编码";
             // 
-            // Temp_ZCFZJ_Name
+            // JZCFZRep
             // 
-            this.Temp_ZCFZJ_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Temp_ZCFZJ_Name.FormattingEnabled = true;
-            this.Temp_ZCFZJ_Name.Location = new System.Drawing.Point(156, 356);
-            this.Temp_ZCFZJ_Name.Name = "Temp_ZCFZJ_Name";
-            this.Temp_ZCFZJ_Name.Size = new System.Drawing.Size(292, 23);
-            this.Temp_ZCFZJ_Name.TabIndex = 97;
+            this.JZCFZRep.FormattingEnabled = true;
+            this.JZCFZRep.Location = new System.Drawing.Point(156, 356);
+            this.JZCFZRep.Name = "JZCFZRep";
+            this.JZCFZRep.Size = new System.Drawing.Size(408, 23);
+            this.JZCFZRep.TabIndex = 97;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 360);
+            this.label11.Location = new System.Drawing.Point(14, 360);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(127, 15);
             this.label11.TabIndex = 91;
             this.label11.Text = "尽调资产负债横排";
             // 
-            // Temp_ZCFZB_ID
+            // BZCFZRep_ID
             // 
-            this.Temp_ZCFZB_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Temp_ZCFZB_ID.Enabled = false;
-            this.Temp_ZCFZB_ID.FormattingEnabled = true;
-            this.Temp_ZCFZB_ID.Location = new System.Drawing.Point(748, 12);
-            this.Temp_ZCFZB_ID.Name = "Temp_ZCFZB_ID";
-            this.Temp_ZCFZB_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_ZCFZB_ID.TabIndex = 96;
+            this.BZCFZRep_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BZCFZRep_ID.Enabled = false;
+            this.BZCFZRep_ID.FormattingEnabled = true;
+            this.BZCFZRep_ID.Location = new System.Drawing.Point(833, 16);
+            this.BZCFZRep_ID.Name = "BZCFZRep_ID";
+            this.BZCFZRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.BZCFZRep_ID.TabIndex = 96;
             // 
-            // Temp_ZCFZB_No
+            // BZCFZRep_No
             // 
-            this.Temp_ZCFZB_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Temp_ZCFZB_No.Enabled = false;
-            this.Temp_ZCFZB_No.FormattingEnabled = true;
-            this.Temp_ZCFZB_No.Location = new System.Drawing.Point(527, 12);
-            this.Temp_ZCFZB_No.Name = "Temp_ZCFZB_No";
-            this.Temp_ZCFZB_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_ZCFZB_No.TabIndex = 95;
+            this.BZCFZRep_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BZCFZRep_No.Enabled = false;
+            this.BZCFZRep_No.FormattingEnabled = true;
+            this.BZCFZRep_No.Location = new System.Drawing.Point(612, 16);
+            this.BZCFZRep_No.Name = "BZCFZRep_No";
+            this.BZCFZRep_No.Size = new System.Drawing.Size(156, 23);
+            this.BZCFZRep_No.TabIndex = 95;
             // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(703, 16);
+            this.label25.Location = new System.Drawing.Point(788, 20);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(23, 15);
             this.label25.TabIndex = 94;
@@ -4267,26 +4193,24 @@
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(467, 16);
+            this.label26.Location = new System.Drawing.Point(552, 20);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(37, 15);
             this.label26.TabIndex = 93;
             this.label26.Text = "编码";
             // 
-            // Temp_ZCFZB_Name
+            // BZCFZRep
             // 
-            this.Temp_ZCFZB_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Temp_ZCFZB_Name.FormattingEnabled = true;
-            this.Temp_ZCFZB_Name.Location = new System.Drawing.Point(156, 12);
-            this.Temp_ZCFZB_Name.Name = "Temp_ZCFZB_Name";
-            this.Temp_ZCFZB_Name.Size = new System.Drawing.Size(292, 23);
-            this.Temp_ZCFZB_Name.TabIndex = 92;
+            this.BZCFZRep.FormattingEnabled = true;
+            this.BZCFZRep.Location = new System.Drawing.Point(156, 16);
+            this.BZCFZRep.Name = "BZCFZRep";
+            this.BZCFZRep.Size = new System.Drawing.Size(408, 23);
+            this.BZCFZRep.TabIndex = 92;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 16);
+            this.label9.Location = new System.Drawing.Point(14, 20);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(127, 15);
             this.label9.TabIndex = 90;
@@ -4295,45 +4219,31 @@
             // LRSetting
             // 
             this.LRSetting.AutoScroll = true;
-            this.LRSetting.Controls.Add(this.ReadLRValue);
             this.LRSetting.Controls.Add(this.groupBox9);
             this.LRSetting.Controls.Add(this.groupBox7);
             this.LRSetting.Controls.Add(this.groupBox10);
             this.LRSetting.Controls.Add(this.groupBox8);
-            this.LRSetting.Controls.Add(this.Temp_LRJ_ID);
-            this.LRSetting.Controls.Add(this.Temp_LRJ_No);
+            this.LRSetting.Controls.Add(this.JLRRep_ID);
+            this.LRSetting.Controls.Add(this.JLRRep_No);
             this.LRSetting.Controls.Add(this.label27);
             this.LRSetting.Controls.Add(this.label28);
-            this.LRSetting.Controls.Add(this.Temp_LRJ_Name);
-            this.LRSetting.Controls.Add(this.Temp_LRB_ID);
-            this.LRSetting.Controls.Add(this.Temp_LRB_No);
+            this.LRSetting.Controls.Add(this.JLRRep);
+            this.LRSetting.Controls.Add(this.BLRRep_ID);
+            this.LRSetting.Controls.Add(this.BLRRep_No);
             this.LRSetting.Controls.Add(this.label23);
             this.LRSetting.Controls.Add(this.label24);
-            this.LRSetting.Controls.Add(this.Temp_LRB_Name);
+            this.LRSetting.Controls.Add(this.BLRRep);
             this.LRSetting.Controls.Add(this.label12);
             this.LRSetting.Controls.Add(this.label10);
             this.LRSetting.Location = new System.Drawing.Point(4, 25);
             this.LRSetting.Name = "LRSetting";
-            this.LRSetting.Size = new System.Drawing.Size(1099, 425);
+            this.LRSetting.Size = new System.Drawing.Size(1099, 415);
             this.LRSetting.TabIndex = 4;
             this.LRSetting.Text = "利润工作表设置";
             this.LRSetting.UseVisualStyleBackColor = true;
             // 
-            // ReadLRValue
-            // 
-            this.ReadLRValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReadLRValue.Location = new System.Drawing.Point(644, 723);
-            this.ReadLRValue.Name = "ReadLRValue";
-            this.ReadLRValue.Size = new System.Drawing.Size(94, 43);
-            this.ReadLRValue.TabIndex = 169;
-            this.ReadLRValue.Text = "读取数据";
-            this.ReadLRValue.UseVisualStyleBackColor = true;
-            this.ReadLRValue.Click += new System.EventHandler(this.ReadLRValue_Click);
-            // 
             // groupBox9
             // 
-            this.groupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox9.Controls.Add(this.LR_C_J_CEnd_C_Cell);
             this.groupBox9.Controls.Add(this.LR_C_J_Count_C_F2);
             this.groupBox9.Controls.Add(this.LR_C_J_CStart_C_Cell);
@@ -4351,13 +4261,13 @@
             this.groupBox9.Controls.Add(this.label107);
             this.groupBox9.Controls.Add(this.label108);
             this.groupBox9.Controls.Add(this.label109);
-            this.groupBox9.Controls.Add(this.LR_C_J_CStart_C);
-            this.groupBox9.Controls.Add(this.LR_C_J_Count_C);
+            this.groupBox9.Controls.Add(this.JLRRep_FS_CC_C);
+            this.groupBox9.Controls.Add(this.JLRRep_FS_F_C);
             this.groupBox9.Controls.Add(this.LR_C_J_CEnd_C);
-            this.groupBox9.Controls.Add(this.LR_C_J_Z_C);
+            this.groupBox9.Controls.Add(this.JLRRep_FS_MC_C);
             this.groupBox9.Location = new System.Drawing.Point(7, 572);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(1004, 139);
+            this.groupBox9.Size = new System.Drawing.Size(1065, 139);
             this.groupBox9.TabIndex = 177;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "标准表信息-初";
@@ -4366,7 +4276,7 @@
             // 
             this.LR_C_J_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_CEnd_C_Cell.Enabled = false;
-            this.LR_C_J_CEnd_C_Cell.Location = new System.Drawing.Point(935, 42);
+            this.LR_C_J_CEnd_C_Cell.Location = new System.Drawing.Point(996, 42);
             this.LR_C_J_CEnd_C_Cell.Name = "LR_C_J_CEnd_C_Cell";
             this.LR_C_J_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_C_J_CEnd_C_Cell.TabIndex = 164;
@@ -4378,14 +4288,14 @@
             this.LR_C_J_Count_C_F2.Enabled = false;
             this.LR_C_J_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.LR_C_J_Count_C_F2.Name = "LR_C_J_Count_C_F2";
-            this.LR_C_J_Count_C_F2.Size = new System.Drawing.Size(86, 25);
+            this.LR_C_J_Count_C_F2.Size = new System.Drawing.Size(211, 25);
             this.LR_C_J_Count_C_F2.TabIndex = 166;
             // 
             // LR_C_J_CStart_C_Cell
             // 
             this.LR_C_J_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_CStart_C_Cell.Enabled = false;
-            this.LR_C_J_CStart_C_Cell.Location = new System.Drawing.Point(684, 42);
+            this.LR_C_J_CStart_C_Cell.Location = new System.Drawing.Point(745, 42);
             this.LR_C_J_CStart_C_Cell.Name = "LR_C_J_CStart_C_Cell";
             this.LR_C_J_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_C_J_CStart_C_Cell.TabIndex = 163;
@@ -4394,7 +4304,7 @@
             // 
             this.LR_C_J_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_CStart_C_Name.Enabled = false;
-            this.LR_C_J_CStart_C_Name.Location = new System.Drawing.Point(587, 106);
+            this.LR_C_J_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.LR_C_J_CStart_C_Name.Name = "LR_C_J_CStart_C_Name";
             this.LR_C_J_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_C_J_CStart_C_Name.TabIndex = 167;
@@ -4404,9 +4314,9 @@
             this.LR_C_J_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_Count_C_Cell.Enabled = false;
-            this.LR_C_J_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.LR_C_J_Count_C_Cell.Location = new System.Drawing.Point(497, 43);
             this.LR_C_J_Count_C_Cell.Name = "LR_C_J_Count_C_Cell";
-            this.LR_C_J_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.LR_C_J_Count_C_Cell.Size = new System.Drawing.Size(134, 25);
             this.LR_C_J_Count_C_Cell.TabIndex = 162;
             // 
             // LR_C_J_Z_C_Name
@@ -4429,7 +4339,7 @@
             // 
             this.LR_C_J_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_CEnd_C_Name.Enabled = false;
-            this.LR_C_J_CEnd_C_Name.Location = new System.Drawing.Point(838, 106);
+            this.LR_C_J_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.LR_C_J_CEnd_C_Name.Name = "LR_C_J_CEnd_C_Name";
             this.LR_C_J_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_C_J_CEnd_C_Name.TabIndex = 168;
@@ -4441,14 +4351,14 @@
             this.LR_C_J_Count_C_F1.Enabled = false;
             this.LR_C_J_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.LR_C_J_Count_C_F1.Name = "LR_C_J_Count_C_F1";
-            this.LR_C_J_Count_C_F1.Size = new System.Drawing.Size(86, 25);
+            this.LR_C_J_Count_C_F1.Size = new System.Drawing.Size(211, 25);
             this.LR_C_J_Count_C_F1.TabIndex = 162;
             // 
             // LR_C_J_CStart_C_No
             // 
             this.LR_C_J_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_CStart_C_No.Enabled = false;
-            this.LR_C_J_CStart_C_No.Location = new System.Drawing.Point(587, 74);
+            this.LR_C_J_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.LR_C_J_CStart_C_No.Name = "LR_C_J_CStart_C_No";
             this.LR_C_J_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_C_J_CStart_C_No.TabIndex = 163;
@@ -4465,7 +4375,7 @@
             // 
             this.LR_C_J_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_J_CEnd_C_No.Enabled = false;
-            this.LR_C_J_CEnd_C_No.Location = new System.Drawing.Point(838, 74);
+            this.LR_C_J_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.LR_C_J_CEnd_C_No.Name = "LR_C_J_CEnd_C_No";
             this.LR_C_J_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_C_J_CEnd_C_No.TabIndex = 164;
@@ -4475,7 +4385,7 @@
             this.label105.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label105.AutoSize = true;
             this.label105.Font = new System.Drawing.Font("宋体", 30F);
-            this.label105.Location = new System.Drawing.Point(751, 61);
+            this.label105.Location = new System.Drawing.Point(812, 61);
             this.label105.Name = "label105";
             this.label105.Size = new System.Drawing.Size(72, 50);
             this.label105.TabIndex = 160;
@@ -4485,7 +4395,7 @@
             // 
             this.label106.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(850, 20);
+            this.label106.Location = new System.Drawing.Point(911, 20);
             this.label106.Name = "label106";
             this.label106.Size = new System.Drawing.Size(127, 15);
             this.label106.TabIndex = 151;
@@ -4495,7 +4405,7 @@
             // 
             this.label107.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(599, 20);
+            this.label107.Location = new System.Drawing.Point(660, 20);
             this.label107.Name = "label107";
             this.label107.Size = new System.Drawing.Size(127, 15);
             this.label107.TabIndex = 150;
@@ -4519,57 +4429,57 @@
             this.label109.TabIndex = 148;
             this.label109.Text = "总公司数据列";
             // 
-            // LR_C_J_CStart_C
+            // JLRRep_FS_CC_C
             // 
-            this.LR_C_J_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_C_J_CStart_C.Location = new System.Drawing.Point(587, 42);
-            this.LR_C_J_CStart_C.Maximum = new decimal(new int[] {
+            this.JLRRep_FS_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JLRRep_FS_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.JLRRep_FS_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_C_J_CStart_C.Minimum = new decimal(new int[] {
+            this.JLRRep_FS_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_C_J_CStart_C.Name = "LR_C_J_CStart_C";
-            this.LR_C_J_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_C_J_CStart_C.TabIndex = 138;
-            this.LR_C_J_CStart_C.Value = new decimal(new int[] {
+            this.JLRRep_FS_CC_C.Name = "JLRRep_FS_CC_C";
+            this.JLRRep_FS_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_FS_CC_C.TabIndex = 138;
+            this.JLRRep_FS_CC_C.Value = new decimal(new int[] {
             51,
             0,
             0,
             0});
-            this.LR_C_J_CStart_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.JLRRep_FS_CC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_C_J_Count_C
+            // JLRRep_FS_F_C
             // 
-            this.LR_C_J_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.LR_C_J_Count_C.Maximum = new decimal(new int[] {
+            this.JLRRep_FS_F_C.Location = new System.Drawing.Point(420, 42);
+            this.JLRRep_FS_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_C_J_Count_C.Minimum = new decimal(new int[] {
+            this.JLRRep_FS_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_C_J_Count_C.Name = "LR_C_J_Count_C";
-            this.LR_C_J_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_C_J_Count_C.TabIndex = 136;
-            this.LR_C_J_Count_C.Value = new decimal(new int[] {
+            this.JLRRep_FS_F_C.Name = "JLRRep_FS_F_C";
+            this.JLRRep_FS_F_C.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_FS_F_C.TabIndex = 136;
+            this.JLRRep_FS_F_C.Value = new decimal(new int[] {
             49,
             0,
             0,
             0});
-            this.LR_C_J_Count_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.JLRRep_FS_F_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // LR_C_J_CEnd_C
             // 
             this.LR_C_J_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_C_J_CEnd_C.Location = new System.Drawing.Point(838, 42);
+            this.LR_C_J_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.LR_C_J_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -4590,33 +4500,31 @@
             0});
             this.LR_C_J_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_C_J_Z_C
+            // JLRRep_FS_MC_C
             // 
-            this.LR_C_J_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.LR_C_J_Z_C.Maximum = new decimal(new int[] {
+            this.JLRRep_FS_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.JLRRep_FS_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_C_J_Z_C.Minimum = new decimal(new int[] {
+            this.JLRRep_FS_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_C_J_Z_C.Name = "LR_C_J_Z_C";
-            this.LR_C_J_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_C_J_Z_C.TabIndex = 134;
-            this.LR_C_J_Z_C.Value = new decimal(new int[] {
+            this.JLRRep_FS_MC_C.Name = "JLRRep_FS_MC_C";
+            this.JLRRep_FS_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_FS_MC_C.TabIndex = 134;
+            this.JLRRep_FS_MC_C.Value = new decimal(new int[] {
             47,
             0,
             0,
             0});
-            this.LR_C_J_Z_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.JLRRep_FS_MC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // groupBox7
             // 
-            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox7.Controls.Add(this.LR_C_B_CEnd_C_Cell);
             this.groupBox7.Controls.Add(this.LR_C_B_Count_C_F2);
             this.groupBox7.Controls.Add(this.LR_C_B_CStart_C_Cell);
@@ -4634,13 +4542,13 @@
             this.groupBox7.Controls.Add(this.label79);
             this.groupBox7.Controls.Add(this.label89);
             this.groupBox7.Controls.Add(this.label90);
-            this.groupBox7.Controls.Add(this.LR_C_B_CStart_C);
-            this.groupBox7.Controls.Add(this.LR_C_B_Count_C);
+            this.groupBox7.Controls.Add(this.BLRRep_FS_CC_C);
+            this.groupBox7.Controls.Add(this.BLRRep_FS_F_C);
             this.groupBox7.Controls.Add(this.LR_C_B_CEnd_C);
-            this.groupBox7.Controls.Add(this.LR_C_B_Z_C);
+            this.groupBox7.Controls.Add(this.BLRRep_FS_MC_C);
             this.groupBox7.Location = new System.Drawing.Point(7, 203);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1004, 139);
+            this.groupBox7.Size = new System.Drawing.Size(1065, 139);
             this.groupBox7.TabIndex = 175;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "标准表信息-初";
@@ -4649,7 +4557,7 @@
             // 
             this.LR_C_B_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_CEnd_C_Cell.Enabled = false;
-            this.LR_C_B_CEnd_C_Cell.Location = new System.Drawing.Point(935, 42);
+            this.LR_C_B_CEnd_C_Cell.Location = new System.Drawing.Point(996, 42);
             this.LR_C_B_CEnd_C_Cell.Name = "LR_C_B_CEnd_C_Cell";
             this.LR_C_B_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_C_B_CEnd_C_Cell.TabIndex = 164;
@@ -4661,14 +4569,14 @@
             this.LR_C_B_Count_C_F2.Enabled = false;
             this.LR_C_B_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.LR_C_B_Count_C_F2.Name = "LR_C_B_Count_C_F2";
-            this.LR_C_B_Count_C_F2.Size = new System.Drawing.Size(86, 25);
+            this.LR_C_B_Count_C_F2.Size = new System.Drawing.Size(211, 25);
             this.LR_C_B_Count_C_F2.TabIndex = 166;
             // 
             // LR_C_B_CStart_C_Cell
             // 
             this.LR_C_B_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_CStart_C_Cell.Enabled = false;
-            this.LR_C_B_CStart_C_Cell.Location = new System.Drawing.Point(684, 42);
+            this.LR_C_B_CStart_C_Cell.Location = new System.Drawing.Point(745, 42);
             this.LR_C_B_CStart_C_Cell.Name = "LR_C_B_CStart_C_Cell";
             this.LR_C_B_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_C_B_CStart_C_Cell.TabIndex = 163;
@@ -4677,7 +4585,7 @@
             // 
             this.LR_C_B_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_CStart_C_Name.Enabled = false;
-            this.LR_C_B_CStart_C_Name.Location = new System.Drawing.Point(587, 106);
+            this.LR_C_B_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.LR_C_B_CStart_C_Name.Name = "LR_C_B_CStart_C_Name";
             this.LR_C_B_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_C_B_CStart_C_Name.TabIndex = 167;
@@ -4687,9 +4595,9 @@
             this.LR_C_B_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_Count_C_Cell.Enabled = false;
-            this.LR_C_B_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.LR_C_B_Count_C_Cell.Location = new System.Drawing.Point(503, 43);
             this.LR_C_B_Count_C_Cell.Name = "LR_C_B_Count_C_Cell";
-            this.LR_C_B_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.LR_C_B_Count_C_Cell.Size = new System.Drawing.Size(128, 25);
             this.LR_C_B_Count_C_Cell.TabIndex = 162;
             // 
             // LR_C_B_Z_C_Name
@@ -4712,7 +4620,7 @@
             // 
             this.LR_C_B_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_CEnd_C_Name.Enabled = false;
-            this.LR_C_B_CEnd_C_Name.Location = new System.Drawing.Point(838, 106);
+            this.LR_C_B_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.LR_C_B_CEnd_C_Name.Name = "LR_C_B_CEnd_C_Name";
             this.LR_C_B_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_C_B_CEnd_C_Name.TabIndex = 168;
@@ -4724,14 +4632,14 @@
             this.LR_C_B_Count_C_F1.Enabled = false;
             this.LR_C_B_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.LR_C_B_Count_C_F1.Name = "LR_C_B_Count_C_F1";
-            this.LR_C_B_Count_C_F1.Size = new System.Drawing.Size(86, 25);
+            this.LR_C_B_Count_C_F1.Size = new System.Drawing.Size(211, 25);
             this.LR_C_B_Count_C_F1.TabIndex = 162;
             // 
             // LR_C_B_CStart_C_No
             // 
             this.LR_C_B_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_CStart_C_No.Enabled = false;
-            this.LR_C_B_CStart_C_No.Location = new System.Drawing.Point(587, 74);
+            this.LR_C_B_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.LR_C_B_CStart_C_No.Name = "LR_C_B_CStart_C_No";
             this.LR_C_B_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_C_B_CStart_C_No.TabIndex = 163;
@@ -4748,7 +4656,7 @@
             // 
             this.LR_C_B_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_C_B_CEnd_C_No.Enabled = false;
-            this.LR_C_B_CEnd_C_No.Location = new System.Drawing.Point(838, 74);
+            this.LR_C_B_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.LR_C_B_CEnd_C_No.Name = "LR_C_B_CEnd_C_No";
             this.LR_C_B_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_C_B_CEnd_C_No.TabIndex = 164;
@@ -4758,7 +4666,7 @@
             this.label72.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label72.AutoSize = true;
             this.label72.Font = new System.Drawing.Font("宋体", 30F);
-            this.label72.Location = new System.Drawing.Point(751, 61);
+            this.label72.Location = new System.Drawing.Point(812, 61);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(72, 50);
             this.label72.TabIndex = 160;
@@ -4768,7 +4676,7 @@
             // 
             this.label74.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(850, 20);
+            this.label74.Location = new System.Drawing.Point(911, 20);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(127, 15);
             this.label74.TabIndex = 151;
@@ -4778,7 +4686,7 @@
             // 
             this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(599, 20);
+            this.label79.Location = new System.Drawing.Point(660, 20);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(127, 15);
             this.label79.TabIndex = 150;
@@ -4802,57 +4710,57 @@
             this.label90.TabIndex = 148;
             this.label90.Text = "总公司数据列";
             // 
-            // LR_C_B_CStart_C
+            // BLRRep_FS_CC_C
             // 
-            this.LR_C_B_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_C_B_CStart_C.Location = new System.Drawing.Point(587, 42);
-            this.LR_C_B_CStart_C.Maximum = new decimal(new int[] {
+            this.BLRRep_FS_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BLRRep_FS_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.BLRRep_FS_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_C_B_CStart_C.Minimum = new decimal(new int[] {
+            this.BLRRep_FS_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_C_B_CStart_C.Name = "LR_C_B_CStart_C";
-            this.LR_C_B_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_C_B_CStart_C.TabIndex = 138;
-            this.LR_C_B_CStart_C.Value = new decimal(new int[] {
+            this.BLRRep_FS_CC_C.Name = "BLRRep_FS_CC_C";
+            this.BLRRep_FS_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_FS_CC_C.TabIndex = 138;
+            this.BLRRep_FS_CC_C.Value = new decimal(new int[] {
             51,
             0,
             0,
             0});
-            this.LR_C_B_CStart_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.BLRRep_FS_CC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_C_B_Count_C
+            // BLRRep_FS_F_C
             // 
-            this.LR_C_B_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.LR_C_B_Count_C.Maximum = new decimal(new int[] {
+            this.BLRRep_FS_F_C.Location = new System.Drawing.Point(420, 42);
+            this.BLRRep_FS_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_C_B_Count_C.Minimum = new decimal(new int[] {
+            this.BLRRep_FS_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_C_B_Count_C.Name = "LR_C_B_Count_C";
-            this.LR_C_B_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_C_B_Count_C.TabIndex = 136;
-            this.LR_C_B_Count_C.Value = new decimal(new int[] {
+            this.BLRRep_FS_F_C.Name = "BLRRep_FS_F_C";
+            this.BLRRep_FS_F_C.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_FS_F_C.TabIndex = 136;
+            this.BLRRep_FS_F_C.Value = new decimal(new int[] {
             49,
             0,
             0,
             0});
-            this.LR_C_B_Count_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.BLRRep_FS_F_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // LR_C_B_CEnd_C
             // 
             this.LR_C_B_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_C_B_CEnd_C.Location = new System.Drawing.Point(838, 42);
+            this.LR_C_B_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.LR_C_B_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -4873,35 +4781,33 @@
             0});
             this.LR_C_B_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_C_B_Z_C
+            // BLRRep_FS_MC_C
             // 
-            this.LR_C_B_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.LR_C_B_Z_C.Maximum = new decimal(new int[] {
+            this.BLRRep_FS_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.BLRRep_FS_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_C_B_Z_C.Minimum = new decimal(new int[] {
+            this.BLRRep_FS_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_C_B_Z_C.Name = "LR_C_B_Z_C";
-            this.LR_C_B_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_C_B_Z_C.TabIndex = 134;
-            this.LR_C_B_Z_C.Value = new decimal(new int[] {
+            this.BLRRep_FS_MC_C.Name = "BLRRep_FS_MC_C";
+            this.BLRRep_FS_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_FS_MC_C.TabIndex = 134;
+            this.BLRRep_FS_MC_C.Value = new decimal(new int[] {
             47,
             0,
             0,
             0});
-            this.LR_C_B_Z_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.BLRRep_FS_MC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // groupBox10
             // 
-            this.groupBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox10.Controls.Add(this.LR_J_F2_R);
-            this.groupBox10.Controls.Add(this.LR_J_F1_R);
+            this.groupBox10.Controls.Add(this.JLRRep_F_R);
             this.groupBox10.Controls.Add(this.label110);
             this.groupBox10.Controls.Add(this.label111);
             this.groupBox10.Controls.Add(this.LR_M_J_CEnd_C_Cell);
@@ -4917,21 +4823,21 @@
             this.groupBox10.Controls.Add(this.LR_M_J_Z_C_No);
             this.groupBox10.Controls.Add(this.LR_M_J_CEnd_C_No);
             this.groupBox10.Controls.Add(this.label112);
-            this.groupBox10.Controls.Add(this.LR_J_Name_R);
+            this.groupBox10.Controls.Add(this.JLRRep_ZTName_R);
             this.groupBox10.Controls.Add(this.label113);
             this.groupBox10.Controls.Add(this.label114);
             this.groupBox10.Controls.Add(this.label115);
             this.groupBox10.Controls.Add(this.label116);
             this.groupBox10.Controls.Add(this.label117);
             this.groupBox10.Controls.Add(this.label118);
-            this.groupBox10.Controls.Add(this.LR_M_J_CStart_C);
-            this.groupBox10.Controls.Add(this.LR_M_J_Count_C);
+            this.groupBox10.Controls.Add(this.JLRRep_LFS_CC_C);
+            this.groupBox10.Controls.Add(this.JLRRep_LFS_F_C);
             this.groupBox10.Controls.Add(this.LR_M_J_CEnd_C);
-            this.groupBox10.Controls.Add(this.LR_J_No_R);
-            this.groupBox10.Controls.Add(this.LR_M_J_Z_C);
+            this.groupBox10.Controls.Add(this.JLRRep_ZTNo_R);
+            this.groupBox10.Controls.Add(this.JLRRep_LFS_MC_C);
             this.groupBox10.Location = new System.Drawing.Point(7, 416);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1004, 139);
+            this.groupBox10.Size = new System.Drawing.Size(1065, 139);
             this.groupBox10.TabIndex = 176;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "标准表信息-末";
@@ -4958,23 +4864,23 @@
             0,
             0});
             // 
-            // LR_J_F1_R
+            // JLRRep_F_R
             // 
-            this.LR_J_F1_R.Location = new System.Drawing.Point(362, 74);
-            this.LR_J_F1_R.Maximum = new decimal(new int[] {
+            this.JLRRep_F_R.Location = new System.Drawing.Point(362, 74);
+            this.JLRRep_F_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_J_F1_R.Minimum = new decimal(new int[] {
+            this.JLRRep_F_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_J_F1_R.Name = "LR_J_F1_R";
-            this.LR_J_F1_R.Size = new System.Drawing.Size(48, 25);
-            this.LR_J_F1_R.TabIndex = 171;
-            this.LR_J_F1_R.Value = new decimal(new int[] {
+            this.JLRRep_F_R.Name = "JLRRep_F_R";
+            this.JLRRep_F_R.Size = new System.Drawing.Size(48, 25);
+            this.JLRRep_F_R.TabIndex = 171;
+            this.JLRRep_F_R.Value = new decimal(new int[] {
             7,
             0,
             0,
@@ -5002,7 +4908,7 @@
             // 
             this.LR_M_J_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_CEnd_C_Cell.Enabled = false;
-            this.LR_M_J_CEnd_C_Cell.Location = new System.Drawing.Point(935, 42);
+            this.LR_M_J_CEnd_C_Cell.Location = new System.Drawing.Point(996, 42);
             this.LR_M_J_CEnd_C_Cell.Name = "LR_M_J_CEnd_C_Cell";
             this.LR_M_J_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_M_J_CEnd_C_Cell.TabIndex = 164;
@@ -5014,14 +4920,14 @@
             this.LR_M_J_Count_C_F2.Enabled = false;
             this.LR_M_J_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.LR_M_J_Count_C_F2.Name = "LR_M_J_Count_C_F2";
-            this.LR_M_J_Count_C_F2.Size = new System.Drawing.Size(86, 25);
+            this.LR_M_J_Count_C_F2.Size = new System.Drawing.Size(211, 25);
             this.LR_M_J_Count_C_F2.TabIndex = 166;
             // 
             // LR_M_J_CStart_C_Cell
             // 
             this.LR_M_J_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_CStart_C_Cell.Enabled = false;
-            this.LR_M_J_CStart_C_Cell.Location = new System.Drawing.Point(684, 42);
+            this.LR_M_J_CStart_C_Cell.Location = new System.Drawing.Point(745, 42);
             this.LR_M_J_CStart_C_Cell.Name = "LR_M_J_CStart_C_Cell";
             this.LR_M_J_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_M_J_CStart_C_Cell.TabIndex = 163;
@@ -5030,7 +4936,7 @@
             // 
             this.LR_M_J_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_CStart_C_Name.Enabled = false;
-            this.LR_M_J_CStart_C_Name.Location = new System.Drawing.Point(587, 106);
+            this.LR_M_J_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.LR_M_J_CStart_C_Name.Name = "LR_M_J_CStart_C_Name";
             this.LR_M_J_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_M_J_CStart_C_Name.TabIndex = 167;
@@ -5040,9 +4946,9 @@
             this.LR_M_J_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_Count_C_Cell.Enabled = false;
-            this.LR_M_J_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.LR_M_J_Count_C_Cell.Location = new System.Drawing.Point(497, 43);
             this.LR_M_J_Count_C_Cell.Name = "LR_M_J_Count_C_Cell";
-            this.LR_M_J_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.LR_M_J_Count_C_Cell.Size = new System.Drawing.Size(134, 25);
             this.LR_M_J_Count_C_Cell.TabIndex = 162;
             // 
             // LR_M_J_Z_C_Name
@@ -5065,7 +4971,7 @@
             // 
             this.LR_M_J_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_CEnd_C_Name.Enabled = false;
-            this.LR_M_J_CEnd_C_Name.Location = new System.Drawing.Point(838, 106);
+            this.LR_M_J_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.LR_M_J_CEnd_C_Name.Name = "LR_M_J_CEnd_C_Name";
             this.LR_M_J_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_M_J_CEnd_C_Name.TabIndex = 168;
@@ -5077,14 +4983,14 @@
             this.LR_M_J_Count_C_F1.Enabled = false;
             this.LR_M_J_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.LR_M_J_Count_C_F1.Name = "LR_M_J_Count_C_F1";
-            this.LR_M_J_Count_C_F1.Size = new System.Drawing.Size(86, 25);
+            this.LR_M_J_Count_C_F1.Size = new System.Drawing.Size(211, 25);
             this.LR_M_J_Count_C_F1.TabIndex = 162;
             // 
             // LR_M_J_CStart_C_No
             // 
             this.LR_M_J_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_CStart_C_No.Enabled = false;
-            this.LR_M_J_CStart_C_No.Location = new System.Drawing.Point(587, 74);
+            this.LR_M_J_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.LR_M_J_CStart_C_No.Name = "LR_M_J_CStart_C_No";
             this.LR_M_J_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_M_J_CStart_C_No.TabIndex = 163;
@@ -5101,7 +5007,7 @@
             // 
             this.LR_M_J_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_J_CEnd_C_No.Enabled = false;
-            this.LR_M_J_CEnd_C_No.Location = new System.Drawing.Point(838, 74);
+            this.LR_M_J_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.LR_M_J_CEnd_C_No.Name = "LR_M_J_CEnd_C_No";
             this.LR_M_J_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_M_J_CEnd_C_No.TabIndex = 164;
@@ -5111,29 +5017,29 @@
             this.label112.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label112.AutoSize = true;
             this.label112.Font = new System.Drawing.Font("宋体", 30F);
-            this.label112.Location = new System.Drawing.Point(751, 61);
+            this.label112.Location = new System.Drawing.Point(812, 61);
             this.label112.Name = "label112";
             this.label112.Size = new System.Drawing.Size(72, 50);
             this.label112.TabIndex = 160;
             this.label112.Text = "→";
             // 
-            // LR_J_Name_R
+            // JLRRep_ZTName_R
             // 
-            this.LR_J_Name_R.Location = new System.Drawing.Point(87, 106);
-            this.LR_J_Name_R.Maximum = new decimal(new int[] {
+            this.JLRRep_ZTName_R.Location = new System.Drawing.Point(87, 106);
+            this.JLRRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_J_Name_R.Minimum = new decimal(new int[] {
+            this.JLRRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_J_Name_R.Name = "LR_J_Name_R";
-            this.LR_J_Name_R.Size = new System.Drawing.Size(53, 25);
-            this.LR_J_Name_R.TabIndex = 157;
-            this.LR_J_Name_R.Value = new decimal(new int[] {
+            this.JLRRep_ZTName_R.Name = "JLRRep_ZTName_R";
+            this.JLRRep_ZTName_R.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_ZTName_R.TabIndex = 157;
+            this.JLRRep_ZTName_R.Value = new decimal(new int[] {
             4,
             0,
             0,
@@ -5152,7 +5058,7 @@
             // 
             this.label114.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(850, 20);
+            this.label114.Location = new System.Drawing.Point(911, 20);
             this.label114.Name = "label114";
             this.label114.Size = new System.Drawing.Size(127, 15);
             this.label114.TabIndex = 151;
@@ -5162,7 +5068,7 @@
             // 
             this.label115.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(599, 20);
+            this.label115.Location = new System.Drawing.Point(660, 20);
             this.label115.Name = "label115";
             this.label115.Size = new System.Drawing.Size(127, 15);
             this.label115.TabIndex = 150;
@@ -5195,58 +5101,58 @@
             this.label118.TabIndex = 143;
             this.label118.Text = "账套编码";
             // 
-            // LR_M_J_CStart_C
+            // JLRRep_LFS_CC_C
             // 
-            this.LR_M_J_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_M_J_CStart_C.Location = new System.Drawing.Point(587, 42);
-            this.LR_M_J_CStart_C.Maximum = new decimal(new int[] {
+            this.JLRRep_LFS_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JLRRep_LFS_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.JLRRep_LFS_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_M_J_CStart_C.Minimum = new decimal(new int[] {
+            this.JLRRep_LFS_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_M_J_CStart_C.Name = "LR_M_J_CStart_C";
-            this.LR_M_J_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_M_J_CStart_C.TabIndex = 138;
-            this.LR_M_J_CStart_C.Tag = "LR_M_J_CStart_C";
-            this.LR_M_J_CStart_C.Value = new decimal(new int[] {
+            this.JLRRep_LFS_CC_C.Name = "JLRRep_LFS_CC_C";
+            this.JLRRep_LFS_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_LFS_CC_C.TabIndex = 138;
+            this.JLRRep_LFS_CC_C.Tag = "LR_M_J_CStart_C";
+            this.JLRRep_LFS_CC_C.Value = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.LR_M_J_CStart_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.JLRRep_LFS_CC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_M_J_Count_C
+            // JLRRep_LFS_F_C
             // 
-            this.LR_M_J_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.LR_M_J_Count_C.Maximum = new decimal(new int[] {
+            this.JLRRep_LFS_F_C.Location = new System.Drawing.Point(420, 42);
+            this.JLRRep_LFS_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_M_J_Count_C.Minimum = new decimal(new int[] {
+            this.JLRRep_LFS_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_M_J_Count_C.Name = "LR_M_J_Count_C";
-            this.LR_M_J_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_M_J_Count_C.TabIndex = 136;
-            this.LR_M_J_Count_C.Value = new decimal(new int[] {
+            this.JLRRep_LFS_F_C.Name = "JLRRep_LFS_F_C";
+            this.JLRRep_LFS_F_C.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_LFS_F_C.TabIndex = 136;
+            this.JLRRep_LFS_F_C.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.LR_M_J_Count_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.JLRRep_LFS_F_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // LR_M_J_CEnd_C
             // 
             this.LR_M_J_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_M_J_CEnd_C.Location = new System.Drawing.Point(838, 42);
+            this.LR_M_J_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.LR_M_J_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -5267,57 +5173,55 @@
             0});
             this.LR_M_J_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_J_No_R
+            // JLRRep_ZTNo_R
             // 
-            this.LR_J_No_R.Location = new System.Drawing.Point(87, 74);
-            this.LR_J_No_R.Maximum = new decimal(new int[] {
+            this.JLRRep_ZTNo_R.Location = new System.Drawing.Point(87, 74);
+            this.JLRRep_ZTNo_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_J_No_R.Minimum = new decimal(new int[] {
+            this.JLRRep_ZTNo_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_J_No_R.Name = "LR_J_No_R";
-            this.LR_J_No_R.Size = new System.Drawing.Size(53, 25);
-            this.LR_J_No_R.TabIndex = 142;
-            this.LR_J_No_R.Value = new decimal(new int[] {
+            this.JLRRep_ZTNo_R.Name = "JLRRep_ZTNo_R";
+            this.JLRRep_ZTNo_R.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_ZTNo_R.TabIndex = 142;
+            this.JLRRep_ZTNo_R.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
             // 
-            // LR_M_J_Z_C
+            // JLRRep_LFS_MC_C
             // 
-            this.LR_M_J_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.LR_M_J_Z_C.Maximum = new decimal(new int[] {
+            this.JLRRep_LFS_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.JLRRep_LFS_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_M_J_Z_C.Minimum = new decimal(new int[] {
+            this.JLRRep_LFS_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_M_J_Z_C.Name = "LR_M_J_Z_C";
-            this.LR_M_J_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_M_J_Z_C.TabIndex = 134;
-            this.LR_M_J_Z_C.Value = new decimal(new int[] {
+            this.JLRRep_LFS_MC_C.Name = "JLRRep_LFS_MC_C";
+            this.JLRRep_LFS_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.JLRRep_LFS_MC_C.TabIndex = 134;
+            this.JLRRep_LFS_MC_C.Value = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.LR_M_J_Z_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.JLRRep_LFS_MC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // groupBox8
             // 
-            this.groupBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox8.Controls.Add(this.LR_B_F2_R);
-            this.groupBox8.Controls.Add(this.LR_B_F1_R);
+            this.groupBox8.Controls.Add(this.BLRRep_F_R);
             this.groupBox8.Controls.Add(this.label92);
             this.groupBox8.Controls.Add(this.label97);
             this.groupBox8.Controls.Add(this.LR_M_B_CEnd_C_Cell);
@@ -5333,21 +5237,21 @@
             this.groupBox8.Controls.Add(this.LR_M_B_Z_C_No);
             this.groupBox8.Controls.Add(this.LR_M_B_CEnd_C_No);
             this.groupBox8.Controls.Add(this.label98);
-            this.groupBox8.Controls.Add(this.LR_B_Name_R);
+            this.groupBox8.Controls.Add(this.BLRRep_ZTName_R);
             this.groupBox8.Controls.Add(this.label99);
             this.groupBox8.Controls.Add(this.label100);
             this.groupBox8.Controls.Add(this.label101);
             this.groupBox8.Controls.Add(this.label102);
             this.groupBox8.Controls.Add(this.label103);
             this.groupBox8.Controls.Add(this.label104);
-            this.groupBox8.Controls.Add(this.LR_M_B_CStart_C);
-            this.groupBox8.Controls.Add(this.LR_M_B_Count_C);
+            this.groupBox8.Controls.Add(this.BLRRep_LFS_CC_C);
+            this.groupBox8.Controls.Add(this.BLRRep_LFS_F_C);
             this.groupBox8.Controls.Add(this.LR_M_B_CEnd_C);
-            this.groupBox8.Controls.Add(this.LR_B_No_R);
-            this.groupBox8.Controls.Add(this.LR_M_B_Z_C);
+            this.groupBox8.Controls.Add(this.BLRRep_ZTNo_R);
+            this.groupBox8.Controls.Add(this.BLRRep_LFS_MC_C);
             this.groupBox8.Location = new System.Drawing.Point(7, 47);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(1005, 139);
+            this.groupBox8.Size = new System.Drawing.Size(1065, 139);
             this.groupBox8.TabIndex = 174;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "标准表信息-末";
@@ -5374,23 +5278,23 @@
             0,
             0});
             // 
-            // LR_B_F1_R
+            // BLRRep_F_R
             // 
-            this.LR_B_F1_R.Location = new System.Drawing.Point(362, 74);
-            this.LR_B_F1_R.Maximum = new decimal(new int[] {
+            this.BLRRep_F_R.Location = new System.Drawing.Point(362, 74);
+            this.BLRRep_F_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_B_F1_R.Minimum = new decimal(new int[] {
+            this.BLRRep_F_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_B_F1_R.Name = "LR_B_F1_R";
-            this.LR_B_F1_R.Size = new System.Drawing.Size(48, 25);
-            this.LR_B_F1_R.TabIndex = 171;
-            this.LR_B_F1_R.Value = new decimal(new int[] {
+            this.BLRRep_F_R.Name = "BLRRep_F_R";
+            this.BLRRep_F_R.Size = new System.Drawing.Size(48, 25);
+            this.BLRRep_F_R.TabIndex = 171;
+            this.BLRRep_F_R.Value = new decimal(new int[] {
             7,
             0,
             0,
@@ -5418,7 +5322,7 @@
             // 
             this.LR_M_B_CEnd_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_CEnd_C_Cell.Enabled = false;
-            this.LR_M_B_CEnd_C_Cell.Location = new System.Drawing.Point(936, 42);
+            this.LR_M_B_CEnd_C_Cell.Location = new System.Drawing.Point(996, 42);
             this.LR_M_B_CEnd_C_Cell.Name = "LR_M_B_CEnd_C_Cell";
             this.LR_M_B_CEnd_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_M_B_CEnd_C_Cell.TabIndex = 164;
@@ -5430,14 +5334,14 @@
             this.LR_M_B_Count_C_F2.Enabled = false;
             this.LR_M_B_Count_C_F2.Location = new System.Drawing.Point(420, 106);
             this.LR_M_B_Count_C_F2.Name = "LR_M_B_Count_C_F2";
-            this.LR_M_B_Count_C_F2.Size = new System.Drawing.Size(87, 25);
+            this.LR_M_B_Count_C_F2.Size = new System.Drawing.Size(211, 25);
             this.LR_M_B_Count_C_F2.TabIndex = 166;
             // 
             // LR_M_B_CStart_C_Cell
             // 
             this.LR_M_B_CStart_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_CStart_C_Cell.Enabled = false;
-            this.LR_M_B_CStart_C_Cell.Location = new System.Drawing.Point(685, 42);
+            this.LR_M_B_CStart_C_Cell.Location = new System.Drawing.Point(745, 42);
             this.LR_M_B_CStart_C_Cell.Name = "LR_M_B_CStart_C_Cell";
             this.LR_M_B_CStart_C_Cell.Size = new System.Drawing.Size(53, 25);
             this.LR_M_B_CStart_C_Cell.TabIndex = 163;
@@ -5446,7 +5350,7 @@
             // 
             this.LR_M_B_CStart_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_CStart_C_Name.Enabled = false;
-            this.LR_M_B_CStart_C_Name.Location = new System.Drawing.Point(588, 106);
+            this.LR_M_B_CStart_C_Name.Location = new System.Drawing.Point(648, 106);
             this.LR_M_B_CStart_C_Name.Name = "LR_M_B_CStart_C_Name";
             this.LR_M_B_CStart_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_M_B_CStart_C_Name.TabIndex = 167;
@@ -5456,9 +5360,9 @@
             this.LR_M_B_Count_C_Cell.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_Count_C_Cell.Enabled = false;
-            this.LR_M_B_Count_C_Cell.Location = new System.Drawing.Point(517, 43);
+            this.LR_M_B_Count_C_Cell.Location = new System.Drawing.Point(503, 43);
             this.LR_M_B_Count_C_Cell.Name = "LR_M_B_Count_C_Cell";
-            this.LR_M_B_Count_C_Cell.Size = new System.Drawing.Size(0, 25);
+            this.LR_M_B_Count_C_Cell.Size = new System.Drawing.Size(128, 25);
             this.LR_M_B_Count_C_Cell.TabIndex = 162;
             // 
             // LR_M_B_Z_C_Name
@@ -5481,7 +5385,7 @@
             // 
             this.LR_M_B_CEnd_C_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_CEnd_C_Name.Enabled = false;
-            this.LR_M_B_CEnd_C_Name.Location = new System.Drawing.Point(839, 106);
+            this.LR_M_B_CEnd_C_Name.Location = new System.Drawing.Point(899, 106);
             this.LR_M_B_CEnd_C_Name.Name = "LR_M_B_CEnd_C_Name";
             this.LR_M_B_CEnd_C_Name.Size = new System.Drawing.Size(150, 25);
             this.LR_M_B_CEnd_C_Name.TabIndex = 168;
@@ -5493,14 +5397,14 @@
             this.LR_M_B_Count_C_F1.Enabled = false;
             this.LR_M_B_Count_C_F1.Location = new System.Drawing.Point(420, 74);
             this.LR_M_B_Count_C_F1.Name = "LR_M_B_Count_C_F1";
-            this.LR_M_B_Count_C_F1.Size = new System.Drawing.Size(87, 25);
+            this.LR_M_B_Count_C_F1.Size = new System.Drawing.Size(211, 25);
             this.LR_M_B_Count_C_F1.TabIndex = 162;
             // 
             // LR_M_B_CStart_C_No
             // 
             this.LR_M_B_CStart_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_CStart_C_No.Enabled = false;
-            this.LR_M_B_CStart_C_No.Location = new System.Drawing.Point(588, 74);
+            this.LR_M_B_CStart_C_No.Location = new System.Drawing.Point(648, 74);
             this.LR_M_B_CStart_C_No.Name = "LR_M_B_CStart_C_No";
             this.LR_M_B_CStart_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_M_B_CStart_C_No.TabIndex = 163;
@@ -5517,7 +5421,7 @@
             // 
             this.LR_M_B_CEnd_C_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LR_M_B_CEnd_C_No.Enabled = false;
-            this.LR_M_B_CEnd_C_No.Location = new System.Drawing.Point(839, 74);
+            this.LR_M_B_CEnd_C_No.Location = new System.Drawing.Point(899, 74);
             this.LR_M_B_CEnd_C_No.Name = "LR_M_B_CEnd_C_No";
             this.LR_M_B_CEnd_C_No.Size = new System.Drawing.Size(150, 25);
             this.LR_M_B_CEnd_C_No.TabIndex = 164;
@@ -5527,29 +5431,29 @@
             this.label98.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label98.AutoSize = true;
             this.label98.Font = new System.Drawing.Font("宋体", 30F);
-            this.label98.Location = new System.Drawing.Point(752, 61);
+            this.label98.Location = new System.Drawing.Point(812, 61);
             this.label98.Name = "label98";
             this.label98.Size = new System.Drawing.Size(72, 50);
             this.label98.TabIndex = 160;
             this.label98.Text = "→";
             // 
-            // LR_B_Name_R
+            // BLRRep_ZTName_R
             // 
-            this.LR_B_Name_R.Location = new System.Drawing.Point(87, 106);
-            this.LR_B_Name_R.Maximum = new decimal(new int[] {
+            this.BLRRep_ZTName_R.Location = new System.Drawing.Point(87, 106);
+            this.BLRRep_ZTName_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_B_Name_R.Minimum = new decimal(new int[] {
+            this.BLRRep_ZTName_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_B_Name_R.Name = "LR_B_Name_R";
-            this.LR_B_Name_R.Size = new System.Drawing.Size(53, 25);
-            this.LR_B_Name_R.TabIndex = 157;
-            this.LR_B_Name_R.Value = new decimal(new int[] {
+            this.BLRRep_ZTName_R.Name = "BLRRep_ZTName_R";
+            this.BLRRep_ZTName_R.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_ZTName_R.TabIndex = 157;
+            this.BLRRep_ZTName_R.Value = new decimal(new int[] {
             4,
             0,
             0,
@@ -5568,7 +5472,7 @@
             // 
             this.label100.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(851, 20);
+            this.label100.Location = new System.Drawing.Point(911, 20);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(127, 15);
             this.label100.TabIndex = 151;
@@ -5578,7 +5482,7 @@
             // 
             this.label101.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(600, 20);
+            this.label101.Location = new System.Drawing.Point(660, 20);
             this.label101.Name = "label101";
             this.label101.Size = new System.Drawing.Size(127, 15);
             this.label101.TabIndex = 150;
@@ -5611,57 +5515,57 @@
             this.label104.TabIndex = 143;
             this.label104.Text = "账套编码";
             // 
-            // LR_M_B_CStart_C
+            // BLRRep_LFS_CC_C
             // 
-            this.LR_M_B_CStart_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_M_B_CStart_C.Location = new System.Drawing.Point(588, 42);
-            this.LR_M_B_CStart_C.Maximum = new decimal(new int[] {
+            this.BLRRep_LFS_CC_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BLRRep_LFS_CC_C.Location = new System.Drawing.Point(648, 42);
+            this.BLRRep_LFS_CC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_M_B_CStart_C.Minimum = new decimal(new int[] {
+            this.BLRRep_LFS_CC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_M_B_CStart_C.Name = "LR_M_B_CStart_C";
-            this.LR_M_B_CStart_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_M_B_CStart_C.TabIndex = 138;
-            this.LR_M_B_CStart_C.Value = new decimal(new int[] {
+            this.BLRRep_LFS_CC_C.Name = "BLRRep_LFS_CC_C";
+            this.BLRRep_LFS_CC_C.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_LFS_CC_C.TabIndex = 138;
+            this.BLRRep_LFS_CC_C.Value = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.LR_M_B_CStart_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.BLRRep_LFS_CC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_M_B_Count_C
+            // BLRRep_LFS_F_C
             // 
-            this.LR_M_B_Count_C.Location = new System.Drawing.Point(420, 42);
-            this.LR_M_B_Count_C.Maximum = new decimal(new int[] {
+            this.BLRRep_LFS_F_C.Location = new System.Drawing.Point(420, 42);
+            this.BLRRep_LFS_F_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_M_B_Count_C.Minimum = new decimal(new int[] {
+            this.BLRRep_LFS_F_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_M_B_Count_C.Name = "LR_M_B_Count_C";
-            this.LR_M_B_Count_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_M_B_Count_C.TabIndex = 136;
-            this.LR_M_B_Count_C.Value = new decimal(new int[] {
+            this.BLRRep_LFS_F_C.Name = "BLRRep_LFS_F_C";
+            this.BLRRep_LFS_F_C.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_LFS_F_C.TabIndex = 136;
+            this.BLRRep_LFS_F_C.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.LR_M_B_Count_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.BLRRep_LFS_F_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
             // LR_M_B_CEnd_C
             // 
             this.LR_M_B_CEnd_C.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LR_M_B_CEnd_C.Location = new System.Drawing.Point(839, 42);
+            this.LR_M_B_CEnd_C.Location = new System.Drawing.Point(899, 42);
             this.LR_M_B_CEnd_C.Maximum = new decimal(new int[] {
             500,
             0,
@@ -5682,68 +5586,68 @@
             0});
             this.LR_M_B_CEnd_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // LR_B_No_R
+            // BLRRep_ZTNo_R
             // 
-            this.LR_B_No_R.Location = new System.Drawing.Point(87, 74);
-            this.LR_B_No_R.Maximum = new decimal(new int[] {
+            this.BLRRep_ZTNo_R.Location = new System.Drawing.Point(87, 74);
+            this.BLRRep_ZTNo_R.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_B_No_R.Minimum = new decimal(new int[] {
+            this.BLRRep_ZTNo_R.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_B_No_R.Name = "LR_B_No_R";
-            this.LR_B_No_R.Size = new System.Drawing.Size(53, 25);
-            this.LR_B_No_R.TabIndex = 142;
-            this.LR_B_No_R.Value = new decimal(new int[] {
+            this.BLRRep_ZTNo_R.Name = "BLRRep_ZTNo_R";
+            this.BLRRep_ZTNo_R.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_ZTNo_R.TabIndex = 142;
+            this.BLRRep_ZTNo_R.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
             // 
-            // LR_M_B_Z_C
+            // BLRRep_LFS_MC_C
             // 
-            this.LR_M_B_Z_C.Location = new System.Drawing.Point(149, 42);
-            this.LR_M_B_Z_C.Maximum = new decimal(new int[] {
+            this.BLRRep_LFS_MC_C.Location = new System.Drawing.Point(149, 42);
+            this.BLRRep_LFS_MC_C.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.LR_M_B_Z_C.Minimum = new decimal(new int[] {
+            this.BLRRep_LFS_MC_C.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.LR_M_B_Z_C.Name = "LR_M_B_Z_C";
-            this.LR_M_B_Z_C.Size = new System.Drawing.Size(53, 25);
-            this.LR_M_B_Z_C.TabIndex = 134;
-            this.LR_M_B_Z_C.Value = new decimal(new int[] {
+            this.BLRRep_LFS_MC_C.Name = "BLRRep_LFS_MC_C";
+            this.BLRRep_LFS_MC_C.Size = new System.Drawing.Size(53, 25);
+            this.BLRRep_LFS_MC_C.TabIndex = 134;
+            this.BLRRep_LFS_MC_C.Value = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.LR_M_B_Z_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
+            this.BLRRep_LFS_MC_C.ValueChanged += new System.EventHandler(this.Temp_LRWorkRep_ColRow_indexChanged);
             // 
-            // Temp_LRJ_ID
+            // JLRRep_ID
             // 
-            this.Temp_LRJ_ID.Enabled = false;
-            this.Temp_LRJ_ID.FormattingEnabled = true;
-            this.Temp_LRJ_ID.Location = new System.Drawing.Point(918, 367);
-            this.Temp_LRJ_ID.Name = "Temp_LRJ_ID";
-            this.Temp_LRJ_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_LRJ_ID.TabIndex = 103;
+            this.JLRRep_ID.Enabled = false;
+            this.JLRRep_ID.FormattingEnabled = true;
+            this.JLRRep_ID.Location = new System.Drawing.Point(915, 367);
+            this.JLRRep_ID.Name = "JLRRep_ID";
+            this.JLRRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.JLRRep_ID.TabIndex = 103;
             // 
-            // Temp_LRJ_No
+            // JLRRep_No
             // 
-            this.Temp_LRJ_No.Enabled = false;
-            this.Temp_LRJ_No.FormattingEnabled = true;
-            this.Temp_LRJ_No.Location = new System.Drawing.Point(697, 367);
-            this.Temp_LRJ_No.Name = "Temp_LRJ_No";
-            this.Temp_LRJ_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_LRJ_No.TabIndex = 102;
+            this.JLRRep_No.Enabled = false;
+            this.JLRRep_No.FormattingEnabled = true;
+            this.JLRRep_No.Location = new System.Drawing.Point(697, 367);
+            this.JLRRep_No.Name = "JLRRep_No";
+            this.JLRRep_No.Size = new System.Drawing.Size(156, 23);
+            this.JLRRep_No.TabIndex = 102;
             // 
             // label27
             // 
@@ -5763,31 +5667,31 @@
             this.label28.TabIndex = 100;
             this.label28.Text = "编码";
             // 
-            // Temp_LRJ_Name
+            // JLRRep
             // 
-            this.Temp_LRJ_Name.FormattingEnabled = true;
-            this.Temp_LRJ_Name.Location = new System.Drawing.Point(150, 367);
-            this.Temp_LRJ_Name.Name = "Temp_LRJ_Name";
-            this.Temp_LRJ_Name.Size = new System.Drawing.Size(460, 23);
-            this.Temp_LRJ_Name.TabIndex = 99;
+            this.JLRRep.FormattingEnabled = true;
+            this.JLRRep.Location = new System.Drawing.Point(150, 367);
+            this.JLRRep.Name = "JLRRep";
+            this.JLRRep.Size = new System.Drawing.Size(460, 23);
+            this.JLRRep.TabIndex = 99;
             // 
-            // Temp_LRB_ID
+            // BLRRep_ID
             // 
-            this.Temp_LRB_ID.Enabled = false;
-            this.Temp_LRB_ID.FormattingEnabled = true;
-            this.Temp_LRB_ID.Location = new System.Drawing.Point(913, 17);
-            this.Temp_LRB_ID.Name = "Temp_LRB_ID";
-            this.Temp_LRB_ID.Size = new System.Drawing.Size(156, 23);
-            this.Temp_LRB_ID.TabIndex = 98;
+            this.BLRRep_ID.Enabled = false;
+            this.BLRRep_ID.FormattingEnabled = true;
+            this.BLRRep_ID.Location = new System.Drawing.Point(912, 17);
+            this.BLRRep_ID.Name = "BLRRep_ID";
+            this.BLRRep_ID.Size = new System.Drawing.Size(156, 23);
+            this.BLRRep_ID.TabIndex = 98;
             // 
-            // Temp_LRB_No
+            // BLRRep_No
             // 
-            this.Temp_LRB_No.Enabled = false;
-            this.Temp_LRB_No.FormattingEnabled = true;
-            this.Temp_LRB_No.Location = new System.Drawing.Point(692, 17);
-            this.Temp_LRB_No.Name = "Temp_LRB_No";
-            this.Temp_LRB_No.Size = new System.Drawing.Size(156, 23);
-            this.Temp_LRB_No.TabIndex = 97;
+            this.BLRRep_No.Enabled = false;
+            this.BLRRep_No.FormattingEnabled = true;
+            this.BLRRep_No.Location = new System.Drawing.Point(692, 17);
+            this.BLRRep_No.Name = "BLRRep_No";
+            this.BLRRep_No.Size = new System.Drawing.Size(156, 23);
+            this.BLRRep_No.TabIndex = 97;
             // 
             // label23
             // 
@@ -5807,13 +5711,13 @@
             this.label24.TabIndex = 95;
             this.label24.Text = "编码";
             // 
-            // Temp_LRB_Name
+            // BLRRep
             // 
-            this.Temp_LRB_Name.FormattingEnabled = true;
-            this.Temp_LRB_Name.Location = new System.Drawing.Point(150, 17);
-            this.Temp_LRB_Name.Name = "Temp_LRB_Name";
-            this.Temp_LRB_Name.Size = new System.Drawing.Size(460, 23);
-            this.Temp_LRB_Name.TabIndex = 94;
+            this.BLRRep.FormattingEnabled = true;
+            this.BLRRep.Location = new System.Drawing.Point(150, 17);
+            this.BLRRep.Name = "BLRRep";
+            this.BLRRep.Size = new System.Drawing.Size(460, 23);
+            this.BLRRep.TabIndex = 94;
             // 
             // label12
             // 
@@ -5836,23 +5740,23 @@
             // WriteZTListInfo
             // 
             this.WriteZTListInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.WriteZTListInfo.Location = new System.Drawing.Point(816, 47);
+            this.WriteZTListInfo.Location = new System.Drawing.Point(977, 47);
             this.WriteZTListInfo.Name = "WriteZTListInfo";
-            this.WriteZTListInfo.Size = new System.Drawing.Size(116, 30);
+            this.WriteZTListInfo.Size = new System.Drawing.Size(127, 45);
             this.WriteZTListInfo.TabIndex = 163;
             this.WriteZTListInfo.Text = "获取账表设置";
             this.WriteZTListInfo.UseVisualStyleBackColor = true;
             this.WriteZTListInfo.Click += new System.EventHandler(this.WriteZTListInfo_Click);
             // 
-            // SaveSQLConn
+            // ReadSetting
             // 
-            this.SaveSQLConn.Location = new System.Drawing.Point(556, 45);
-            this.SaveSQLConn.Name = "SaveSQLConn";
-            this.SaveSQLConn.Size = new System.Drawing.Size(95, 32);
-            this.SaveSQLConn.TabIndex = 20;
-            this.SaveSQLConn.Text = "保存设置";
-            this.SaveSQLConn.UseVisualStyleBackColor = true;
-            this.SaveSQLConn.Click += new System.EventHandler(this.SaveSQLConn_Click);
+            this.ReadSetting.Location = new System.Drawing.Point(566, 47);
+            this.ReadSetting.Name = "ReadSetting";
+            this.ReadSetting.Size = new System.Drawing.Size(105, 45);
+            this.ReadSetting.TabIndex = 20;
+            this.ReadSetting.Text = "读取设置";
+            this.ReadSetting.UseVisualStyleBackColor = true;
+            this.ReadSetting.Click += new System.EventHandler(this.ReadSetting_Click);
             // 
             // MainWork
             // 
@@ -5861,10 +5765,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MainWork.Controls.Add(this.MainWorkSetting);
             this.MainWork.Controls.Add(this.WorkPage);
-            this.MainWork.Location = new System.Drawing.Point(0, 92);
+            this.MainWork.Location = new System.Drawing.Point(0, 102);
             this.MainWork.Name = "MainWork";
             this.MainWork.SelectedIndex = 0;
-            this.MainWork.Size = new System.Drawing.Size(1115, 483);
+            this.MainWork.Size = new System.Drawing.Size(1115, 473);
             this.MainWork.TabIndex = 21;
             // 
             // MainWorkSetting
@@ -5873,33 +5777,33 @@
             this.MainWorkSetting.Location = new System.Drawing.Point(4, 25);
             this.MainWorkSetting.Name = "MainWorkSetting";
             this.MainWorkSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.MainWorkSetting.Size = new System.Drawing.Size(1107, 454);
+            this.MainWorkSetting.Size = new System.Drawing.Size(1107, 444);
             this.MainWorkSetting.TabIndex = 0;
             this.MainWorkSetting.Text = "参数设置";
             this.MainWorkSetting.UseVisualStyleBackColor = true;
             // 
             // WorkPage
             // 
-            this.WorkPage.Controls.Add(this.textBox1);
+            this.WorkPage.Controls.Add(this.ProgressMSG);
             this.WorkPage.Controls.Add(this.StartWorking);
             this.WorkPage.Controls.Add(this.progressBar1);
             this.WorkPage.Controls.Add(this.ZTListShow);
             this.WorkPage.Location = new System.Drawing.Point(4, 25);
             this.WorkPage.Name = "WorkPage";
             this.WorkPage.Padding = new System.Windows.Forms.Padding(3);
-            this.WorkPage.Size = new System.Drawing.Size(1107, 454);
+            this.WorkPage.Size = new System.Drawing.Size(1107, 444);
             this.WorkPage.TabIndex = 1;
             this.WorkPage.Text = "写入数据";
             this.WorkPage.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // ProgressMSG
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ProgressMSG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(676, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(310, 25);
-            this.textBox1.TabIndex = 3;
+            this.ProgressMSG.Location = new System.Drawing.Point(676, 9);
+            this.ProgressMSG.Name = "ProgressMSG";
+            this.ProgressMSG.Size = new System.Drawing.Size(310, 25);
+            this.ProgressMSG.TabIndex = 3;
             // 
             // StartWorking
             // 
@@ -5921,6 +5825,9 @@
             // 
             // ZTListShow
             // 
+            this.ZTListShow.AllowUserToAddRows = false;
+            this.ZTListShow.AllowUserToDeleteRows = false;
+            this.ZTListShow.AllowUserToResizeColumns = false;
             this.ZTListShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -5929,30 +5836,81 @@
             this.ZTListShow.Name = "ZTListShow";
             this.ZTListShow.RowHeadersWidth = 51;
             this.ZTListShow.RowTemplate.Height = 27;
-            this.ZTListShow.Size = new System.Drawing.Size(1104, 410);
+            this.ZTListShow.Size = new System.Drawing.Size(1104, 400);
             this.ZTListShow.TabIndex = 0;
             // 
-            // GetXNL
+            // ViewSetting
             // 
-            this.GetXNL.Location = new System.Drawing.Point(669, 45);
-            this.GetXNL.Name = "GetXNL";
-            this.GetXNL.Size = new System.Drawing.Size(126, 32);
-            this.GetXNL.TabIndex = 22;
-            this.GetXNL.Text = "获取表单信息";
-            this.GetXNL.UseVisualStyleBackColor = true;
-            this.GetXNL.Click += new System.EventHandler(this.GetXNL_Click);
+            this.ViewSetting.Location = new System.Drawing.Point(677, 47);
+            this.ViewSetting.Name = "ViewSetting";
+            this.ViewSetting.Size = new System.Drawing.Size(133, 45);
+            this.ViewSetting.TabIndex = 22;
+            this.ViewSetting.Text = "查看设置信息";
+            this.ViewSetting.UseVisualStyleBackColor = true;
+            this.ViewSetting.Click += new System.EventHandler(this.ViewSetting_Click);
+            // 
+            // ZtListRep
+            // 
+            this.ZtListRep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ZtListRep.FormattingEnabled = true;
+            this.ZtListRep.Location = new System.Drawing.Point(274, 69);
+            this.ZtListRep.Name = "ZtListRep";
+            this.ZtListRep.Size = new System.Drawing.Size(185, 23);
+            this.ZtListRep.TabIndex = 164;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(391, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.TabIndex = 165;
+            this.label5.Text = "账套设置表";
+            // 
+            // ZtListRepID
+            // 
+            this.ZtListRepID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ZtListRepID.Enabled = false;
+            this.ZtListRepID.FormattingEnabled = true;
+            this.ZtListRepID.Location = new System.Drawing.Point(470, 69);
+            this.ZtListRepID.Name = "ZtListRepID";
+            this.ZtListRepID.Size = new System.Drawing.Size(69, 23);
+            this.ZtListRepID.TabIndex = 166;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(103, 46);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(52, 15);
+            this.label119.TabIndex = 167;
+            this.label119.Text = "账套库";
+            // 
+            // SaveSetting
+            // 
+            this.SaveSetting.Location = new System.Drawing.Point(813, 47);
+            this.SaveSetting.Name = "SaveSetting";
+            this.SaveSetting.Size = new System.Drawing.Size(105, 45);
+            this.SaveSetting.TabIndex = 168;
+            this.SaveSetting.Text = "保存设置";
+            this.SaveSetting.UseVisualStyleBackColor = true;
+            this.SaveSetting.Click += new System.EventHandler(this.SaveSetting_Click);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 571);
-            this.Controls.Add(this.WriteZTListInfo);
-            this.Controls.Add(this.GetXNL);
-            this.Controls.Add(this.MainWork);
-            this.Controls.Add(this.SaveSQLConn);
-            this.Controls.Add(this.GetWorkDB);
+            this.Controls.Add(this.SaveSetting);
+            this.Controls.Add(this.label119);
+            this.Controls.Add(this.ZtListRepID);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.ZtListRep);
+            this.Controls.Add(this.WriteZTListInfo);
+            this.Controls.Add(this.ViewSetting);
+            this.Controls.Add(this.MainWork);
+            this.Controls.Add(this.ReadSetting);
+            this.Controls.Add(this.GetWorkDB);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -5969,121 +5927,121 @@
             this.BaseSetting.PerformLayout();
             this.ZTInfoBox.ResumeLayout(false);
             this.ZTInfoBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTName_Col)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTName_Row)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_ZBC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_LJC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_ZJC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Temp_BaseRep_ZTNo_LBC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTName_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_BZCFZ_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_JLR_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_JZCFZ_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_ZTTitle_BLR_C)).EndInit();
             this.ZTDataBox.ResumeLayout(false);
             this.ZTDataBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.JZQCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLNC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JZMCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLYC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZQCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLNC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZMCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLYC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLYCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZMC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JLNCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BZQC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLYCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLNCC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JZMC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JZQC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QC_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_LFS_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QM_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_FS_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QC_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_LFS_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QM_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_FS_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_FS_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QM_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JLR_LFS_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BZCFZ_QC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_FS_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_BLR_LFS_CD_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QM_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseRep_JZCFZ_QC_C)).EndInit();
             this.CDSetting.ResumeLayout(false);
             this.CDSetting.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JCD_CCount_R2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_CCount_R1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_Name_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_CCount_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_F_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDREP_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JCD_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_NO_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JCD_Basic_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_ZTNo_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JCDRep_MC_C)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BCD_CCount_R2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_CCount_R1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_Name_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_CCount_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_F_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDREP_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BCD_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_NO_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BCD_Basic_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_ZTNo_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BCDRep_MC_C)).EndInit();
             this.ZCFZSetting.ResumeLayout(false);
             this.ZCFZSetting.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QC_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QC_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_J_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QC_MC_C)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_F2_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_F1_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_Name_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_F_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QM_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QM_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_J_No_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_J_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_ZTNo_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JZCFZRep_QM_MC_C)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QC_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QC_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_C_B_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QC_MC_C)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_F2_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_F1_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_Name_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_F_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QM_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QM_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_B_No_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZCFZ_M_B_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_ZTNo_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BZCFZRep_QM_MC_C)).EndInit();
             this.LRSetting.ResumeLayout(false);
             this.LRSetting.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_FS_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_FS_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_J_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_FS_MC_C)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_FS_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_FS_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_C_B_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_FS_MC_C)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LR_J_F2_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_J_F1_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_J_Name_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_F_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_LFS_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_LFS_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_J_No_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_J_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_ZTNo_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JLRRep_LFS_MC_C)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LR_B_F2_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_B_F1_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_B_Name_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_CStart_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_Count_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_F_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_ZTName_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_LFS_CC_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_LFS_F_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_CEnd_C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_B_No_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LR_M_B_Z_C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_ZTNo_R)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLRRep_LFS_MC_C)).EndInit();
             this.MainWork.ResumeLayout(false);
             this.MainWorkSetting.ResumeLayout(false);
             this.WorkPage.ResumeLayout(false);
@@ -6105,7 +6063,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button GetWorkDB;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabControl WorkSetting;
@@ -6116,48 +6073,47 @@
         private System.Windows.Forms.TextBox Temp_BaseRep_BZTNo_New;
         private System.Windows.Forms.TextBox Temp_BaseRep_JZTNo;
         private System.Windows.Forms.TextBox Temp_BaseRep_BZTNo;
-        private System.Windows.Forms.ComboBox Temp_BaseRep_Name;
-        private System.Windows.Forms.Button SaveSQLConn;
+        private System.Windows.Forms.ComboBox BaseRep;
+        private System.Windows.Forms.Button ReadSetting;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox Temp_BaseRep_No;
-        private System.Windows.Forms.ComboBox Temp_BaseRep_ID;
+        private System.Windows.Forms.ComboBox BaseRep_No;
+        private System.Windows.Forms.ComboBox BaseRep_ID;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTName_CellName;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Button SaveSetting;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTName_Col;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTName_Row;
-        private System.Windows.Forms.NumericUpDown JZQC;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTName_C;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTName_R;
+        private System.Windows.Forms.NumericUpDown BaseRep_JZCFZ_QC_C;
         private System.Windows.Forms.TextBox JZQCS;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.NumericUpDown JZMC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JZCFZ_QM_C;
         private System.Windows.Forms.TextBox JZMCS;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.NumericUpDown BZQC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BZCFZ_QC_C;
         private System.Windows.Forms.TextBox BZQCS;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.NumericUpDown BZMC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BZCFZ_QM_C;
         private System.Windows.Forms.TextBox BZMCS;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox JLYCS;
-        private System.Windows.Forms.NumericUpDown JLYC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JLR_FS_C;
         private System.Windows.Forms.TextBox JLNCS;
-        private System.Windows.Forms.NumericUpDown JLNC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JLR_LFS_C;
         private System.Windows.Forms.TextBox BLYCS;
-        private System.Windows.Forms.NumericUpDown BLYC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BLR_FS_C;
         private System.Windows.Forms.TextBox BLNCS;
-        private System.Windows.Forms.NumericUpDown BLNC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BLR_LFS_C;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNo_LJCV;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTNo_LJC;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTTitle_JLR_C;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNo_LBCV;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTNo_LBC;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTTitle_BLR_C;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNo_ZJCV;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTNo_ZJC;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTTitle_JZCFZ_C;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNo_ZBCV;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTNo_ZBC;
-        private System.Windows.Forms.NumericUpDown Temp_BaseRep_ZTNo_R;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTTitle_BZCFZ_C;
+        private System.Windows.Forms.NumericUpDown BaseRep_ZTTitle_R;
         private System.Windows.Forms.GroupBox ZTInfoBox;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNo_LJCS;
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNo_LBCS;
@@ -6167,22 +6123,22 @@
         private System.Windows.Forms.GroupBox ZTDataBox;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.NumericUpDown JZQCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JZCFZ_QC_CD_C;
         private System.Windows.Forms.TextBox JZQCCS;
-        private System.Windows.Forms.NumericUpDown JZMCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JZCFZ_QM_CD_C;
         private System.Windows.Forms.TextBox JZMCCS;
-        private System.Windows.Forms.NumericUpDown BZQCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BZCFZ_QC_CD_C;
         private System.Windows.Forms.TextBox BZQCCS;
-        private System.Windows.Forms.NumericUpDown BZMCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BZCFZ_QM_CD_C;
         private System.Windows.Forms.TextBox BZMCCS;
         private System.Windows.Forms.TextBox JLYCCS;
-        private System.Windows.Forms.NumericUpDown JLYCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JLR_FS_CD_C;
         private System.Windows.Forms.TextBox JLNCCS;
-        private System.Windows.Forms.NumericUpDown JLNCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_JLR_LFS_CD_C;
         private System.Windows.Forms.TextBox BLYCCS;
-        private System.Windows.Forms.NumericUpDown BLYCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BLR_FS_CD_C;
         private System.Windows.Forms.TextBox BLNCCS;
-        private System.Windows.Forms.NumericUpDown BLNCC;
+        private System.Windows.Forms.NumericUpDown BaseRep_BLR_LFS_CD_C;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
@@ -6190,7 +6146,6 @@
         private System.Windows.Forms.TextBox Temp_BaseRep_ZTNoMsg;
         private System.Windows.Forms.TextBox Temp_BaseRep_JZTNo_ListShow;
         private System.Windows.Forms.TextBox Temp_BaseRep_BZTNo_ListShow;
-        private System.Windows.Forms.Button ReadBaseRepSet;
         private System.Windows.Forms.TabPage ZCFZSetting;
         private System.Windows.Forms.TabPage LRSetting;
         private System.Windows.Forms.TabPage CDSetting;
@@ -6200,7 +6155,7 @@
         private System.Windows.Forms.TextBox BaseRepNoFront;
         private System.Windows.Forms.TextBox JCD_CCount_C_F2;
         private System.Windows.Forms.TextBox JCD_CStart_C_Name;
-        private System.Windows.Forms.NumericUpDown JCD_Name_R;
+        private System.Windows.Forms.NumericUpDown JCDRep_ZTName_R;
         private System.Windows.Forms.TextBox JCD_Basic_C_Name;
         private System.Windows.Forms.TextBox JCD_CEnd_C_Name;
         private System.Windows.Forms.Label label53;
@@ -6210,66 +6165,66 @@
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TextBox JCD_CEnd_C_Cell;
-        private System.Windows.Forms.NumericUpDown JCD_CStart_C;
+        private System.Windows.Forms.NumericUpDown JCDREP_CC_C;
         private System.Windows.Forms.TextBox JCD_CStart_C_Cell;
         private System.Windows.Forms.TextBox JCD_CCount_C_F1;
         private System.Windows.Forms.TextBox JCD_CCount_C_Cell;
         private System.Windows.Forms.TextBox JCD_CStart_C_No;
         private System.Windows.Forms.TextBox JCD_Basic_C_Cell;
-        private System.Windows.Forms.NumericUpDown JCD_CCount_C;
+        private System.Windows.Forms.NumericUpDown JCDRep_F_C;
         private System.Windows.Forms.NumericUpDown JCD_CEnd_C;
-        private System.Windows.Forms.NumericUpDown JCD_NO_R;
+        private System.Windows.Forms.NumericUpDown JCDRep_ZTNo_R;
         private System.Windows.Forms.TextBox JCD_Basic_C_No;
-        private System.Windows.Forms.NumericUpDown JCD_Basic_C;
+        private System.Windows.Forms.NumericUpDown JCDRep_MC_C;
         private System.Windows.Forms.TextBox JCD_CEnd_C_No;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.NumericUpDown BCD_Name_R;
+        private System.Windows.Forms.NumericUpDown BCDRep_ZTName_R;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.NumericUpDown BCD_CStart_C;
-        private System.Windows.Forms.NumericUpDown BCD_CCount_C;
+        private System.Windows.Forms.NumericUpDown BCDREP_CC_C;
+        private System.Windows.Forms.NumericUpDown BCDRep_F_C;
         private System.Windows.Forms.NumericUpDown BCD_CEnd_C;
-        private System.Windows.Forms.NumericUpDown BCD_NO_R;
-        private System.Windows.Forms.NumericUpDown BCD_Basic_C;
-        private System.Windows.Forms.ComboBox Temp_CDJ_ID;
-        private System.Windows.Forms.ComboBox Temp_CDJ_No;
-        private System.Windows.Forms.ComboBox Temp_CDB_ID;
-        private System.Windows.Forms.ComboBox Temp_CDB_No;
+        private System.Windows.Forms.NumericUpDown BCDRep_ZTNo_R;
+        private System.Windows.Forms.NumericUpDown BCDRep_MC_C;
+        private System.Windows.Forms.ComboBox JCDRep_ID;
+        private System.Windows.Forms.ComboBox JCDRep_No;
+        private System.Windows.Forms.ComboBox BCDRep_ID;
+        private System.Windows.Forms.ComboBox BCDRep_No;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.ComboBox Temp_CDJ_Name;
+        private System.Windows.Forms.ComboBox JCDRep;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox Temp_CDB_Name;
+        private System.Windows.Forms.ComboBox BCDRep;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox Temp_ZCFZJ_ID;
-        private System.Windows.Forms.ComboBox Temp_ZCFZJ_No;
+        private System.Windows.Forms.ComboBox JZCFZRep_ID;
+        private System.Windows.Forms.ComboBox JZCFZRep_No;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox Temp_ZCFZJ_Name;
+        private System.Windows.Forms.ComboBox JZCFZRep;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox Temp_ZCFZB_ID;
-        private System.Windows.Forms.ComboBox Temp_ZCFZB_No;
+        private System.Windows.Forms.ComboBox BZCFZRep_ID;
+        private System.Windows.Forms.ComboBox BZCFZRep_No;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox Temp_ZCFZB_Name;
+        private System.Windows.Forms.ComboBox BZCFZRep;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox Temp_LRJ_ID;
-        private System.Windows.Forms.ComboBox Temp_LRJ_No;
+        private System.Windows.Forms.ComboBox JLRRep_ID;
+        private System.Windows.Forms.ComboBox JLRRep_No;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.ComboBox Temp_LRJ_Name;
-        private System.Windows.Forms.ComboBox Temp_LRB_ID;
-        private System.Windows.Forms.ComboBox Temp_LRB_No;
+        private System.Windows.Forms.ComboBox JLRRep;
+        private System.Windows.Forms.ComboBox BLRRep_ID;
+        private System.Windows.Forms.ComboBox BLRRep_No;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox Temp_LRB_Name;
+        private System.Windows.Forms.ComboBox BLRRep;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox BCD_CEnd_C_Cell;
@@ -6284,15 +6239,14 @@
         private System.Windows.Forms.TextBox BCD_CStart_C_No;
         private System.Windows.Forms.TextBox BCD_Basic_C_No;
         private System.Windows.Forms.TextBox BCD_CEnd_C_No;
-        private System.Windows.Forms.Button BTN_ReadCDValue;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.NumericUpDown JCD_CCount_R2;
-        private System.Windows.Forms.NumericUpDown JCD_CCount_R1;
+        private System.Windows.Forms.NumericUpDown JCDRep_F_R;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.NumericUpDown BCD_CCount_R2;
-        private System.Windows.Forms.NumericUpDown BCD_CCount_R1;
+        private System.Windows.Forms.NumericUpDown BCDRep_F_R;
         private System.Windows.Forms.Button WriteZTListInfo;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox ZCFZ_C_B_CEnd_C_Cell;
@@ -6312,13 +6266,13 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.NumericUpDown ZCFZ_C_B_CStart_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_C_B_Count_C;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_QC_CC_C;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_QC_F_C;
         private System.Windows.Forms.NumericUpDown ZCFZ_C_B_CEnd_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_C_B_Z_C;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_QC_MC_C;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.NumericUpDown ZCFZ_B_F2_R;
-        private System.Windows.Forms.NumericUpDown ZCFZ_B_F1_R;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_F_R;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox ZCFZ_M_B_CEnd_C_Cell;
@@ -6334,18 +6288,18 @@
         private System.Windows.Forms.TextBox ZCFZ_M_B_Z_C_No;
         private System.Windows.Forms.TextBox ZCFZ_M_B_CEnd_C_No;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.NumericUpDown ZCFZ_B_Name_R;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_ZTName_R;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.NumericUpDown ZCFZ_M_B_CStart_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_M_B_Count_C;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_QM_CC_C;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_QM_F_C;
         private System.Windows.Forms.NumericUpDown ZCFZ_M_B_CEnd_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_B_No_R;
-        private System.Windows.Forms.NumericUpDown ZCFZ_M_B_Z_C;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_ZTNo_R;
+        private System.Windows.Forms.NumericUpDown BZCFZRep_QM_MC_C;
         private System.Windows.Forms.TabControl MainWork;
         private System.Windows.Forms.TabPage MainWorkSetting;
         private System.Windows.Forms.TabPage WorkPage;
@@ -6367,13 +6321,13 @@
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.NumericUpDown ZCFZ_C_J_CStart_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_C_J_Count_C;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_QC_CC_C;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_QC_F_C;
         private System.Windows.Forms.NumericUpDown ZCFZ_C_J_CEnd_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_C_J_Z_C;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_QC_MC_C;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.NumericUpDown ZCFZ_J_F2_R;
-        private System.Windows.Forms.NumericUpDown ZCFZ_J_F1_R;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_F_R;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.TextBox ZCFZ_M_J_CEnd_C_Cell;
@@ -6389,20 +6343,18 @@
         private System.Windows.Forms.TextBox ZCFZ_M_J_Z_C_No;
         private System.Windows.Forms.TextBox ZCFZ_M_J_CEnd_C_No;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.NumericUpDown ZCFZ_J_Name_R;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_ZTName_R;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.NumericUpDown ZCFZ_M_J_CStart_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_M_J_Count_C;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_QM_CC_C;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_QM_F_C;
         private System.Windows.Forms.NumericUpDown ZCFZ_M_J_CEnd_C;
-        private System.Windows.Forms.NumericUpDown ZCFZ_J_No_R;
-        private System.Windows.Forms.NumericUpDown ZCFZ_M_J_Z_C;
-        private System.Windows.Forms.Button ReadZCFZValue;
-        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_ZTNo_R;
+        private System.Windows.Forms.NumericUpDown JZCFZRep_QM_MC_C;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.TextBox LR_C_J_CEnd_C_Cell;
         private System.Windows.Forms.TextBox LR_C_J_Count_C_F2;
@@ -6421,10 +6373,10 @@
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.NumericUpDown LR_C_J_CStart_C;
-        private System.Windows.Forms.NumericUpDown LR_C_J_Count_C;
+        private System.Windows.Forms.NumericUpDown JLRRep_FS_CC_C;
+        private System.Windows.Forms.NumericUpDown JLRRep_FS_F_C;
         private System.Windows.Forms.NumericUpDown LR_C_J_CEnd_C;
-        private System.Windows.Forms.NumericUpDown LR_C_J_Z_C;
+        private System.Windows.Forms.NumericUpDown JLRRep_FS_MC_C;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox LR_C_B_CEnd_C_Cell;
         private System.Windows.Forms.TextBox LR_C_B_Count_C_F2;
@@ -6443,13 +6395,13 @@
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.NumericUpDown LR_C_B_CStart_C;
-        private System.Windows.Forms.NumericUpDown LR_C_B_Count_C;
+        private System.Windows.Forms.NumericUpDown BLRRep_FS_CC_C;
+        private System.Windows.Forms.NumericUpDown BLRRep_FS_F_C;
         private System.Windows.Forms.NumericUpDown LR_C_B_CEnd_C;
-        private System.Windows.Forms.NumericUpDown LR_C_B_Z_C;
+        private System.Windows.Forms.NumericUpDown BLRRep_FS_MC_C;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.NumericUpDown LR_J_F2_R;
-        private System.Windows.Forms.NumericUpDown LR_J_F1_R;
+        private System.Windows.Forms.NumericUpDown JLRRep_F_R;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.TextBox LR_M_J_CEnd_C_Cell;
@@ -6465,21 +6417,21 @@
         private System.Windows.Forms.TextBox LR_M_J_Z_C_No;
         private System.Windows.Forms.TextBox LR_M_J_CEnd_C_No;
         private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.NumericUpDown LR_J_Name_R;
+        private System.Windows.Forms.NumericUpDown JLRRep_ZTName_R;
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.Label label117;
         private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.NumericUpDown LR_M_J_CStart_C;
-        private System.Windows.Forms.NumericUpDown LR_M_J_Count_C;
+        private System.Windows.Forms.NumericUpDown JLRRep_LFS_CC_C;
+        private System.Windows.Forms.NumericUpDown JLRRep_LFS_F_C;
         private System.Windows.Forms.NumericUpDown LR_M_J_CEnd_C;
-        private System.Windows.Forms.NumericUpDown LR_J_No_R;
-        private System.Windows.Forms.NumericUpDown LR_M_J_Z_C;
+        private System.Windows.Forms.NumericUpDown JLRRep_ZTNo_R;
+        private System.Windows.Forms.NumericUpDown JLRRep_LFS_MC_C;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.NumericUpDown LR_B_F2_R;
-        private System.Windows.Forms.NumericUpDown LR_B_F1_R;
+        private System.Windows.Forms.NumericUpDown BLRRep_F_R;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.TextBox LR_M_B_CEnd_C_Cell;
@@ -6495,24 +6447,28 @@
         private System.Windows.Forms.TextBox LR_M_B_Z_C_No;
         private System.Windows.Forms.TextBox LR_M_B_CEnd_C_No;
         private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.NumericUpDown LR_B_Name_R;
+        private System.Windows.Forms.NumericUpDown BLRRep_ZTName_R;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.NumericUpDown LR_M_B_CStart_C;
-        private System.Windows.Forms.NumericUpDown LR_M_B_Count_C;
+        private System.Windows.Forms.NumericUpDown BLRRep_LFS_CC_C;
+        private System.Windows.Forms.NumericUpDown BLRRep_LFS_F_C;
         private System.Windows.Forms.NumericUpDown LR_M_B_CEnd_C;
-        private System.Windows.Forms.NumericUpDown LR_B_No_R;
-        private System.Windows.Forms.NumericUpDown LR_M_B_Z_C;
-        private System.Windows.Forms.Button ReadLRValue;
+        private System.Windows.Forms.NumericUpDown BLRRep_ZTNo_R;
+        private System.Windows.Forms.NumericUpDown BLRRep_LFS_MC_C;
         private System.Windows.Forms.DataGridView ZTListShow;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ProgressMSG;
         private System.Windows.Forms.Button StartWorking;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button GetXNL;
+        private System.Windows.Forms.Button ViewSetting;
+        private System.Windows.Forms.ComboBox ZtListRep;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox ZtListRepID;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.Button SaveSetting;
     }
 }
 
