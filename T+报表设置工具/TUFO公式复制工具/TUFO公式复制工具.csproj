@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JRepWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JRepWork.Designer.cs">
+      <DependentUpon>JRepWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BRepWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BRepWork.Designer.cs">
+      <DependentUpon>BRepWork.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildListSet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorkSet.cs" />
+    <EmbeddedResource Include="JRepWork.resx">
+      <DependentUpon>JRepWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BRepWork.resx">
+      <DependentUpon>BRepWork.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildListSet.resx">
       <DependentUpon>ChildListSet.cs</DependentUpon>
     </EmbeddedResource>

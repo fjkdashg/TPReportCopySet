@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.WorkMsg = new System.Windows.Forms.RichTextBox();
             this.BackStep = new System.Windows.Forms.Button();
+            this.SetB = new System.Windows.Forms.Button();
+            this.SetJ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BaseBNo
@@ -59,11 +61,11 @@
             // WriteNewTxt
             // 
             this.WriteNewTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.WriteNewTxt.Location = new System.Drawing.Point(381, 139);
+            this.WriteNewTxt.Location = new System.Drawing.Point(122, 139);
             this.WriteNewTxt.Name = "WriteNewTxt";
-            this.WriteNewTxt.Size = new System.Drawing.Size(142, 36);
+            this.WriteNewTxt.Size = new System.Drawing.Size(167, 36);
             this.WriteNewTxt.TabIndex = 5;
-            this.WriteNewTxt.Text = "生成";
+            this.WriteNewTxt.Text = "生成基础公式";
             this.WriteNewTxt.UseVisualStyleBackColor = true;
             this.WriteNewTxt.Click += new System.EventHandler(this.StartWork_Click);
             // 
@@ -73,7 +75,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.Location = new System.Drawing.Point(20, 101);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(503, 32);
+            this.progressBar1.Size = new System.Drawing.Size(623, 32);
             this.progressBar1.TabIndex = 6;
             // 
             // OuterPath
@@ -83,7 +85,7 @@
             this.OuterPath.Location = new System.Drawing.Point(120, 13);
             this.OuterPath.Name = "OuterPath";
             this.OuterPath.ReadOnly = true;
-            this.OuterPath.Size = new System.Drawing.Size(403, 25);
+            this.OuterPath.Size = new System.Drawing.Size(523, 25);
             this.OuterPath.TabIndex = 7;
             // 
             // label1
@@ -121,7 +123,7 @@
             this.WorkMsg.Location = new System.Drawing.Point(1, 181);
             this.WorkMsg.Name = "WorkMsg";
             this.WorkMsg.ReadOnly = true;
-            this.WorkMsg.Size = new System.Drawing.Size(544, 266);
+            this.WorkMsg.Size = new System.Drawing.Size(654, 266);
             this.WorkMsg.TabIndex = 19;
             this.WorkMsg.Text = "";
             // 
@@ -129,17 +131,41 @@
             // 
             this.BackStep.Location = new System.Drawing.Point(20, 139);
             this.BackStep.Name = "BackStep";
-            this.BackStep.Size = new System.Drawing.Size(142, 36);
+            this.BackStep.Size = new System.Drawing.Size(93, 36);
             this.BackStep.TabIndex = 20;
             this.BackStep.Text = "上一步";
             this.BackStep.UseVisualStyleBackColor = true;
             this.BackStep.Click += new System.EventHandler(this.BackStep_Click);
             // 
+            // SetB
+            // 
+            this.SetB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SetB.Location = new System.Drawing.Point(299, 139);
+            this.SetB.Name = "SetB";
+            this.SetB.Size = new System.Drawing.Size(167, 36);
+            this.SetB.TabIndex = 21;
+            this.SetB.Text = "处理标准合并公式";
+            this.SetB.UseVisualStyleBackColor = true;
+            this.SetB.Click += new System.EventHandler(this.SetB_Click);
+            // 
+            // SetJ
+            // 
+            this.SetJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SetJ.Location = new System.Drawing.Point(476, 139);
+            this.SetJ.Name = "SetJ";
+            this.SetJ.Size = new System.Drawing.Size(167, 36);
+            this.SetJ.TabIndex = 22;
+            this.SetJ.Text = "处理尽调合并公式";
+            this.SetJ.UseVisualStyleBackColor = true;
+            this.SetJ.Click += new System.EventHandler(this.SetJ_Click);
+            // 
             // A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 450);
+            this.ClientSize = new System.Drawing.Size(655, 450);
+            this.Controls.Add(this.SetJ);
+            this.Controls.Add(this.SetB);
             this.Controls.Add(this.BackStep);
             this.Controls.Add(this.WriteNewTxt);
             this.Controls.Add(this.WorkMsg);
@@ -152,6 +178,7 @@
             this.Controls.Add(this.BaseBNo);
             this.Name = "A";
             this.Text = "M";
+            this.Activated += new System.EventHandler(this.A_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +196,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox WorkMsg;
         private System.Windows.Forms.Button BackStep;
+        private System.Windows.Forms.Button SetB;
+        private System.Windows.Forms.Button SetJ;
     }
 }

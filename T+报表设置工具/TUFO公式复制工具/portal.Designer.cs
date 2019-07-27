@@ -364,6 +364,7 @@
             this.OuterPath.ReadOnly = true;
             this.OuterPath.Size = new System.Drawing.Size(488, 25);
             this.OuterPath.TabIndex = 1;
+            this.OuterPath.TextChanged += new System.EventHandler(this.OuterPath_TextChanged);
             // 
             // panel8
             // 

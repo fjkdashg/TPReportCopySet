@@ -26,7 +26,18 @@ namespace TUFO公式复制工具
             this.OuterPath.Text = WS.Work_Path.OuterPath;
             this.BaseBNo.Text = WS.BaseBNo;
             this.BaseJNo.Text = WS.BaseJNo;
+
+              
+            if (string.IsNullOrEmpty(WS.Work_Path.BCD_Path) || string.IsNullOrEmpty(WS.Work_Path.BZCFZ_Path) || string.IsNullOrEmpty(WS.Work_Path.BLR_Path))
+            {
+                this.SetB.Enabled = false;
+            }
+            if (string.IsNullOrEmpty(WS.Work_Path.JCD_Path) || string.IsNullOrEmpty(WS.Work_Path.JZCFZ_Path) || string.IsNullOrEmpty(WS.Work_Path.JLR_Path))
+            {
+                this.SetJ.Enabled = false;
+            }
         }
+
 
         public void StartWork_Click(object sender, EventArgs e)
         {
@@ -41,7 +52,6 @@ namespace TUFO公式复制工具
             arg.Add(WS);
             arg.Add(ChildDT);
             BW.RunWorkerAsync(arg);
-
         }
 
         public void Work_Done(object sender, RunWorkerCompletedEventArgs e)
@@ -103,6 +113,28 @@ namespace TUFO公式复制工具
         private void BackStep_Click(object sender, EventArgs e)
         {
             main.ShowNewForm(this.MdiParent, new ChildListSet(WS));
+        }
+
+        private void SetB_Click(object sender, EventArgs e)
+        {
+            main.ShowNewForm(this.MdiParent, new BRepWork(WS,ChildDT));
+        }
+
+        private void SetJ_Click(object sender, EventArgs e)
+        {
+            main.ShowNewForm(this.MdiParent, new JRepWork(WS, ChildDT));
+        }
+
+        private void A_Activated(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(WS.Work_Path.BCD_Path) || string.IsNullOrEmpty(WS.Work_Path.BZCFZ_Path) || string.IsNullOrEmpty(WS.Work_Path.BLR_Path))
+            {
+                this.SetB.Enabled = false;
+            }
+            if (string.IsNullOrEmpty(WS.Work_Path.JCD_Path) || string.IsNullOrEmpty(WS.Work_Path.JZCFZ_Path) || string.IsNullOrEmpty(WS.Work_Path.JLR_Path))
+            {
+                this.SetJ.Enabled = false;
+            }
         }
     }
 }

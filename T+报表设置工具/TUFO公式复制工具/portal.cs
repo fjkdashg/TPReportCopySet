@@ -66,6 +66,12 @@ namespace TUFO公式复制工具
         {
             WS.Work_Path.OuterPath = @"D:\Temp\北京";
             WS.Work_Path.BaseRepTemp_Path = @"D:\Temp\北京\北京瑞克博云-1.txt";
+            WS.Work_Path.BCD_Path = @"D:\Temp\北京\冲抵数据汇总表.txt";
+            WS.Work_Path.JCD_Path= @"D:\Temp\北京\冲抵数据尽调汇总表.txt";
+            WS.Work_Path.BZCFZ_Path= @"D:\Temp\北京\横排资产负债工作表.txt";
+            WS.Work_Path.JZCFZ_Path= @"D:\Temp\北京\横排资产负债尽调工作表.txt";
+            WS.Work_Path.BLR_Path= @"D:\Temp\北京\横排利润工作表.txt";
+            WS.Work_Path.JLR_Path= @"D:\Temp\北京\横排利润尽调工作表.txt";
 
             if (!string.IsNullOrEmpty(WS.Work_Path.OuterPath))
             {
@@ -74,6 +80,33 @@ namespace TUFO公式复制工具
             if (!string.IsNullOrEmpty(WS.Work_Path.BaseRepTemp_Path))
             {
                 this.BaseRepTemp_Path.Text = WS.Work_Path.BaseRepTemp_Path;
+            }
+
+            if (!string.IsNullOrEmpty(WS.Work_Path.BCD_Path))
+            {
+                this.BCD_Path.Text = WS.Work_Path.BCD_Path;
+            }
+            if (!string.IsNullOrEmpty(WS.Work_Path.JCD_Path))
+            {
+                this.JCD_Path.Text = WS.Work_Path.JCD_Path;
+            }
+
+            if (!string.IsNullOrEmpty(WS.Work_Path.BZCFZ_Path))
+            {
+                this.BZCFZ_Path.Text = WS.Work_Path.BZCFZ_Path;
+            }
+            if (!string.IsNullOrEmpty(WS.Work_Path.JZCFZ_Path))
+            {
+                this.JZCFZ_Path.Text = WS.Work_Path.JZCFZ_Path;
+            }
+
+            if (!string.IsNullOrEmpty(WS.Work_Path.BLR_Path))
+            {
+                this.BLR_Path.Text = WS.Work_Path.BLR_Path;
+            }
+            if (!string.IsNullOrEmpty(WS.Work_Path.JLR_Path))
+            {
+                this.JLR_Path.Text = WS.Work_Path.JLR_Path;
             }
         }
         private void GetPath_Click(object sender, EventArgs e)
@@ -127,6 +160,20 @@ namespace TUFO公式复制工具
             {
                 MessageBox.Show("关键参数不能为空");
             }
+        }
+
+
+        private void Path_TextChanged(object sender, EventArgs e)
+        {
+            TextBox ak = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(ak.Text))
+            {
+
+            }
+        }
+        private void OuterPath_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

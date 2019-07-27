@@ -187,6 +187,7 @@
             this.Controls.Add(this.TarJNo);
             this.Controls.Add(this.BaseBNo);
             this.Name = "M";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "手动执行";
             this.ResumeLayout(false);
             this.PerformLayout();

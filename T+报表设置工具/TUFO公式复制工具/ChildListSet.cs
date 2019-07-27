@@ -131,6 +131,31 @@ namespace TUFO公式复制工具
             c5.DataType = Type.GetType("System.String");
             ChildDT.Columns.Add(c5);
 
+            DataColumn c6 = new DataColumn();
+            c6.ColumnName = "CD_Cname";
+            c6.DataType = Type.GetType("System.String");
+            ChildDT.Columns.Add(c6);
+
+            DataColumn c7 = new DataColumn();
+            c7.ColumnName = "zcfz1_Cname";
+            c7.DataType = Type.GetType("System.String");
+            ChildDT.Columns.Add(c7);
+
+            DataColumn c8 = new DataColumn();
+            c8.ColumnName = "zcfz2_Cname";
+            c8.DataType = Type.GetType("System.String");
+            ChildDT.Columns.Add(c8);
+
+            DataColumn c9 = new DataColumn();
+            c9.ColumnName = "lr1_Cname";
+            c9.DataType = Type.GetType("System.String");
+            ChildDT.Columns.Add(c9);
+
+            DataColumn c10 = new DataColumn();
+            c10.ColumnName = "lr2_Cname";
+            c10.DataType = Type.GetType("System.String");
+            ChildDT.Columns.Add(c10);
+
             if (ExcelDT.Rows.Count > 0)
             {
                 for (decimal i = this.ChildStartRow.Value; i < ExcelDT.Rows.Count; i++)
@@ -141,6 +166,13 @@ namespace TUFO公式复制工具
                     int ci = bc - 4;
                     int st = bc - 2;
                     int rn = bc - 3;
+
+                    int cd = bc - 1;
+                    int zcfz1 = jc + 4;
+                    int zcfz2 = jc + 5;
+                    int lr1 = jc + 2;
+                    int lr2 = jc + 3;
+
                     if (!string.IsNullOrWhiteSpace(ExcelDT.Rows[r][bc].ToString()))
                     {
                         DataRow dr = ChildDT.NewRow();
@@ -149,6 +181,12 @@ namespace TUFO公式复制工具
                         dr["RepNo"] = ExcelDT.Rows[r][rn].ToString();
                         dr["BNo"] = ExcelDT.Rows[r][bc].ToString();
                         dr["JNo"] = ExcelDT.Rows[r][jc].ToString();
+
+                        dr["CD_Cname"] = ExcelDT.Rows[r][cd].ToString();
+                        dr["zcfz1_Cname"] = ExcelDT.Rows[r][zcfz1].ToString();
+                        dr["zcfz2_Cname"] = ExcelDT.Rows[r][zcfz2].ToString();
+                        dr["lr1_Cname"] = ExcelDT.Rows[r][lr1].ToString();
+                        dr["lr2_Cname"] = ExcelDT.Rows[r][lr2].ToString();
 
                         ChildDT.Rows.Add(dr);
                     }
@@ -238,7 +276,9 @@ namespace TUFO公式复制工具
 
             if (MessageBox.Show("要手动执行吗？", "", buttons: MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                main.ShowNewForm(this.MdiParent, new M(WS));
+                //main.ShowNewForm(this.MdiParent, new M(WS));
+                Form m = new M(WS);
+                m.Show();
             }
         }
 
