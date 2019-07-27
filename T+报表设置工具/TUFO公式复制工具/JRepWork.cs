@@ -16,14 +16,20 @@ namespace TUFO公式复制工具
     {
         WorkSet WS;
         DataTable ChildDT;
+        DataTable ChildDTin;
 
         TempRepCol trc=new TempRepCol();
         public JRepWork(WorkSet _ws,DataTable _ChildDT)
         {
             InitializeComponent();
             WS = _ws;
-            ChildDT = _ChildDT;
+            ChildDTin = _ChildDT;
 
+            
+        }
+
+        private void JRepWork_Activated(object sender, EventArgs e)
+        {
             this.JCD_Path.Text = WS.Work_Path.JCD_Path;
             this.JZCFZ_Path.Text = WS.Work_Path.JZCFZ_Path;
             this.JLR_Path.Text = WS.Work_Path.JLR_Path;
@@ -40,7 +46,7 @@ namespace TUFO公式复制工具
                         string pattern = @"^[a-z,A-Z]{1,2}";
                         foreach (Match match in Regex.Matches(line, pattern))
                         {
-                            LastCDC= match.Value;
+                            LastCDC = match.Value;
                             CD_CName.Add(match.Value);
                         }
                     }
@@ -90,13 +96,14 @@ namespace TUFO公式复制工具
                 sr.Close();
             }
             //Console.WriteLine(Lastlr2C);
-            ChildDT = _ChildDT.Clone();
-            foreach (DataRow dr in _ChildDT.Rows)
+            ChildDT = new DataTable();
+            ChildDT = ChildDTin.Clone();
+            foreach (DataRow dr in ChildDTin.Rows)
             {
                 if (CD_CName.IndexOf(dr["CD_Cname"].ToString()) < 0 || zcfz2_CName.IndexOf(dr["zcfz2_Cname"].ToString()) < 0 || lr2_CName.IndexOf(dr["lr2_Cname"].ToString()) < 0)
                 {
                     DataRow ak = ChildDT.NewRow();
-                    for (int i = 0; i < _ChildDT.Columns.Count; i++)
+                    for (int i = 0; i < ChildDTin.Columns.Count; i++)
                     {
                         ak[i] = dr[i];
                     }
@@ -118,7 +125,7 @@ namespace TUFO公式复制工具
             DataGridViewCheckBoxColumn dgvc = new DataGridViewCheckBoxColumn();
             dgvc.Name = "Select";
             dgvc.HeaderText = "添加进公式";
-            DGV1.Columns.Insert(0,dgvc);
+            DGV1.Columns.Insert(0, dgvc);
         }
 
         public void Work_Done(object sender, RunWorkerCompletedEventArgs e)

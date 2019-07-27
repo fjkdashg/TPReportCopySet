@@ -199,6 +199,7 @@
             this.Controls.Add(this.JCD_Path);
             this.Name = "JRepWork";
             this.Text = "BRepWork";
+            this.Activated += new System.EventHandler(this.JRepWork_Activated);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).EndInit();
