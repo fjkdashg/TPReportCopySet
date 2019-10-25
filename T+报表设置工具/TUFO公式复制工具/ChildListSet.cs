@@ -258,10 +258,16 @@ namespace TUFO公式复制工具
                 ODC.Open();
                 DataTable schemaTable = ODC.GetOleDbSchemaTable(System.Data.OleDb.OleDbSchemaGuid.Tables, null);
 
+                SheetTable.DataSource = schemaTable;
+                SheetTable.DisplayMember = "name";
+                SheetTable.ValueMember = "name";
+
+                /*
                 OleDbDataAdapter odda = new OleDbDataAdapter("select * from ["+ schemaTable.Rows[0][2].ToString().Trim() + "]", connstr);
                 DataTable dt = new DataTable();
                 odda.Fill(ExcelDT);
                 Col_ValueChanged(new object(), new EventArgs());
+                */
                 ODC.Close();
             }
         }

@@ -64,14 +64,14 @@ namespace TUFO公式复制工具
 
         protected override void OnLoad(EventArgs e)
         {
-            WS.Work_Path.OuterPath = @"D:\Temp\北京";
-            WS.Work_Path.BaseRepTemp_Path = @"D:\Temp\北京\北京瑞克博云-1.txt";
-            WS.Work_Path.BCD_Path = @"D:\Temp\北京\冲抵数据汇总表.txt";
-            WS.Work_Path.JCD_Path= @"D:\Temp\北京\冲抵数据尽调汇总表.txt";
-            WS.Work_Path.BZCFZ_Path= @"D:\Temp\北京\横排资产负债工作表.txt";
-            WS.Work_Path.JZCFZ_Path= @"D:\Temp\北京\横排资产负债尽调工作表.txt";
-            WS.Work_Path.BLR_Path= @"D:\Temp\北京\横排利润工作表.txt";
-            WS.Work_Path.JLR_Path= @"D:\Temp\北京\横排利润尽调工作表.txt";
+            WS.Work_Path.OuterPath = @"E:\Temp\北京";
+            WS.Work_Path.BaseRepTemp_Path = @"E:\Temp\北京\北京瑞克博云-1.txt";
+            WS.Work_Path.BCD_Path = @"E:\Temp\北京\冲抵数据汇总表.txt";
+            WS.Work_Path.JCD_Path= @"E:\Temp\北京\冲抵数据尽调汇总表.txt";
+            WS.Work_Path.BZCFZ_Path= @"E:\Temp\北京\横排资产负债工作表.txt";
+            WS.Work_Path.JZCFZ_Path= @"E:\Temp\北京\横排资产负债尽调工作表.txt";
+            WS.Work_Path.BLR_Path= @"E:\Temp\北京\横排利润工作表.txt";
+            WS.Work_Path.JLR_Path= @"E:\Temp\北京\横排利润尽调工作表.txt";
 
             if (!string.IsNullOrEmpty(WS.Work_Path.OuterPath))
             {
